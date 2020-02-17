@@ -1,0 +1,233 @@
+//Variável que possui os valores do degradê
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #FF0B38, 
+        #FF8FE2
+    );
+}
+
+
+//Definições iniciais
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.home{
+    //Ajustando a margem causada pelo círculo
+    margin-right: -5px;
+    display: inline-block;
+    //Definindo o link 'home' com cor diferente
+    color: #FF0B38
+}
+//Definindo círculo que ficará sob o link da página Home
+.circulo{
+    height: 8px;
+    width: 8px;
+    background-image: var(--gradient);
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: -27px;
+}
+//Definindo o link 'home' com cor diferente
+#home{
+    color: #FF0B38;
+}
+#participar-mobile, #home-mobile{
+    display: none;
+}
+
+
+//Logotipo
+#logotipo{
+    color: #FF2256;
+    font-size: 18px;
+    margin-left: 10%;
+    font-weight: 500;
+    line-height: 80px;
+}
+#logotipo:hover{
+    cursor: pointer;
+}
+
+
+//Nav-Bar
+nav ul{
+    float: right;
+    margin-right: 10%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    margin-right: 35px;
+    color: #555555;
+    padding: 7px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+a:hover, a.active{
+    color: #FF0B38;
+    transition:.5s;
+}
+
+//Burger Animation
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #FF0B38;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.burger{
+    margin-top: 30px;
+    display: none;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+//Botão de Participação
+.botao{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 3px 15px 3px 15px; //Top - Right - Bottom - Left
+    background-image: var(--gradient);
+    border: none;
+    border-radius: 3px;
+    background-size: 200%;
+    transition: background-position 0.4s;
+}
+.botao:hover, .botao.active{
+    cursor: pointer;
+    //Animação para o degradê de background
+    background-position: right;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #FF0B38;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    #logotipo{
+        font-size: 18px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 858px){
+    nav{
+        margin-top: 0;
+    }
+    #logotipo{
+        padding: 0 15%;
+        margin: -10px;
+    }
+    #participar-mobile, #home-mobile{
+        display: inline;
+        position: relative;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    //Burger animation
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .circulo{
+        display: none;
+    }
+    .home{
+        display: none;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: var(--gradient);
+        background-size: 400%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        animation: bg-animation 20s infinite alternate;
+    }
+
+    @keyframes bg-animation{
+        0%{
+            background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white !important;
+        margin: 0;
+    }
+    a:hover, a.active{
+        color: black;
+    }
+    //Oculta o botão de participação
+    .botao{
+        display: none;
+    }
+    //Oculta o círculo sobre o link da página atual
+    .circulo{
+        display: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
