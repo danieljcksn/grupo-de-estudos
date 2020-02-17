@@ -1,3 +1,4 @@
+//N A V  B A R
 //Variável que possui os valores do degradê
 :root{
     --gradient: linear-gradient(
@@ -144,7 +145,7 @@ a:hover, a.active{
 }
 
 
-@media (max-width: 952px){
+@media only screen and (max-width: 952px){
     #logotipo{
         font-size: 18px;
     }
@@ -154,7 +155,7 @@ a:hover, a.active{
     }
 }
 
-@media (max-width: 858px){
+@media only screen and (max-width: 858px){
     nav{
         margin-top: 0;
     }
@@ -231,3 +232,40 @@ a:hover, a.active{
     }
 }
 
+//A P R E S E N T A Ç Ã O
+.apresentacao{
+    text-align: center;
+    position: relative;
+    color: #222222;
+}
+.bg-apresentacao{
+    width: 80%;
+    margin: auto;
+}
+
+.fig1{
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45vh;
+}
+//Sobre a unidade vh: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+.apresentacao h1{
+    font-size: 4.5vh;
+    font-weight: bolder;
+    position: absolute;
+    top: 6.6vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.apresentacao p{
+    position: absolute;
+    font-weight: normal;
+    font-size: 4.8vh;
+    top: 18vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

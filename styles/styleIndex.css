@@ -148,7 +148,7 @@ a:hover, a.active {
   display: none;
 }
 
-@media (max-width: 952px) {
+@media only screen and (max-width: 952px) {
   #logotipo {
     font-size: 18px;
   }
@@ -158,7 +158,7 @@ a:hover, a.active {
   }
 }
 
-@media (max-width: 858px) {
+@media only screen and (max-width: 858px) {
   nav {
     margin-top: 0;
   }
@@ -235,5 +235,45 @@ a:hover, a.active {
   #check:checked ~ ul {
     left: 0;
   }
+}
+
+.apresentacao {
+  text-align: center;
+  position: relative;
+  color: #222222;
+}
+
+.bg-apresentacao {
+  width: 80%;
+  margin: auto;
+}
+
+.fig1 {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 45vh;
+}
+
+.apresentacao h1 {
+  font-size: 4.5vh;
+  font-weight: bolder;
+  position: absolute;
+  top: 6.6vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.apresentacao p {
+  position: absolute;
+  font-weight: normal;
+  font-size: 4.8vh;
+  top: 18vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=styleIndex.css.map */
