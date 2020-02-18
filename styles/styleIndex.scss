@@ -50,12 +50,17 @@ nav{
 #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
     display: none;
 }
-
+.img-nav{
+    position: absolute;
+    bottom: 0px;
+    height: 50vh;
+    display: none;
+}
 
 //Logotipo
 #logotipo{
     color: #FF2256;
-    font-size: 18px;
+    font-size: 1.3vw;
     margin-left: 10%;
     font-weight: 500;
     line-height: 80px;
@@ -80,7 +85,7 @@ nav ul li a{
     color: #555555;
     padding: 7px 5px;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1vw;
     text-align: center;
 }
 a:hover, a.active{
@@ -143,8 +148,6 @@ a:hover, a.active{
 #myCheck{
     display: none;
 }
-
-
 @media only screen and (max-width: 952px){
     #logotipo{
         font-size: 18px;
@@ -154,7 +157,6 @@ a:hover, a.active{
         margin: 0;
     }
 }
-
 @media only screen and (max-width: 858px){
     nav{
         margin-top: 0;
@@ -162,6 +164,7 @@ a:hover, a.active{
     #logotipo{
         padding: 0 15%;
         margin: -10px;
+        font-size: 3.5vw;
     }
 
     //Exibindo o Menu Mobile
@@ -255,8 +258,13 @@ a:hover, a.active{
         top: 4vh !important;
     }
     //**** Fim Configs da apresentação
-}
 
+    //*** Sobre o Grupo
+    .grupo{
+        margin-bottom: -5.5vw !important;
+    }
+    //*** Fim Configs Sobre
+}
 //A P R E S E N T A Ç Ã O
 .apresentacao{
     top: 1vw;
@@ -305,3 +313,46 @@ a:hover, a.active{
     width: 100%;
 }
 //Sobre a unidade vw: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+//F I M  A P R E S E N T A Ç Ã O
+
+//S O B R E
+.sobre{
+    margin: 8% 15% 0 15%;
+    line-height: normal;
+    color: #222222;
+    text-align: left;
+}
+.grupo{
+    font-size: 2.2vw;
+    font-weight: normal;
+    margin-bottom: -10%;
+}
+.grupo1{
+    font-size: 2.2vw;
+    font-weight: bolder;
+}
+.descricao{
+    font-size: 1.1vw;
+}
+.saiba-sobre{
+    margin-top: 10px;
+    color: #FF2357;
+    border-radius: 5px;
+    border: solid 1px;
+    font-weight: 600;
+    background-color: white;
+    font-size: 1vw;
+    text-align: center;
+    padding: 0.533333vw 1.67vw 0.533333vw 1.67vw; //Top - Right - Bottom - Left
+    transition: ease-in-out .25s;
+}
+.saiba-sobre:hover{
+    background-image: var(--gradient);
+    color: white;
+    font-weight: 700;
+}
+.fig2{
+    width: 90%;
+    float: right;
+}
+//F I M  S O B R E
