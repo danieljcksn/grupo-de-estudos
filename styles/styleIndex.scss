@@ -47,7 +47,7 @@ nav{
 #home{
     color: #FF0B38;
 }
-#participar-mobile, #home-mobile{
+#participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
     display: none;
 }
 
@@ -140,7 +140,7 @@ a:hover, a.active{
     cursor: pointer;
     display: none;
 }
-#check{
+#myCheck{
     display: none;
 }
 
@@ -163,31 +163,30 @@ a:hover, a.active{
         padding: 0 15%;
         margin: -10px;
     }
-    #participar-mobile, #home-mobile{
+
+    //Exibindo o Menu Mobile
+    #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
         display: inline;
         position: relative;
     }
-    .checkbtn{
-        display: block;
-    }
-
     //Burger animation
     .burger{
         display: block;
         cursor: pointer;
     }
-
-
     .circulo{
         display: none;
     }
-    .home{
+    #home, #sobre, #blog{
         display: none;
+    }
+    .checkbtn{
+        display: block;
     }
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-image: var(--gradient);
         background-size: 400%;
         top: 80px;
@@ -195,8 +194,12 @@ a:hover, a.active{
         text-align: center;
         transition: all .5s;
         animation: bg-animation 20s infinite alternate;
+        z-index: 1;
     }
 
+    #myCheck:checked ~ ul{
+        left: 0;
+    }
     @keyframes bg-animation{
         0%{
             background-position: left;
@@ -216,9 +219,11 @@ a:hover, a.active{
         color: white !important;
         margin: 0;
     }
-    a:hover, a.active{
-        color: black;
-    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+
     //Oculta o botão de participação
     .botao{
         display: none;
@@ -227,45 +232,76 @@ a:hover, a.active{
     .circulo{
         display: none;
     }
-    #check:checked ~ ul{
-        left: 0;
+
+
+    //**** Configs da apresentação
+    .apresentacao{
+        top: 0.5vw !important;
     }
+    .apresentacao .titulo{
+        font-size: 3vw !important;
+    }
+    .apresentacao .titulo1{
+        font-size: 3.2vw !important;
+    }
+    .apresentacao .subtitulo{
+        font-size: 1.6vw !important;
+        width: 60% !important;
+    }  
+    .fig1{
+        top: 80% !important;
+    }
+    .retanguloDivisor{
+        top: 4vh !important;
+    }
+    //**** Fim Configs da apresentação
 }
 
 //A P R E S E N T A Ç Ã O
 .apresentacao{
+    top: 1vw;
     text-align: center;
     position: relative;
     color: #222222;
+    width: 100%;
+    
 }
-.bg-apresentacao{
-    width: 80%;
+.apresentacao .bg-image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.apresentacao .texts{
+    top: 25%;
+    background-color: rgb(255, 144, 70)(94, 31, 31);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.apresentacao .titulo{
+    font-weight: bolder;
+    font-size: 2.5vw;
+    margin-bottom: -1vw;
+    line-height: normal;
+}
+.apresentacao .titulo1{
+    font-weight: normal;
+    font-size: 2.7vw;
+    line-height: normal;
+}
+.apresentacao .subtitulo{
+    width: 50%;
+    font-size: 1.2vw;
     margin: auto;
 }
-
 .fig1{
-    position: absolute;
     width: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 45vh;
-}
-//Sobre a unidade vh: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
-.apresentacao h1{
-    font-size: 4.5vh;
-    font-weight: bolder;
     position: absolute;
-    top: 6.6vh;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-.apresentacao p{
-    position: absolute;
-    font-weight: normal;
-    font-size: 4.8vh;
-    top: 18vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.retanguloDivisor{
+    width: 100%;
 }
+//Sobre a unidade vw: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.

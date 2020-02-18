@@ -2784,6 +2784,7 @@ video.responsive-video {
 .breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
 .breadcrumb i.material-icons {
   display: inline-block;
+  float: left;
   font-size: 24px;
 }
 
@@ -5488,6 +5489,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .waves-circle {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .waves-input-wrapper {
@@ -5508,6 +5510,7 @@ body.keyboard-focused .dropdown-content li:focus {
   height: 2.5em;
   line-height: 2.5em;
   border-radius: 50%;
+  -webkit-mask-image: none;
 }
 
 .waves-block {
@@ -5820,6 +5823,7 @@ body.keyboard-focused .dropdown-content li:focus {
   position: relative;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
+  -webkit-backface-visibility: hidden;
 }
 
 .materialboxed:hover:not(.active) {
@@ -6617,6 +6621,9 @@ textarea.materialize-textarea {
   pointer-events: none;
 }
 
+[type="checkbox"] {
+  /* checkbox aspect */
+}
 
 [type="checkbox"] + span:not(.lever) {
   position: relative;

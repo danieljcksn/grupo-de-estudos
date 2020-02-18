@@ -45,7 +45,7 @@ nav {
   color: #FF0B38;
 }
 
-#participar-mobile, #home-mobile {
+#participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile {
   display: none;
 }
 
@@ -144,7 +144,7 @@ a:hover, a.active {
   display: none;
 }
 
-#check {
+#myCheck {
   display: none;
 }
 
@@ -166,12 +166,9 @@ a:hover, a.active {
     padding: 0 15%;
     margin: -10px;
   }
-  #participar-mobile, #home-mobile {
+  #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile {
     display: inline;
     position: relative;
-  }
-  .checkbtn {
-    display: block;
   }
   .burger {
     display: block;
@@ -180,13 +177,16 @@ a:hover, a.active {
   .circulo {
     display: none;
   }
-  .home {
+  #home, #sobre, #blog {
     display: none;
+  }
+  .checkbtn {
+    display: block;
   }
   ul {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: var(--gradient);
     background-size: 400%;
     top: 80px;
@@ -196,6 +196,10 @@ a:hover, a.active {
     transition: all .5s;
     -webkit-animation: bg-animation 20s infinite alternate;
             animation: bg-animation 20s infinite alternate;
+    z-index: 1;
+  }
+  #myCheck:checked ~ ul {
+    left: 0;
   }
   @-webkit-keyframes bg-animation {
     0% {
@@ -224,7 +228,8 @@ a:hover, a.active {
     margin: 0;
   }
   a:hover, a.active {
-    color: black;
+    background: none;
+    color: #0082e6;
   }
   .botao {
     display: none;
@@ -232,48 +237,79 @@ a:hover, a.active {
   .circulo {
     display: none;
   }
-  #check:checked ~ ul {
-    left: 0;
+  .apresentacao {
+    top: 0.5vw !important;
+  }
+  .apresentacao .titulo {
+    font-size: 3vw !important;
+  }
+  .apresentacao .titulo1 {
+    font-size: 3.2vw !important;
+  }
+  .apresentacao .subtitulo {
+    font-size: 1.6vw !important;
+    width: 60% !important;
+  }
+  .fig1 {
+    top: 80% !important;
+  }
+  .retanguloDivisor {
+    top: 4vh !important;
   }
 }
 
 .apresentacao {
+  top: 1vw;
   text-align: center;
   position: relative;
   color: #222222;
+  width: 100%;
 }
 
-.bg-apresentacao {
-  width: 80%;
+.apresentacao .bg-image {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.apresentacao .texts {
+  top: 25%;
+  background-color: #ff9046 94, 31, 31;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.apresentacao .titulo {
+  font-weight: bolder;
+  font-size: 2.5vw;
+  margin-bottom: -1vw;
+  line-height: normal;
+}
+
+.apresentacao .titulo1 {
+  font-weight: normal;
+  font-size: 2.7vw;
+  line-height: normal;
+}
+
+.apresentacao .subtitulo {
+  width: 50%;
+  font-size: 1.2vw;
   margin: auto;
 }
 
 .fig1 {
-  position: absolute;
   width: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 45vh;
-}
-
-.apresentacao h1 {
-  font-size: 4.5vh;
-  font-weight: bolder;
   position: absolute;
-  top: 6.6vh;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.apresentacao p {
-  position: absolute;
-  font-weight: normal;
-  font-size: 4.8vh;
-  top: 18vh;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.retanguloDivisor {
+  width: 100%;
 }
 /*# sourceMappingURL=styleIndex.css.map */

@@ -9,14 +9,15 @@
         <!--Import materialize.css-->
          <link type="text/css" rel="stylesheet" href="./Materialize/css/materialize.css"  media="screen,projection"/>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--Cabeçalho-->
         <header>
             <nav class="nav-bar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
+                <input type="checkbox" id="myCheck" onclick="ocultarDiv()">
+                <label for="myCheck" class="checkbtn">
                     <div class="burger">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -27,12 +28,18 @@
                 <label id="logotipo">Projeto de Ensino</label>
 
                 <ul>
+                    <!--Menu-->
                     <div class="home"><li><a href="index.html" id="home">Home<span class="circulo"></span></a></li></div>
-                    <li><a href="home.html" id="home-mobile">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="participacao.html" id="participar-mobile">Participar</a></li>
+                    <li><a href="sobre.html" id="sobre">Sobre</a></li>
+                    <li><a href="blog.html" id="blog">Blog</a></li>
                     <li><button type="button" class="botao">Participar</button></li>
+
+                    <!--Menu Mobile-->
+                    <li><a href="home.html" id="home-mobile"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="sobre.html" id="sobre-mobile"><i class="fas fa-info"></i> Sobre</a></li>
+                    <li><a href="blog.html" id="blog-mobile"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="participacao.html" id="participar-mobile"><i class="fab fa-codepen"></i> Participar</a></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -40,13 +47,16 @@
 
         <!--Apresentação-->
         <div class="apresentacao">
-            <img src="./Imagens/Background.png" class="bg-apresentacao">
-            <h1>Matemática Aplicada Na</h1>
-            <p>Ciência da Computação</p>
-            <img src="./Imagens/Fig1.png" class="fig1">
+            <img src="Imagens/Background.png" class="bg-image"> 
+            <div class="texts">
+                <h1 class="titulo">Matemática Aplicada Na</h1>
+                <p class="titulo1">Ciência da Computação</p>
+                <p class="subtitulo">Grupo de Estudos de Programação da Universidade Estadual de Santa Cruz, situada em Ilhéus - Bahia.</p>
+            </div>    
+            <img src="Imagens/fig1.png" class="fig1">
+            <img src="Imagens/retanguloDivisor.png" class="retanguloDivisor">
         </div>
         <!--Fim da Apresentação-->
-
 
         <!--Script-->
         <script src="./scripts/scriptIndex.js"></script>
