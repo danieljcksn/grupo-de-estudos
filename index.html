@@ -24,7 +24,7 @@
                         <div class="line2"></div>
                     </div>
                 </label>
-                <label id="logotipo">Projeto de Ensino</label>
+                <a href="index.html"><label id="logotipo">Grupo de Estudos</label></a>
 
                 <ul>
                     <!--Menu-->
@@ -37,8 +37,7 @@
                     <li><a href="home.html" id="home-mobile"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="sobre.html" id="sobre-mobile"><i class="fas fa-info"></i> Sobre</a></li>
                     <li><a href="blog.html" id="blog-mobile"><i class="fas fa-blog"></i> Blog</a></li>
-                    <li><a href="participacao.html" id="participar-mobile"><i class="fab fa-codepen"></i> Participar</a></li>
-                    <img src="Imagens/menu.png" class="img-nav">                   
+                    <li><a href="participar.html" id="participar-mobile"><i class="fab fa-codepen"></i> Participar</a></li>           
                 </ul>
             </nav>
         </header>
@@ -48,12 +47,12 @@
         <div class="apresentacao">
             <img src="Imagens/Background.png" class="bg-image"> 
             <div class="texts">
-                <h1 class="titulo">Matemática Aplicada Na</h1>
+                <h1 class="titulo">Ensino da Matemática Aplicado Na</h1>
                 <p class="titulo1">Ciência da Computação</p>
                 <p class="subtitulo">Grupo de Estudos de Programação da Universidade Estadual de Santa Cruz, situada em Ilhéus - Bahia.</p>
             </div>    
             <img src="Imagens/fig1.png" class="fig1">
-            <img src="Imagens/retanguloDivisor.png" class="retanguloDivisor">
+            <div class="retangulo-divisor"></div>
         </div>
         <!--Fim - Apresentação-->
 
@@ -62,18 +61,101 @@
         <div class="sobre">
             <div class="row">
                 <div class="col s6">
-                    <p class="grupo">Sobre o</p>
-                    <h1 class="grupo1">Grupo de Estudos</h1>
-                    <p class="descricao">Buscamos o aperfeiçoamento da percepção matemática e evolução das técnicas de programação dos integrantes deste grupo de estudos com o desenvolvimento de soluções para problemas computacionais propostos em sala, retirados, em sua grande parte, da plataforma URI. 
-                        <br>Mais informações sobre este grupo de estudos?</p>
+                    <p class="sobre-title">Sobre o</p>
+                    <h1 class="sobre-title1">Grupo de Estudos</h1>
+                    <p class="sobre-text">Buscamos o aperfeiçoamento da percepção matemática e evolução das técnicas de programação dos integrantes deste grupo de estudos com o desenvolvimento de soluções para problemas computacionais propostos em sala, retirados, em sua grande parte, da plataforma URI. 
+                        <br>Deseja mais informações sobre este grupo de estudos?</p>
                     <button type="button" class="saiba-sobre">Saiba +</button>
                 </div>
                 <div class="col s6">
-                    <img src="Imagens/fig2.png" class="fig2">
+                    <img src="Imagens/fig2.png" class="fig2" alt="Ilustração: Sobre">
                 </div>
             </div>
         </div>
         <!--Fim - Sobre-->
+        
+        <!--Blog-->
+        <div class="blog">
+            <div class="row">
+                <div class="col s6">
+                    <img src="Imagens/fig3.png" class="fig3" alt="Ilustração Blog">
+                </div>
+                <div class="col s6">
+                    <p class="blog-title">Visite o <b>Nosso Blog</b></p>
+                    <p class="blog-text">Veja resoluções detalhadas de problemas do URI, conteúdo de apoio para participantes e +.</p>
+                    <button type="button" class="visitar-blog">Visitar Blog</button>
+                </div>
+            </div>
+        </div>
+        <!--Fim - Blog-->
+
+        <!--Participe-->
+        <div class="participe">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="participe-title">Participe!</h1>
+                    <p class="participe-subtitle">Para saber como participar deste grupo de estudos, clique no botão abaixo e saiba mais!</p>
+                    <button type="button" class="participar">Quero Participar!</button>
+                </div>
+            </div>
+        </div>  
+        <!--Fim - Participe-->
+        <!--Rodapé-->
+        <footer>
+            <!--Footer Info-->
+            <div class="row">
+                <!--Endereço-->
+                <div class="endereco">
+                    <div class="col s3">
+                        <p id="endereco-title"><b>Endereço</b></p>
+                        <p id="endereco-text">Universidade Estadual de Santa Cruz.
+                            Campus Soane Nazaré de Andrade, Rod. Jorge Amado, Km 16 - Salobrinho, Ilhéus - BA.</p>
+                    </div>
+                </div>
+                <!--Fim - Endereço-->
+                <!--Navegação-->
+                <div class="navegacao">
+                    <div class="col s2">
+                        <p id="navegacao-title"><b>Navegação</b></p>
+                        <div class="footer-links">
+                            <a href="index.html" id="home-footer"><i class="fas fa-home"></i> Home</a>
+                            <a href="sobre.html"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
+                            <a href="blog.html">&nbsp;<i class="fas fa-blog"></i> Blog</a>
+                            <a href="participar.html"><i class="fab fa-codepen"></i>&nbsp; Participar</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim Navegação-->
+                <!--Contato-->
+                <div class="contato">
+                    <div class="col s2">
+                        <p id="contato-title"><b>Contato</b></p>
+                        <p id="contato-text"><a href="mailto:projetodensino@gmail.com"><i class="far fa-envelope-open"></i> Contate-nos!</a></p>
+                    </div>
+                </div>
+                <!--Fim Contato-->
+                <!--Social-->
+                <div class="social">
+                    <div class="col s4">
+                        <p id="social-title"><b>Mídias Sociais</b></p>
+                        <a href="https://www.instagram.com/projetodeensino/" id="instagram"><i class="fab fa-instagram"></i>&nbsp;</a>
+                        <a href="https://www.facebook.com/projetodensino/" id="facebook"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <!--Fim Social-->
+            </div>
+            <!--Fim - Footer Info-->
+
+            <!--Criando o footer com divs <div class="footer-bg">
+                <div id="footer-triangle"></div>
+                <div id="footer-square"></div>
+            </div>-->
+             <!--Ilustração - Footer, bugando e indo lá pra cima<img src="Imagens/fig7-footer.png" id="fig7-footer">-->
+            <img src="Imagens/footer.png" id="footer">
+            
+        </footer>
+        <!--Fim - Rodapé-->
+        
         <!--Script-->
         <script src="./scripts/scriptIndex.js"></script>
     </body>
