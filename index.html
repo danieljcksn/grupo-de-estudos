@@ -13,10 +13,11 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="overlay"></div>
         <!--Cabeçalho-->
         <header>
             <nav class="nav-bar">
-                <input type="checkbox" id="myCheck" onclick="ocultarDiv()">
+                <input type="checkbox" id="myCheck" onclick="hideScroll();">
                 <label for="myCheck" class="checkbtn">
                     <div class="burger">
                         <div class="line1"></div>
@@ -31,17 +32,20 @@
                     <div class="home"><li><a href="index.html" id="home">Home<span class="circulo"></span></a></li></div>
                     <li><a href="sobre.html" id="sobre">Sobre</a></li>
                     <li><a href="blog.html" id="blog">Blog</a></li>
-                    <li><button type="button" class="botao">Participar</button></li>
+                    <li><form><button type="submit" class="botao" formaction="participar.html">Participar</button></form></li>
 
                     <!--Menu Mobile-->
-                    <li><a href="index.html" id="home-mobile"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="sobre.html" id="sobre-mobile"><i class="fas fa-info"></i> Sobre</a></li>
-                    <li><a href="blog.html" id="blog-mobile"><i class="fas fa-blog"></i> Blog</a></li>
-                    <li><a href="participar.html" id="participar-mobile"><i class="fab fa-codepen"></i> Participar</a></li>           
+                    <div class="nav-mobile">
+                        <li><a href="index.html" id="home-mobile"><i class="fas fa-home"></i>&emsp;Home</a></li>
+                        <li><a href="sobre.html" id="sobre-mobile">&nbsp;<i class="fas fa-info"></i>&emsp;&nbsp&nbspSobre</a></li>
+                        <li><a href="blog.html" id="blog-mobile"><i class="fas fa-blog"></i>&emsp;Blog</a></li>
+                        <li><a href="participar.html" id="participar-mobile"><i class="fab fa-codepen"></i>&emsp;Participar</a></li>
+                    </div>           
                 </ul>
             </nav>
         </header>
         <!--Fim do Cabeçalho-->
+        
 
         <!--Apresentação-->
         <div class="apresentacao">
@@ -65,7 +69,7 @@
                     <h1 class="sobre-title1">Grupo de Estudos</h1>
                     <p class="sobre-text">Buscamos o aperfeiçoamento da percepção matemática e evolução das técnicas de programação dos integrantes deste grupo de estudos com o desenvolvimento de soluções para problemas computacionais propostos em sala, retirados, em sua grande parte, da plataforma URI. 
                         <br>Deseja mais informações sobre este grupo de estudos?</p>
-                    <button type="button" class="saiba-sobre">Saiba +</button>
+                    <form><button type="submit" class="saiba-sobre" formaction="sobre.html">Saiba +</button></form>
                 </div>
                 <div class="col s6">
                     <img src="Imagens/fig2.png" class="fig2" alt="Ilustração: Sobre">
@@ -83,7 +87,7 @@
                 <div class="col s6">
                     <p class="blog-title">Visite o <b>Nosso Blog</b></p>
                     <p class="blog-text">Veja resoluções detalhadas de problemas do URI, conteúdo de apoio para participantes e +.</p>
-                    <button type="button" class="visitar-blog">Visitar Blog</button>
+                    <form><button type="submit" class="visitar-blog" formaction="blog.html">Visitar Blog</button></form>
                 </div>
             </div>
         </div>
@@ -95,7 +99,7 @@
                 <div class="col s12">
                     <h1 class="participe-title">Participe!</h1>
                     <p class="participe-subtitle">Para saber como participar deste grupo de estudos, clique no botão abaixo e saiba mais!</p>
-                    <button type="button" class="participar">Quero Participar!</button>
+                    <form><button type="submit" class="participar" formaction="participar.html">Quero Participar!</button></form>
                 </div>
             </div>
         </div>  
@@ -114,7 +118,6 @@
                             Campus Soane Nazaré de Andrade, Rod. Jorge Amado, Km 16 - Salobrinho, Ilhéus - BA.</p>
                     </div>
                 </div>
-                <!--Fim - Endereço-->
                 <!--Navegação-->
                 <div class="navegacao">
                     <div class="col s2">
@@ -127,7 +130,6 @@
                         </div>
                     </div>
                 </div>
-                <!--Fim Navegação-->
                 <!--Contato-->
                 <div class="contato">
                     <div class="col s2">
@@ -135,7 +137,6 @@
                         <p id="contato-text"><a href="mailto:projetodensino@gmail.com"><i class="far fa-envelope-open"></i> Contate-nos!</a></p>
                     </div>
                 </div>
-                <!--Fim Contato-->
                 <!--Social-->
                 <div class="social">
                     <div class="col s4">
@@ -144,7 +145,6 @@
                         <a href="https://www.facebook.com/projetodensino/" id="facebook"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
-                <!--Fim Social-->
             </div>
         </div>
         <!--Fim - Footer Info-->

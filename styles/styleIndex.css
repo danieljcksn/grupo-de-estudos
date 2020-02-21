@@ -6,6 +6,40 @@
     );
 }
 
+.overlay {
+  position: absolute;
+  display: none;
+  top: 8.2vw;
+  bottom: 0;
+  opacity: 0.5;
+  width: 100%;
+  right: 0;
+  background: #212121;
+  z-index: 1;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+  -webkit-animation: overlay-animation 0.5s;
+          animation: overlay-animation 0.5s;
+}
+
+@-webkit-keyframes overlay-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes overlay-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +108,7 @@ nav {
   font-size: 1.3vw;
   margin-left: 10%;
   font-weight: 500;
-  line-height: 80px;
+  line-height: 8.2vw;
 }
 
 #logotipo:hover {
@@ -88,7 +122,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 8.2vw;
   margin: 0 5px;
 }
 
@@ -157,11 +191,11 @@ a:hover, a.active {
 .checkbtn {
   font-size: 30px;
   color: #FF0B38;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+  float: left;
+  line-height: 8.2vw;
   cursor: pointer;
   display: none;
+  margin-left: 10%;
 }
 
 #myCheck {
@@ -222,6 +256,27 @@ a:hover, a.active {
   height: 4.2vw;
   background-image: var(--gradient);
   width: 100%;
+  background-size: 400%;
+  -webkit-animation: retangulo-animation 10s infinite alternate;
+          animation: retangulo-animation 10s infinite alternate;
+}
+
+@-webkit-keyframes retangulo-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes retangulo-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .sobre {
@@ -431,7 +486,6 @@ footer {
 
 #contato-text a:hover {
   color: #FF0B38;
-  font-size: 1vw;
 }
 
 #social-title {
@@ -447,12 +501,10 @@ footer {
 
 .social #instagram:hover {
   color: #F44747;
-  font-size: 2.3vw;
 }
 
 .social #facebook:hover {
   color: #3C5898;
-  font-size: 2.3vw;
 }
 
 .page-footer {
@@ -477,7 +529,15 @@ footer {
   color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+/*
+@custom-media --viewport-4 (min-width: 480px);
+@custom-media --viewport-7 (min-width: 768px);
+@custom-media --viewport-9 (min-width: 992px);
+@custom-media --viewport-12 (min-width: 1200px);*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .overlay {
+    display: none;
+  }
   #logotipo {
     font-size: 2vw !important;
   }
@@ -498,46 +558,101 @@ footer {
     margin-top: 55px;
     margin-left: -2.5vw;
   }
+  nav ul li a {
+    font-size: 1.4vw;
+    margin-right: 15px;
+  }
+  .botao {
+    font-size: 1.4vw;
+  }
+  .sobre-title {
+    margin-bottom: -0.5vw;
+  }
+  .sobre-title1, .sobre-title1, .blog-title, .participe-title, .footer-title {
+    font-size: 2.6vw;
+  }
+  .sobre-text, .blog-text, .participe-subtitle {
+    font-size: 1.3vw;
+  }
+  .fig2 {
+    width: 90%;
+    float: right;
+  }
+  .saiba-sobre, .visitar-blog {
+    font-size: 1.3vw;
+  }
+  .blog-title {
+    margin-top: 10%;
+  }
+  .fig3 {
+    width: 80%;
+  }
+  .participe-subtitle {
+    width: 40%;
+    margin-left: 30%;
+    font-size: 1.3vw;
+  }
+  .participar {
+    font-size: 1.3vw;
+    margin-left: 43.5%;
+    font-weight: normal;
+  }
+  .footer-title {
+    font-size: 2vw;
+  }
+  #navegacao-title, #endereco-title, #contato-title, #social-title {
+    font-size: 1.4vw;
+  }
+  #contato-text a, #endereco-text, .footer-links a {
+    font-size: 1.3vw;
+  }
+  #facebook, #instagram {
+    font-size: 2.5vw;
+  }
+  .container {
+    font-size: 1.1vw !important;
+  }
 }
 
-@media only screen and (max-width: 858px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .overlay {
+    display: none;
+  }
   header {
     padding: 0;
+    margin-bottom: -6vw;
     height: 15vw !important;
-  }
-  nav {
-    margin-top: 0;
   }
   #logotipo {
     padding: 0 10% !important;
-    font-size: 3.5vw;
-    margin-left: 0;
-    margin-top: 5vw;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-left: 15%;
+    text-transform: uppercase;
+  }
+  #home, #sobre, #blog {
+    display: none;
   }
   #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile {
     display: inline;
     position: relative;
   }
-  .burger {
+  .nav-mobile {
+    margin-top: -3vw;
+    text-align: left;
+  }
+  nav ul li {
     display: block;
-    cursor: pointer;
-  }
-  .circulo {
-    display: none;
-  }
-  #home, #sobre, #blog {
-    display: none;
-  }
-  .checkbtn {
-    display: block;
+    margin: 3vw 0;
+    line-height: 30px;
   }
   ul {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-image: var(--gradient);
     background-size: 400%;
-    top: 80px;
+    top: 8.2vw;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
@@ -546,8 +661,28 @@ footer {
             animation: bg-animation 20s infinite alternate;
     z-index: 1;
   }
+  nav ul li a {
+    font-size: 2vw;
+    color: white !important;
+    margin-left: 10%;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  .burger {
+    margin-top: 2.7vw;
+    padding: 0;
+    display: block;
+  }
+  .checkbtn {
+    display: block;
+  }
   #myCheck:checked ~ ul {
     left: 0;
+  }
+  .circulo {
+    display: none;
   }
   @-webkit-keyframes bg-animation {
     0% {
@@ -565,47 +700,67 @@ footer {
       background-position: right;
     }
   }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-    color: white !important;
-    margin: 0;
-  }
-  a:hover, a.active {
-    background: none;
-    color: #0082e6;
-  }
   .botao {
     display: none;
   }
   .circulo {
     display: none;
   }
-  .apresentacao {
-    top: 0.5vw !important;
+  .sobre-title {
+    margin-bottom: -0.5vw;
   }
-  .apresentacao .titulo {
-    font-size: 2.5vw !important;
+  .sobre-title1, .sobre-title1, .blog-title, .participe-title, .footer-title {
+    font-size: 2.6vw;
   }
-  .apresentacao .titulo1 {
-    font-size: 3.2vw !important;
+  .sobre-text, .blog-text, .participe-subtitle {
+    font-size: 1.3vw;
   }
-  .apresentacao .subtitulo {
-    font-size: 1.6vw !important;
-    width: 60% !important;
+  .fig2 {
+    width: 90%;
+    float: right;
   }
-  .fig1 {
-    top: 75% !important;
+  .saiba-sobre, .visitar-blog {
+    font-size: 1.3vw;
   }
-  .descricao {
+  .blog-title {
+    margin-top: 10%;
+  }
+  .fig3 {
+    width: 80%;
+  }
+  .participe-subtitle {
+    width: 40%;
+    margin-left: 30%;
     font-size: 1.3vw;
   }
   .participar {
-    margin-top: 0.5vw !important;
+    font-size: 1.3vw;
+    margin-left: 43.5%;
+    font-weight: normal;
+  }
+  .footer-title {
+    font-size: 2vw;
+  }
+  #navegacao-title, #endereco-title, #contato-title, #social-title {
+    font-size: 1.4vw;
+  }
+  #contato-text a, #endereco-text, .footer-links a {
+    font-size: 1.3vw;
+  }
+  #facebook, #instagram {
+    font-size: 2.5vw;
+  }
+  #contato-text {
+    margin-top: -0.2vw;
+  }
+  .container {
+    font-size: 1.1vw !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .overlay {
+    display: none;
   }
 }
 /*# sourceMappingURL=styleIndex.css.map */
