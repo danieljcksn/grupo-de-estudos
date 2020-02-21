@@ -17,6 +17,20 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 nav {
@@ -347,8 +361,19 @@ a:hover, a.active {
   background-position: right;
 }
 
+.footer-info {
+  margin-top: 10vw;
+}
+
 footer {
-  margin-top: 18vw;
+  margin-top: 6vw;
+}
+
+.footer-title {
+  text-align: center;
+  color: #FF2256;
+  margin-bottom: 3vw;
+  font-size: 1.5vw;
 }
 
 .endereco {
@@ -389,6 +414,10 @@ footer {
   color: #FF0B38;
 }
 
+#home-footer:hover {
+  color: #087F8C;
+}
+
 #contato-title {
   font-size: 1.1vw;
   color: #101C21;
@@ -401,7 +430,7 @@ footer {
 }
 
 #contato-text a:hover {
-  color: #D44638;
+  color: #FF0B38;
   font-size: 1vw;
 }
 
@@ -426,38 +455,26 @@ footer {
   font-size: 2.3vw;
 }
 
-#fig7-footer {
-  position: absolute;
-  bottom: 0px;
-  left: 15%;
-  z-index: 0;
+.page-footer {
+  padding: 0 !important;
 }
 
-#footer-square {
-  height: 7vw;
-  background-color: #FDECEF;
-  width: 100%;
-  position: relative;
+.footer-copyright {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #FF2357 !important;
+  text-align: center;
+  bottom: 0px !important;
+  color: #222222;
+  height: 4vw !important;
 }
 
-#footer-triangle {
-  margin-bottom: -1px !important;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 0;
-  border-bottom: 7.5vw solid #FDECEF;
-  border-left: 98vw solid transparent;
-  position: relative;
+.container {
+  font-size: 0.8vw !important;
 }
 
-.footer-bg {
-  bottom: 0;
-}
-
-#footer {
-  bottom: 0;
-  width: 100%;
+.container a {
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {

@@ -19,7 +19,15 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+main{
+    flex: 1 0 auto;
+}
+
 nav{
     margin-top: 1.2vw;
     width: 100%;
@@ -325,8 +333,17 @@ a:hover, a.active{
 
 
 //F O O T E R
+.footer-info{
+    margin-top: 10vw;
+}
 footer{
-    margin-top: 18vw;
+    margin-top: 6vw;
+}
+.footer-title{
+    text-align: center;
+    color: #FF2256;
+    margin-bottom: 3vw;
+    font-size: 1.5vw;
 }
 //Endereço -----------------
 .endereco{
@@ -361,6 +378,9 @@ footer{
 #home-footer{
     color: #FF0B38;
 }
+#home-footer:hover{
+    color: #087F8C;
+}
 //Contato -----------------
 #contato-title{
     font-size: 1.1vw;
@@ -372,7 +392,7 @@ footer{
     font-size: 1vw;
 }
 #contato-text a:hover{
-    color: #D44638;
+    color: #FF0B38;
     font-size: 1vw;
 }
 //Mídias Sociais -----------------
@@ -394,39 +414,26 @@ footer{
     font-size: 2.3vw;
 }
 
-
-
-#fig7-footer{
-    position: absolute;
-    bottom: 0px;
-    left: 15%;
-    z-index: 0;
+.page-footer{
+    padding: 0 !important;
 }
-#footer-square{
-    height: 7vw;
-    background-color: #FDECEF;
-    width: 100%;
-    position: relative;
+.footer-copyright{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #FF2357 !important;
+    text-align: center;
+    bottom: 0px !important;
+    color: #222222;
+    height: 4vw !important;
 }
-#footer-triangle{
-    margin-bottom: -1px !important;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 0;
-    border-bottom: 7.5vw solid #FDECEF;
-    border-left: 98vw solid transparent;
-    position: relative;
+.container{
+    font-size: 0.8vw !important;
 }
-.footer-bg{
-    bottom: 0;
-}
-#footer{
-    bottom: 0;
-    width: 100%;
+.container a{
+    color: white;
 }
 //F I M  F O O T E R
-//M E D I A  Q U E R Y
+//M E D I A  Q U E R Y  B R E A K  P O I N T S 
 @media only screen and (max-width: 1024px){
     #logotipo{
         font-size: 2vw !important;
