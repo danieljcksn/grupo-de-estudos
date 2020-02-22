@@ -67,7 +67,7 @@ nav{
     background-image: var(--gradient);
     border-radius: 70%;
     position: absolute;
-    margin-top: 55px;
+    margin-top: 5vw;
     margin-left: -1.75vw;
 }
 
@@ -363,6 +363,9 @@ a:hover, a.active{
 
 
 //F O O T E R
+.footer-mobile{
+    display: none;
+}
 .footer-info{
     margin-top: 10vw;
 }
@@ -488,7 +491,7 @@ footer{
         border-radius: 50%;
         margin: auto;
         position: absolute;
-        margin-top: 55px;
+        margin-top: 5vw;
         margin-left: -2.5vw;
     }
     nav ul li a{
@@ -639,7 +642,7 @@ footer{
         .sobre-title{
         margin-bottom: -0.5vw;
     }
-    .sobre-title1, .sobre-title1, .blog-title, .participe-title, .footer-title{
+    .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
         font-size: 2.6vw;
     }
     .sobre-text, .blog-text, .participe-subtitle{
@@ -688,9 +691,178 @@ footer{
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .overlay{
         display: none;
+    }
+    header{
+        padding: 0;
+        margin-bottom: -8vw;
+        height: 15vw !important;
+    }
+    #logotipo{
+        padding: 0 10% !important;
+        font-size: 2.5vw;
+        text-align: center;
+        margin-left: 15%;
+        text-transform: uppercase;
+    }
+    #home, #sobre, #blog{
+        display: none;
+    }
+    .apresentacao .titulo{
+        font-size: 2.5vw;
+    }
+    .apresentacao .titulo1{
+        font-size: 3.3vw;
+        margin-top: -1.3vw;
+    }
+    .apresentacao .subtitulo{
+        font-size: 1.5vw;
+        width: 80%;
+    }
+    //Exibindo o Menu Mobile
+    #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
+        display: inline;
+        position: relative;
+    }
+    .nav-mobile{
+        margin-top: -3vw;
+        text-align: left;
+    }
+    nav ul li{
+        display: block;
+        margin: 3vw 0;
+        line-height: 30px;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background-image: var(--gradient);
+        background-size: 400%;
+        top: 8.2vw;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        animation: bg-animation 20s infinite alternate;
+        z-index: 1;
+    }
+    nav ul li a{
+        font-size: 2.3vw;
+        color: white !important;
+        margin-left: 10%;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+
+    .burger{
+        margin-top: 2.7vw;
+        padding: 0;
+        display: block;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #myCheck:checked ~ ul{
+        left: 0;
+    }
+
+    .circulo{
+        display: none;
+    }
+    @keyframes bg-animation{
+        0%{
+            background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+    }
+
+    //Oculta o botão de participação
+    .botao{
+        display: none;
+    }
+    //Oculta o círculo sobre o link da página atual
+    .circulo{
+        display: none;
+    }
+    .sobre-title{
+        margin-bottom: -0.5vw;
+    }
+    .sobre{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
+        font-size: 3vw;
+    }
+    .sobre-text, .blog-text, .participe-subtitle{
+        font-size: 1.6vw;
+    }
+    .fig2{
+        margin-top: 15%;
+        width: 80%;
+        float: right;
+    }
+    .saiba-sobre, .visitar-blog{
+        font-size: 1.6vw;
+    }
+    .blog-title{
+        margin-top: 10%;
+    }
+    .fig3{
+        width: 90%;
+    }
+    .participe-title{
+        font-size: 3.5vw;
+    }
+    .participe-subtitle{
+        width: 40%;
+        margin-left: 30%;
+        font-size: 1.6vw;
+    }
+    .participar{
+        font-size: 1.6vw;
+        margin-left: 42%;
+        font-weight: normal;
+    }
+    //Footer Mobile
+    .footer-mobile{
+        margin-left: 8%;
+        margin-top: 10vw;
+        display: block;
+    }
+    .footer-info{
+        display: none;
+    }
+    .footer-title{
+        font-size: 2.5vw;
+        //Esq -67.5
+        //Centro
+        margin-left: -8vw;
+    }
+    #navegacao-title, #endereco-title, #contato-title, #social-title{
+        font-size: 2.5vw;
+    }
+    #contato-text a, #endereco-text, .footer-links a{
+        font-size: 1.8vw;
+    }
+    #facebook, #instagram{
+        font-size: 2.5vw;
+    }
+    #contato-text{
+        margin-top: -0.2vw;
+    }
+    .container{
+        font-size: 1.4vw !important;
+    }
+    .footer-copyright{
+        height: 6vw !important;
     }
 }
 //F I M  M E D I A  Q U E R Y
