@@ -1,0 +1,87 @@
+.overlay{
+    position: absolute;
+    display: none;   //overlay é exibido apenas quando o jQuery o ativar
+    top: 8.2vw;
+    bottom: 0;
+    opacity: 0.5;
+    width: 100%;
+    right: 0;   //absolutely position element covers entire page
+    background: #212121;
+    z-index: 1;
+    transition: ease-in-out .5s;
+    animation: overlay-animation 0.5s;
+}
+@keyframes overlay-animation{
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+.apresentacao{
+    margin-bottom: -10vw;
+}
+.titulo{
+    font-weight: normal !important;
+    margin-top: -5vw;
+    font-size: 2.5vw;
+}
+.page{
+    text-align: center;
+    margin-top: 2vw;
+    color: #555555;
+    font-weight: normal;
+}
+#home{
+    color: #555555;
+}
+#home:hover{
+    color: #FF0B38;
+}
+#sobre{
+    color: #FF0B38;
+}
+.sobre{
+    margin-top: 0px !important;
+}
+.fig2{
+    margin-top: -2vw;
+    width: 60%;
+}
+
+.blog-title{
+    margin-top: 0;
+}
+.fig3{
+    margin-top: 2.4vw;
+    width: 95%;
+}
+#home-footer{
+    color: #777777;
+}
+#home-footer:hover{
+    color: #FF0B38;
+}
+#sobre-footer{
+    color: #FF0B38;
+}
+#sobre-footer:hover{
+    color: #087F8C;
+}
+
+@media only screen and (max-width: 768px){
+    .fig3{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .apresentacao{
+        margin-bottom: -20vw;
+    }
+    .texts{
+        margin-top: 10vw;
+    }
+    .blog-mobile{
+        margin-bottom: 10vw;
+    }
+}

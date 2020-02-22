@@ -72,7 +72,7 @@ nav {
   width: 100%;
 }
 
-.home {
+.pg-atual {
   margin-right: -5px;
   display: inline-block;
   color: #FF0B38;
@@ -541,11 +541,8 @@ footer {
   color: white;
 }
 
-/*
-@custom-media --viewport-4 (min-width: 480px);
-@custom-media --viewport-7 (min-width: 768px);
-@custom-media --viewport-9 (min-width: 992px);
-@custom-media --viewport-12 (min-width: 1200px);*/
+/*M E D I A  Q U E R Y  B R E A K  P O I N T S 
+*******************************************************************************************************************/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .overlay {
     display: none;
@@ -910,23 +907,10 @@ footer {
     margin: auto;
     margin-bottom: 0.5vw;
   }
-  .blog-text {
-    margin-top: 0.5vw;
-    margin: auto;
-    width: 60%;
-  }
   .fig2-mobile {
     margin-top: 15%;
     width: 33%;
     margin-left: 34%;
-  }
-  .saiba-sobre, .visitar-blog {
-    font-size: 2.5vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .visitar-blog {
-    margin-top: 1.3vw;
   }
   .blog-title {
     margin-top: 0;
@@ -935,6 +919,19 @@ footer {
     width: 35%;
     display: block;
     margin-left: 33%;
+  }
+  .blog-text {
+    margin-top: 0.5vw;
+    margin: auto;
+    width: 60%;
+  }
+  .visitar-blog {
+    margin-top: 1.3vw;
+  }
+  .saiba-sobre, .visitar-blog {
+    font-size: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .participe {
     height: 30vw;
@@ -986,4 +983,4 @@ footer {
     height: 6vw !important;
   }
 }
-/*# sourceMappingURL=styleIndex.css.map */
+/*# sourceMappingURL=style-index.css.map */

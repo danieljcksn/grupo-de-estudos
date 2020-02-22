@@ -7,8 +7,7 @@
         #FF8FE2
     );
 }
-
-.overlay {
+.overlay{
     position: absolute;
     display: none;   //overlay é exibido apenas quando o jQuery o ativar
     top: 8.2vw;
@@ -29,6 +28,7 @@
         opacity: 0.5;
     }
 }
+
 //Definições iniciais
 *{
     margin: 0;
@@ -52,13 +52,12 @@ nav{
     margin-top: 1.2vw;
     width: 100%;
 }
-
-.home{
+.pg-atual{
     //Ajustando a margem causada pelo círculo
     margin-right: -5px;
     display: inline-block;
     //Definindo o link 'home' com cor diferente
-    color: #FF0B38
+    color: #FF0B38;
 }
 //Definindo círculo que ficará sob o link da página Home
 .circulo{
@@ -90,7 +89,6 @@ nav{
     height: 50vh;
     display: none;
 }
-
 //Logotipo
 #logotipo{
     color: #FF2256;
@@ -102,8 +100,6 @@ nav{
 #logotipo:hover{
     cursor: pointer;
 }
-
-
 //Nav-Bar
 nav ul{
     float: right;
@@ -126,7 +122,6 @@ a:hover, a.active{
     color: #FF0B38;
     transition:.5s;
 }
-
 //Burger Animation
 .burger div{
     width: 3vw;
@@ -135,7 +130,6 @@ a:hover, a.active{
     margin: 0.583333vw;
     transition: all 0.3s ease;
 }
-
 .burger{
     margin-top: 30px;
     display: none;
@@ -149,8 +143,6 @@ a:hover, a.active{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
 //Botão de Participação
 .botao{
     cursor: pointer;
@@ -450,6 +442,7 @@ footer{
     color: #3C5898;
 }
 
+//Rodapé -----------------
 .page-footer{
     padding: 0 !important;
 }
@@ -469,13 +462,8 @@ footer{
     color: white;
 }
 //F I M  F O O T E R
-//M E D I A  Q U E R Y  B R E A K  P O I N T S 
-/*
-@custom-media --viewport-4 (min-width: 480px);
-@custom-media --viewport-7 (min-width: 768px);
-@custom-media --viewport-9 (min-width: 992px);
-@custom-media --viewport-12 (min-width: 1200px);*/
-//******************************************************************************************************************
+/*M E D I A  Q U E R Y  B R E A K  P O I N T S 
+*******************************************************************************************************************/
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     .overlay{
         display: none;
@@ -507,6 +495,7 @@ footer{
     .botao{
         font-size: 1.4vw;
     }
+    //Sobre
     .sobre-title{
         margin-bottom: -0.5vw;
     }
@@ -523,12 +512,14 @@ footer{
     .saiba-sobre, .visitar-blog{
         font-size: 1.3vw;
     }
+    //Blog
     .blog-title{
         margin-top: 10%;
     }
     .fig3{
         width: 80%;
     }
+    //Participar
     .participe-subtitle{
         width: 40%;
         margin-left: 30%;
@@ -539,6 +530,7 @@ footer{
         margin-left: 43.5%;
         font-weight: normal;
     }
+    //Footer
     .footer-title{
         font-size: 2vw;
     }
@@ -560,6 +552,7 @@ footer{
     .overlay{
         display: none;
     }
+    //Nav
     header{
         padding: 0;
         margin-bottom: -6vw;
@@ -611,8 +604,6 @@ footer{
         background: none;
         color: #0082e6;
     }
-
-
     .burger{
         margin-top: 2.7vw;
         padding: 0;
@@ -624,7 +615,6 @@ footer{
     #myCheck:checked ~ ul{
         left: 0;
     }
-
     .circulo{
         display: none;
     }
@@ -648,12 +638,15 @@ footer{
     .sobre-title{
         margin-bottom: -0.5vw;
     }
+    //Modifica tamanho dos títulos
     .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
         font-size: 2.6vw;
     }
+    //Modifica tamanho do conteúdo dos blocos
     .sobre-text, .blog-text, .participe-subtitle{
         font-size: 1.3vw;
     }
+    //Sobre
     .fig2{
         width: 90%;
         float: right;
@@ -661,12 +654,14 @@ footer{
     .saiba-sobre, .visitar-blog{
         font-size: 1.3vw;
     }
+    //Blog
     .blog-title{
         margin-top: 10%;
     }
     .fig3{
         width: 80%;
     }
+    //Participar
     .participe-subtitle{
         width: 40%;
         margin-left: 30%;
@@ -677,6 +672,7 @@ footer{
         margin-left: 43.5%;
         font-weight: normal;
     }
+    //Footer
     .footer-title{
         font-size: 2vw;
     }
@@ -698,6 +694,7 @@ footer{
 }
 
 @media only screen and (max-width: 768px){
+    //Header
     .overlay{
         display: none;
     }
@@ -716,6 +713,7 @@ footer{
     #home, #sobre, #blog{
         display: none;
     }
+    //Apresentação
     .apresentacao .titulo{
         font-size: 3vw;
         width: 100vw;
@@ -733,6 +731,7 @@ footer{
         display: inline;
         position: relative;
     }
+    //Side Nav-Bar
     .nav-mobile{
         margin-top: -3vw;
         text-align: left;
@@ -764,8 +763,6 @@ footer{
         background: none;
         color: #0082e6;
     }
-
-
     .burger{
         margin-top: 2.7vw;
         padding: 0;
@@ -778,13 +775,14 @@ footer{
         left: 0;
     }
 
+    //Div que centralizará textos e botões
     .centralizado{
         text-align: center;
     }
     .circulo{
         display: none;
     }
-
+    //Animação
     @keyframes bg-animation{
         0%{
             background-position: left;
@@ -808,7 +806,7 @@ footer{
         display: block;
     }
 
-    //Oculta o botão de participação
+    //Oculta o botão de participação da Nav-bar
     .botao{
         display: none;
     }
@@ -816,6 +814,7 @@ footer{
     .circulo{
         display: none;
     }
+    //Sobre
     .sobre-title{
         margin-bottom: -0.5vw;
     }
@@ -823,10 +822,12 @@ footer{
         margin-left: 4%;
         margin-right: 4%;
     }
+    //Alterando tamanho dos títulos
     .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
         font-size: 4.5vw;
         text-align: center;
     }
+    //Alterando tamanho da fonte do conteúdo
     .sobre-text, .blog-text, .participe-subtitle{
         font-size: 2.5vw;
         text-align: center;
@@ -836,24 +837,13 @@ footer{
         margin: auto;
         margin-bottom: 0.5vw;
     }
-    .blog-text{
-        margin-top: 0.5vw;
-        margin: auto;
-        width: 60%;
-    }
     .fig2-mobile{
         margin-top: 15%;
         width: 33%;
         margin-left: 34%;
     }
-    .saiba-sobre, .visitar-blog{
-        font-size: 2.5vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .visitar-blog{
-        margin-top: 1.3vw;
-    }
+
+    //Blog
     .blog-title{
         margin-top: 0;
     }
@@ -862,6 +852,23 @@ footer{
         display: block;
         margin-left: 33%;
     }
+    .blog-text{
+        margin-top: 0.5vw;
+        margin: auto;
+        width: 60%;
+    }
+    .visitar-blog{
+        margin-top: 1.3vw;
+    }
+
+    //Editando os botões
+    .saiba-sobre, .visitar-blog{
+        font-size: 2.5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    //Participar
     .participe{
         height: 30vw;
     }
@@ -879,6 +886,7 @@ footer{
         margin-right: auto;
         font-weight: normal;
     }
+
     //Footer Mobile
     .footer-mobile{
         margin-left: 8%;
