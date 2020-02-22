@@ -75,6 +75,12 @@ nav{
 #home{
     color: #FF0B38;
 }
+.sobre-mobile{
+    display: none;
+}
+.blog-mobile{
+    display: none;
+}
 #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
     display: none;
 }
@@ -288,7 +294,7 @@ a:hover, a.active{
     float: left;
 }
 .blog-title{
-    margin-top: 20%;
+    margin-top: 11%;
     font-size: 2.2vw;
     font-weight: normal;
 }
@@ -639,7 +645,7 @@ footer{
     .circulo{
         display: none;
     }
-        .sobre-title{
+    .sobre-title{
         margin-bottom: -0.5vw;
     }
     .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
@@ -771,9 +777,13 @@ footer{
         left: 0;
     }
 
+    .centralizado{
+        text-align: center;
+    }
     .circulo{
         display: none;
     }
+
     @keyframes bg-animation{
         0%{
             background-position: left;
@@ -781,6 +791,20 @@ footer{
         100%{
             background-position: right;
         }
+    }
+    //Ocultando e Exibindo Divs
+    .sobre{
+        display: none;
+    }
+    .blog{
+        display: none;
+    }
+    .sobre-mobile{
+        display: block;
+        margin-bottom: 6vw;
+    }
+    .blog-mobile{
+        display: block;
     }
 
     //Oculta o botão de participação
@@ -799,24 +823,43 @@ footer{
         margin-right: 8%;
     }
     .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
-        font-size: 3vw;
+        font-size: 3.5vw;
+        text-align: center;
     }
     .sobre-text, .blog-text, .participe-subtitle{
-        font-size: 1.6vw;
+        font-size: 2vw;
+        text-align: center;
     }
-    .fig2{
+    .sobre-text{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 0.5vw;
+    }
+    .blog-text{
+        margin-top: 0.5vw;
+        margin: auto;
+        width: 50%;
+    }
+    .fig2-mobile{
         margin-top: 15%;
-        width: 80%;
-        float: right;
+        width: 33%;
+        margin-left: 34%;
     }
     .saiba-sobre, .visitar-blog{
-        font-size: 1.6vw;
+        font-size: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .visitar-blog{
+        margin-top: 1.3vw;
     }
     .blog-title{
-        margin-top: 10%;
+        margin-top: 0;
     }
     .fig3{
-        width: 90%;
+        width: 30%;
+        display: block;
+        margin-left: 35%;
     }
     .participe-title{
         font-size: 3.5vw;
@@ -828,14 +871,15 @@ footer{
     }
     .participar{
         font-size: 1.6vw;
-        margin-left: 42%;
+        margin-left: auto;
+        margin-right: auto;
         font-weight: normal;
     }
     //Footer Mobile
     .footer-mobile{
         margin-left: 8%;
         margin-top: 10vw;
-        display: block;
+        display: inline-block;
     }
     .footer-info{
         display: none;
@@ -847,13 +891,15 @@ footer{
         margin-left: -8vw;
     }
     #navegacao-title, #endereco-title, #contato-title, #social-title{
+        padding-bottom: 1vw;
         font-size: 2.5vw;
+        border-bottom: solid 0.01vw #FF2256;
     }
     #contato-text a, #endereco-text, .footer-links a{
         font-size: 1.8vw;
     }
     #facebook, #instagram{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     #contato-text{
         margin-top: -0.2vw;
@@ -865,4 +911,5 @@ footer{
         height: 6vw !important;
     }
 }
+
 //F I M  M E D I A  Q U E R Y
