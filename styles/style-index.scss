@@ -148,7 +148,7 @@ a:hover, a.active{
     color: white;
     font-size: 1.1vw;
     text-align: center;
-    padding: 0.183333vw 0.916667vw 0.183333vw 0.916667vw; //Top - Right - Bottom - Left
+    padding: 0.4vw 0.916667vw 0.4vw 0.916667vw; //Top - Right - Bottom - Left
     background-image: var(--gradient);
     border: none;
     border-radius: 0.183333vw;
@@ -368,11 +368,12 @@ a:hover, a.active{
 footer{
     margin-top: 6vw;
 }
-.footer-title{
-    text-align: center;
-    color: #FF2256;
+#footer-title{
+    display: block;
     margin-bottom: 3vw;
-    font-size: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4vw;
 }
 //Endereço -----------------
 .endereco{
@@ -497,7 +498,7 @@ footer{
     .sobre-title{
         margin-bottom: -0.5vw;
     }
-    .sobre-title1, .sobre-title1, .blog-title, .participe-title, .footer-title{
+    .sobre-title1, .sobre-title1, .blog-title, .participe-title{
         font-size: 2.6vw;
     }
     .sobre-text, .blog-text, .participe-subtitle{
@@ -527,10 +528,6 @@ footer{
         font-size: 1.3vw;
         margin-left: 43.5%;
         font-weight: normal;
-    }
-    //Footer
-    .footer-title{
-        font-size: 2vw;
     }
     #navegacao-title, #endereco-title, #contato-title, #social-title{
         font-size: 1.4vw;
@@ -636,7 +633,7 @@ footer{
         margin-bottom: -0.5vw;
     }
     //Modifica tamanho dos títulos
-    .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
+    .sobre-title, .sobre-title1, .blog-title, .participe-title{
         font-size: 2.6vw;
     }
     //Modifica tamanho do conteúdo dos blocos
@@ -669,10 +666,7 @@ footer{
         margin-left: 43.5%;
         font-weight: normal;
     }
-    //Footer
-    .footer-title{
-        font-size: 2vw;
-    }
+    //Foote
     #navegacao-title, #endereco-title, #contato-title, #social-title{
         font-size: 1.4vw;
     }
@@ -721,6 +715,14 @@ footer{
     .apresentacao .subtitulo{
         font-size: 1.8vw;
         width:50%;
+    }
+    #footer-title{
+        display: block;
+        margin-bottom: 3vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 6vw;
+        margin-right: 44%;
     }
     //Exibindo o Menu Mobile
     #participar-mobile, #home-mobile, #sobre-mobile, #blog-mobile{
@@ -819,7 +821,7 @@ footer{
         margin-right: 4%;
     }
     //Alterando tamanho dos títulos
-    .sobre-title, .sobre-title1, .blog-title, .participe-title, .footer-title{
+    .sobre-title, .sobre-title1, .blog-title, .participe-title{
         font-size: 4.5vw;
         text-align: center;
     }
@@ -891,12 +893,6 @@ footer{
     }
     .footer-info{
         display: none;
-    }
-    .footer-title{
-        font-size: 4vw;
-        //Esq -67.5
-        //Centro
-        margin-left: -8vw;
     }
     #navegacao-title, #endereco-title, #contato-title, #social-title{
         padding-bottom: 1vw;
