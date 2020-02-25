@@ -36,6 +36,8 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Scroll Animation-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>    
     </head>
     <body>
         <div class="overlay"></div>
@@ -72,7 +74,7 @@
         <!--Fim do Cabeçalho-->
 
         <!--Apresentação-->
-        <div class="apresentacao">
+        <div class="apresentacao" id="apresentacao">
             <img src="Imagens/Background.png" class="bg-image"> 
             <div class="texts">
                 <p class="titulo"><b>Sobre</b> o Projeto</b></p>
@@ -85,16 +87,16 @@
         <div class="sobre">
             <div class="row">
                 <div class="col s6">
-                    <p class="sobre-title">Objetivo do</p>
-                    <h1 class="sobre-title1">Grupo de Estudos</h1>
-                    <p class="sobre-text">Este grupo, dirigido pela professora doutora Marta Magda Dornelles, visa auxiliar o aluno no aprimoramento de seu raciocínio lógico-matemático, além de ampliar sua capacidade de reconhecer e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos para a resolução de problemas computacionais propostos em sala.</p>
+                    <p class="sobre-title" id="text-objetivo">Objetivo do</p>
+                    <h1 class="sobre-title1" id="text-objetivo">Grupo de Estudos</h1>
+                    <p class="sobre-text" id="content-objetivo">Este grupo, dirigido pela professora doutora Marta Magda Dornelles, visa auxiliar o aluno no aprimoramento de seu raciocínio lógico-matemático, além de ampliar sua capacidade de reconhecer e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos para a resolução de problemas computacionais propostos em sala.</p>
                 </div>
-                <div class="col s6">
+                <div class="col s6" id="img-objetivo">
                     <img src="Imagens/fig8.png" class="fig2" alt="Ilustração: Objetivo">
                 </div>
             </div>
         </div>
-        <div class="sobre-mobile">
+        <div class="sobre-mobile" id="content-objetivo-m">
             <div class="row">
                 <div class="col s12">
                     <img src="Imagens/fig8.png" class="fig2-mobile" alt="Ilustração: Objetivo">
@@ -111,21 +113,21 @@
 
 
         <div class="blog">
-            <div class="row">
+            <div class="row" id="img-sobre">
                 <div class="col s6">
                     <img src="Imagens/fig9.png" class="fig3" alt="Ilustração Encontros">
                 </div>
                 
                 <div class="col s6">
-                    <p class="blog-title">Sobre os Encontros</p>
-                    <p class="blog-text">A plataforma URI Online Judge será adotada como a fonte dos exercícios a serem resolvidos em sala. Tais exercícios, selecionados com a finalidade de exigir e ensinar conhecimentos matemáticos específicos, serão aplicados aos participantes, ao passo que estes desenvolverão algoritmos para a solução dos problemas. As dúvidas sobre as soluções serão sanadas em sala, além, é claro, de explicações sobre os conceitos exigidos nos exercícios.
+                    <p class="blog-title" id="text-sobre"><b>Sobre os Encontros</b></p>
+                    <p class="blog-text" id="content-sobre">A plataforma URI Online Judge será adotada como a fonte dos exercícios a serem resolvidos em sala. Tais exercícios, selecionados com a finalidade de exigir e ensinar conhecimentos matemáticos específicos, serão aplicados aos participantes, ao passo que estes desenvolverão algoritmos para a solução dos problemas. As dúvidas sobre as soluções serão sanadas em sala, além, é claro, de explicações sobre os conceitos exigidos nos exercícios.
                         Dúvidas sobre a plataforma URI? Veja o tutorial para iniciantes que desenvolvemos clicando no botão abaixo!</p>
-                    <form><button type="submit" class="visitar-blog" formaction="tutorial-uri.html">Ver Tutorial</button></form>
+                    <form id="content-sobre"><button type="submit" class="visitar-blog" formaction="tutorial-uri.html">Ver Tutorial</button></form>
                 </div>
             </div>
         </div>
         
-        <div class="blog-mobile">
+        <div class="blog-mobile" id="content-sobre-m">
             <div class="row">
                 <div class="col s12">
                     <img src="Imagens/fig9.png" class="fig3" alt="Ilustração Encontros">
@@ -148,7 +150,7 @@
 
         <!--Rodapé-->  
         <!--Footer Info-->
-        <div class="footer-info">
+        <div class="footer-info" id="footer-info">
             <p class="footer-title">Grupo de Estudos</p>
             <div class="row">
                 <!--Endereço-->
@@ -189,7 +191,7 @@
             </div>
         </div>
         <!--Footer-Mobile-->
-        <div class="footer-mobile">
+        <div class="footer-mobile" id="footer-info">
             <p class="footer-title">Grupo de Estudos</p>
             <div class="row">
                 <div class="col s6">

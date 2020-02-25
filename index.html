@@ -34,6 +34,8 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Scroll Animation-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body>
         <div class="overlay"></div>
@@ -71,14 +73,14 @@
         
 
         <!--Apresentação-->
-        <div class="apresentacao">
+        <div class="apresentacao" id="apresentacao">
             <img src="Imagens/Background.png" class="bg-image"> 
             <div class="texts">
                 <h1 class="titulo">Ensino da Matemática Aplicado Na</h1>
                 <p class="titulo1">Ciência da Computação</p>
                 <p class="subtitulo">Grupo de Estudos de Programação da Universidade Estadual de Santa Cruz, situada em Ilhéus - Bahia.</p>
             </div>    
-            <img src="Imagens/fig1.png" class="fig1">
+            <img src="Imagens/fig1.png" class="fig1" id="img-apresentacao">
             <div class="retangulo-divisor"></div>
         </div>
         <!--Fim - Apresentação-->
@@ -88,18 +90,18 @@
         <div class="sobre">
             <div class="row">
                 <div class="col s6">
-                    <p class="sobre-title">Sobre o</p>
-                    <h1 class="sobre-title1">Grupo de Estudos</h1>
-                    <p class="sobre-text">Buscamos o aperfeiçoamento da percepção matemática e evolução das técnicas de programação dos integrantes deste grupo de estudos com o desenvolvimento de soluções para problemas computacionais propostos em sala, retirados, em sua grande parte, da plataforma URI. 
+                    <p class="sobre-title" id="text-sobre">Sobre o</p>
+                    <h1 class="sobre-title1" id="text-sobre">Grupo de Estudos</h1>
+                    <p class="sobre-text" id="content-sobre">Buscamos o aperfeiçoamento da percepção matemática e evolução das técnicas de programação dos integrantes deste grupo de estudos com o desenvolvimento de soluções para problemas computacionais propostos em sala, retirados, em sua grande parte, da plataforma URI. 
                         <br>Deseja mais informações sobre este grupo de estudos?</p>
-                    <form><button type="submit" class="saiba-sobre" formaction="sobre.html">Saiba +</button></form>
+                    <form id="content-sobre"><button type="submit" class="saiba-sobre" formaction="sobre.html">Saiba +</button></form>
                 </div>
-                <div class="col s6">
+                <div class="col s6" id="img-sobre">
                     <img src="Imagens/fig2.png" class="fig2" alt="Ilustração: Sobre">
                 </div>
             </div>
         </div>
-        <div class="sobre-mobile">
+        <div class="sobre-mobile" id="content-sobre-m">
             <div class="row">
                 <div class="col s12">
                     <img src="Imagens/fig2.png" class="fig2-mobile" alt="Ilustração: Sobre">
@@ -121,20 +123,20 @@
         
         <!--Blog-->
         <div class="blog">
-            <div class="row">
+            <div class="row" id="img-blog">
                 <div class="col s6">
                     <img src="Imagens/fig3.png" class="fig3" alt="Ilustração Blog">
                 </div>
                 
                 <div class="col s6">
-                    <p class="blog-title">Visite o <b>Nosso Blog</b></p>
-                    <p class="blog-text">Veja resoluções detalhadas de problemas do URI, conteúdo de apoio para participantes e +.</p>
-                    <form><button type="submit" class="visitar-blog" formaction="blog.html">Visitar Blog</button></form>
+                    <p class="blog-title" id="text-blog">Visite o <b>Nosso Blog</b></p>
+                    <p class="blog-text" id="content-blog">Veja resoluções detalhadas de problemas do URI, conteúdo de apoio para participantes e +.</p>
+                    <form id="content-blog"><button type="submit" class="visitar-blog" formaction="blog.html">Visitar Blog</button></form>
                 </div>
             </div>
         </div>
         
-        <div class="blog-mobile">
+        <div class="blog-mobile" id="content-blog-m">
             <div class="row">
                 <div class="col s12">
                     <img src="Imagens/fig3.png" class="fig3" alt="Ilustração Blog">
@@ -156,9 +158,9 @@
         <div class="participe">
             <div class="row">
                 <div class="col s12">
-                    <h1 class="participe-title">Participe!</h1>
-                    <p class="participe-subtitle">Para saber como participar deste grupo de estudos, clique no botão abaixo e saiba mais!</p>
-                    <div class="centralizado">
+                    <h1 class="participe-title" id="text-participe">Participe!</h1>
+                    <p class="participe-subtitle" id="content-participe">Para saber como participar deste grupo de estudos, clique no botão abaixo e saiba mais!</p>
+                    <div class="centralizado" id="botao-participe">
                         <form><button type="submit" class="participar" formaction="participar.html">Quero Participar!</button></form>
                     </div>    
                 </div>  
@@ -168,7 +170,7 @@
 
         <!--Rodapé-->  
         <!--Footer Info-->
-        <div class="footer-info">
+        <div class="footer-info" id="footer-info">
             <p class="footer-title">Grupo de Estudos</p>
             <div class="row">
                 <!--Endereço-->
@@ -209,7 +211,7 @@
             </div>
         </div>
         <!--Footer-Mobile-->
-        <div class="footer-mobile">
+        <div class="footer-mobile" id="footer-info">
             <p class="footer-title">Grupo de Estudos</p>
             <div class="row">
                 <div class="col s6">
