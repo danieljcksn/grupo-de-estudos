@@ -5,11 +5,9 @@ function hideScroll(){
     if(checkBox.checked == true){
         overflowState = 'hidden';
         $('.overlay').show();
-        //$('div.apresentacao').hide(); // Hides all matches
     }else{
         overflowState = 'auto';
         $('.overlay').hide(); 
-        //$('div.apresentacao').show(); // Shows all matches
     }
     $('html, body').css('overflow', overflowState);
 }
