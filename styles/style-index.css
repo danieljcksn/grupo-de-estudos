@@ -889,20 +889,16 @@ footer {
   .sobre-title {
     margin-bottom: -0.5vw;
   }
-  .sobre {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-  .sobre-title, .sobre-title1, .blog-title, .participe-title {
+  .sobre-title, .sobre-title1, .blog-title {
     font-size: 4.5vw;
     text-align: center;
   }
-  .sobre-text, .blog-text, .participe-subtitle {
+  .sobre-text, .blog-text {
     font-size: 2.5vw;
-    text-align: center;
+    text-align: justify;
+    width: 85%;
   }
   .sobre-text {
-    width: 75%;
     margin: auto;
     margin-bottom: 0.5vw;
   }
@@ -922,21 +918,19 @@ footer {
   .blog-text {
     margin-top: 0.5vw;
     margin: auto;
-    width: 60%;
   }
   .visitar-blog {
     margin-top: 1.3vw;
   }
   .saiba-sobre, .visitar-blog {
     font-size: 2.5vw;
-    margin-left: auto;
-    margin-right: auto;
   }
   .participe {
     height: 30vw;
   }
   .participe-title {
     font-size: 4.5vw;
+    text-align: center;
   }
   .participe-subtitle {
     width: 60%;
@@ -964,6 +958,7 @@ footer {
   }
   #contato-text a, #endereco-text, .footer-links a {
     font-size: 2.3vw;
+    text-align: left;
   }
   #facebook, #instagram {
     font-size: 4vw;
