@@ -19,6 +19,7 @@
         opacity: 0.5;
     }
 }
+
 .apresentacao .bg-image{
     position: absolute;
     margin: 0 !important;
@@ -49,13 +50,20 @@
     color: #555555;
     font-weight: normal;
 }
+//Home / Blog
+#home-blog{
+    color: #555555;
+}
+#home-blog:hover{
+    color: #FF0B38;
+}
 #home{
     color: #555555 !important;
 }
 #home:hover{
     color: #FF0B38 !important;
 }
-#sobre{
+#blog{
     color: #FF0B38 !important;
 }
 .sobre{
@@ -73,18 +81,55 @@
     margin-top: 2.4vw;
     width: 95%;
 }
+
+.corpo-blog{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card-title{
+    margin-top: -0.5vw !important;
+    color: #222222 !important;
+    font-size: 1.45vw !important;
+    font-weight: bolder !important;
+    line-height: 1.9vw !important;
+}
+.conteudo-post{
+    margin-top: 0.6vw !important;
+    color: #555555;
+    font-size: 1vw;
+}
+.subtitulo-post{
+    font-size: 0.75vw;
+    color: #999999;
+}
+.link-post{
+    color: #49BE55 !important;
+    text-transform: none !important;
+    font-weight: bold !important;
+}
 #home-footer{
     color: #777777;
 }
 #home-footer:hover{
     color: #FF0B38;
 }
-#sobre-footer{
+#blog-footer{
     color: #FF0B38;
 }
-#sobre-footer:hover{
+#blog-footer:hover{
     color: #087F8C;
 }
+.circulo{
+    height: 0.5vw;
+    width: 0.5vw;
+    background-image: var(--gradient);
+    border-radius: 70%;
+    position: absolute;
+    margin-top: 3.5vw;
+    margin-left: -1.35vw;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     
     .circulo{
@@ -95,13 +140,7 @@
         margin: auto;
         position: absolute;
         margin-top: 4.3vw;
-        margin-left: -2.4vw;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    .apresentacao .texts{
-        position: relative;
-        margin-top: 13%;
+        margin-left: -1.9vw;
     }
 }
 @media only screen and (max-width: 768px){
@@ -109,14 +148,31 @@
         width: 40%;
         margin-left: 30%;
     }
+    .apresentacao{
+        margin-bottom: -20vw;
+    }
+    .texts{
+        margin-top: 10vw;
+    }
+    .blog-mobile{
+        margin-bottom: 10vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .apresentacao .texts{
+        position: relative;
+        margin-top: 13%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
     .apresentacao .texts{
         position: relative;
         margin-top: 15%;
     }
     .apresentacao{
         margin-bottom: 0.1vw;
-    }
-    .blog-mobile{
-        margin-bottom: 10vw;
     }
 }

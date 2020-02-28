@@ -25,49 +25,55 @@
         <meta name="msapplication-TileImage" content="Imagens/Favicon/favicon-144.png">
         <meta name="msapplication-config" content="Imagens/Favicon/browserconfig.xml">
         <!-- ****** FAVICONS ****** -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" type="text/css" href="./styles/style-index.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Import materialize.css-->
-         <link type="text/css" rel="stylesheet" href="./Materialize/css/materialize.css"  media="screen,projection"/>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--Scroll Animation-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <div class="overlay"></div>
         <!--Cabeçalho-->
-        <header>
-            <nav class="nav-bar">
-                <input type="checkbox" id="myCheck" onclick="hideScroll();">
-                <label for="myCheck" class="checkbtn">
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line2"></div>
+        <header id="inicio">
+            <!--Barra de Navegação-->
+            <nav class="transparent z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="#" class="brand-logo"><img src="Imagens/logotipo.png" id="logotipo"></a>
+                        <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+    
+                        <ul class="right hide-on-med-and-down">
+                            <!--Menu-->
+                            <li><a href="index.html" id="home">Home<span class="circulo"></span></a></li>
+                            <li><a href="sobre.html" id="sobre">Sobre</a></li>
+                            <li><a href="blog.html" id="blog">Blog</a></li>
+                            <li><form><button type="submit" class="botao" formaction="participar.html">Participar</button></form></li>
+                        </ul>
                     </div>
-                </label>
-                <a href="index.html"><img src="Imagens/logotipo.png" id="logotipo" alt="Logotipo: progmat"></a>
-
-                <ul>
-                    <!--Menu-->
-                    <div class="pg-atual"><li><a href="index.html" id="home">Home<span class="circulo"></span></a></li></div>
-                    <li><a href="sobre.html" id="sobre">Sobre</a></li>
-                    <li><a href="blog.html" id="blog">Blog</a></li>
-                    <li><form><button type="submit" class="botao" formaction="participar.html">Participar</button></form></li>
-
-                    <!--Menu Mobile-->
-                    <div class="nav-mobile">
-                        <li><a href="index.html" id="home-mobile"><i class="fas fa-home"></i>&emsp;Home</a></li>
-                        <li><a href="sobre.html" id="sobre-mobile">&nbsp;<i class="fas fa-info"></i>&emsp;&nbsp&nbspSobre</a></li>
-                        <li><a href="blog.html" id="blog-mobile"><i class="fas fa-blog"></i>&emsp;Blog</a></li>
-                        <li><a href="participar.html" id="participar-mobile"><i class="fas fa-terminal"></i>&nbsp&nbsp&nbspParticipar</a></li>
-                    </div>           
-                </ul>
+                </div>
             </nav>
+            <!--Fim Nav-Bar-->
+            <!--Mobile Nav-->
+            <ul class="sidenav pink darken-1" id="slide_out">
+                <!--Oculta a side-nav quando algum link recebe um click-->
+                <div class="sidenav-close">
+                    <li><a href="index.html"><i class="fas fa-home" style="color:#FFF;"></i>Home</a></li>
+                    <li><a href="sobre.html"><i class="fas fa-info-circle" style="color:#FFF;"></i></i>Sobre</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog" style="color:#FFF;"></i>Blog</a></li>
+                    <li><a href="participar.html"><i class="fas fa-terminal" style="color:#FFF;"></i>Participar</a></li>
+                </div>
+            </ul>
         </header>
         <!--Fim do Cabeçalho-->
         

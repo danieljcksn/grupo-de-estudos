@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>ProgMat - Sobre</title>
+        <title>Blog - ProgMat</title>
         <meta charset="utf-8">
         <!-- ****** FAVICONS ****** -->
         <link rel="shortcut icon" href="Imagens/Favicon/favicon.ico">
@@ -28,17 +28,19 @@
         
         <!--Style-->
         <link rel="stylesheet" type="text/css" href="./styles/style-index.css">
-        <link rel="stylesheet" type="text/css" href="./styles/style-sobre.css">
+        <link rel="stylesheet" type="text/css" href="./styles/style-blog.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Icones - Materialize-->
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--jQuery-->
@@ -59,8 +61,8 @@
                         <ul class="right hide-on-med-and-down">
                             <!--Menu-->
                             <li><a href="index.html" id="home">Home</a></li>
-                            <li><a href="sobre.html" id="sobre">Sobre<span class="circulo"></span></a></li>
-                            <li><a href="blog.html" id="blog">Blog</a></li>
+                            <li><a href="sobre.html" id="sobre">Sobre</a></li>
+                            <li><a href="blog.html" id="blog">Blog<span class="circulo"></span></a></li>
                             <li><form><button type="submit" class="botao" formaction="participar.html">Participar</button></form></li>
                         </ul>
                     </div>
@@ -84,73 +86,62 @@
         <div class="apresentacao" id="apresentacao">
             <img src="Imagens/Background.png" class="bg-image"> 
             <div class="texts">
-                <p class="titulo"><b>Sobre</b> ProgMat</p>
-                <p class="page">Home / Sobre</p>
+                <p class="titulo"><b>Blog</b></p>
+                <p class="page"><a href="index.html" id="home-blog">Home</a> / Blog</p>
             </div>
         </div>
         <!--Fim - Apresentação-->
 
-        <!--Objetivo do Grupo de Estudos-->
-        <div class="sobre">
-            <div class="row">
-                <div class="col s6">
-                    <p class="sobre-title" id="text-objetivo">Objetivo do</p>
-                    <h1 class="sobre-title1" id="text-objetivo">Grupo de Estudos</h1>
-                    <p class="sobre-text" id="content-objetivo">Este grupo, dirigido pela professora doutora Marta Magda Dornelles, visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes que solucionem os problemas computacionais propostos em sala.</p>
-                </div>
-                <div class="col s6" id="img-objetivo">
-                    <img src="Imagens/fig8.png" class="fig2" alt="Ilustração: Objetivo">
-                </div>
-            </div>
-        </div>
-        <div class="sobre-mobile" id="content-objetivo-m">
-            <div class="row">
-                <div class="col s12">
-                    <img src="Imagens/fig8.png" class="fig2-mobile" alt="Ilustração: Objetivo">
+        <div class="corpo-blog">
+        <div class="row">
+            <div class="col s4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="Imagens/sample-1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
+                        <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
+                        <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="link-post">Ver detalhes</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12">
-                    <p class="sobre-title">Sobre o</p>
-                    <h1 class="sobre-title1">Grupo de Estudos</h1>
-                    <p class="sobre-text">Este grupo, dirigido pela professora doutora Marta Magda Dornelles, visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes que solucionem os problemas computacionais propostos em sala.</p>
+            <div class="col s4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="Imagens/sample-1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
+                        <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
+                        <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="link-post">Ver detalhes</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="blog">
-            <div class="row" id="img-sobre">
-                <div class="col s6">
-                    <img src="Imagens/fig9.png" class="fig3" alt="Ilustração Encontros">
-                </div>
-                
-                <div class="col s6">
-                    <p class="blog-title" id="text-sobre"><b>Sobre os Encontros</b></p>
-                    <p class="blog-text" id="content-sobre">A plataforma URI Online Judge será adotada como a fonte dos exercícios a serem resolvidos em sala. Tais exercícios, selecionados com a finalidade de exigir e ensinar conhecimentos matemáticos específicos, serão aplicados aos participantes, ao passo que estes desenvolverão algoritmos para a solução dos problemas. As dúvidas sobre as soluções serão sanadas em sala, além, é claro, de explicações sobre os conceitos exigidos nos exercícios.
-                        <b>Dúvidas sobre a plataforma URI?</b> Veja o tutorial para iniciantes que desenvolvemos clicando no botão abaixo!</p>
-                    <form id="content-sobre"><button type="submit" class="visitar-blog" formaction="tutorial-uri.html">Ver Tutorial</button></form>
-                </div>
-            </div>
-        </div>
-        
-        <div class="blog-mobile" id="content-sobre-m">
-            <div class="row">
-                <div class="col s12">
-                    <img src="Imagens/fig9.png" class="fig3" alt="Ilustração Encontros">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <p class="blog-title"><b>Sobre os Encontros</b></p>
-                    <p class="blog-text">A plataforma URI Online Judge será adotada como a fonte dos exercícios a serem resolvidos em sala. Tais exercícios, selecionados com a finalidade de exigir e ensinar conhecimentos matemáticos específicos, serão aplicados aos participantes, ao passo que estes desenvolverão algoritmos para a solução dos problemas. As dúvidas sobre as soluções serão sanadas em sala, além, é claro, de explicações sobre os conceitos exigidos nos exercícios.
-                        <br><b>Dúvidas sobre a plataforma URI?</b> Veja o tutorial para iniciantes que desenvolvemos clicando no botão abaixo!</p>
-                    <div class="centralizado">
-                        <form><button type="submit" class="visitar-blog" formaction="tutorial-uri.html">Ver Tutorial</button></form>
+            <div class="col s4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="Imagens/sample-1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
+                        <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
+                        <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="link-post">Ver detalhes</a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+
 
 
 
@@ -175,7 +166,7 @@
                         <div class="footer-links">
                             <a href="index.html" id="home-footer"><i class="fas fa-home"></i> Home</a>
                             <a href="sobre.html" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
-                            <a href="blog.html">&nbsp;<i class="fas fa-blog"></i> Blog</a>
+                            <a href="blog.html" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
                             <a href="participar.html"><i class="fas fa-terminal"></i>&nbsp; Participar</a>
                         </div>
                     </div>
@@ -241,5 +232,5 @@
         <!--Fim - Rodapé-->
         
         <!--Script-->
-        <script src="./scripts/script-sobre.js"></script>
+        <script src="./scripts/script-blog.js"></script>
     </body>
