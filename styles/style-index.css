@@ -6,40 +6,6 @@
     );
 }
 
-.overlay {
-  position: absolute;
-  display: none;
-  top: 8.2vw;
-  bottom: 0;
-  opacity: 0.5;
-  width: 100%;
-  right: 0;
-  background: #212121;
-  z-index: 1;
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
-  -webkit-animation: overlay-animation 0.5s;
-          animation: overlay-animation 0.5s;
-}
-
-@-webkit-keyframes overlay-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
-@keyframes overlay-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -61,46 +27,26 @@ body {
           flex-direction: column;
 }
 
+#sobre, #blog {
+  color: #555555 !important;
+}
+
+#sobre:hover, #blog:hover {
+  color: #FF0B38 !important;
+}
+
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 
+.sobre-mobile, .blog-mobile {
+  display: none;
+}
+
 nav {
   margin-top: 2.5vw;
-}
-
-.pg-atual {
-  display: inline-block;
-  color: #FF0B38;
-}
-
-.circulo {
-  height: 0.5vw;
-  width: 0.5vw;
-  background-image: var(--gradient);
-  border-radius: 70%;
-  position: absolute;
-  margin-top: 3.5vw;
-  margin-left: -1.65vw;
-}
-
-#home {
-  color: #FF0B38 !important;
-}
-
-#logotipo {
-  height: 4vw;
-  margin-top: 3%;
-}
-
-#logotipo:hover {
-  cursor: pointer;
-}
-
-.material-icons {
-  color: #FF0B38 !important;
 }
 
 nav ul li a {
@@ -126,6 +72,33 @@ a:hover, a.active {
   color: #FF0B38 !important;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.material-icons {
+  color: #FF0B38 !important;
+}
+
+.pg-atual {
+  display: inline-block;
+}
+
+.circulo {
+  height: 0.5vw;
+  width: 0.5vw;
+  background-image: var(--gradient);
+  border-radius: 70%;
+  position: absolute;
+  margin-top: 3.5vw;
+  margin-left: -1.65vw;
+}
+
+#home {
+  color: #FF0B38 !important;
+}
+
+#logotipo {
+  height: 4vw;
+  margin-top: 3%;
 }
 
 .botao {
@@ -183,7 +156,7 @@ a:hover, a.active {
 }
 
 .apresentacao .subtitulo {
-  width: 50%;
+  width: 60%;
   font-size: 1.2vw;
   margin: auto;
 }
@@ -361,10 +334,6 @@ a:hover, a.active {
   background-position: right;
 }
 
-.sobre-mobile, .blog-mobile {
-  display: none;
-}
-
 .footer-mobile {
   display: none;
 }
@@ -481,6 +450,10 @@ footer {
 
 .container a {
   color: white;
+}
+
+.container a:hover {
+  color: white !important;
 }
 
 /*M E D I A  Q U E R Y  B R E A K  P O I N T S 
@@ -670,7 +643,7 @@ footer {
   }
   .apresentacao .subtitulo {
     font-size: 1.8vw;
-    width: 50%;
+    width: 40%;
   }
   #footer-title {
     display: block;

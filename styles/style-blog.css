@@ -1,5 +1,29 @@
-.blog-content-mobile {
-  display: none;
+#home-page {
+  color: #555555;
+}
+
+#home-page:hover {
+  color: #FF0B38;
+}
+
+#sobre {
+  color: #555555 !important;
+}
+
+#sobre:hover {
+  color: #FF0B38 !important;
+}
+
+#home {
+  color: #555555 !important;
+}
+
+#home:hover {
+  color: #FF0B38 !important;
+}
+
+#blog {
+  color: #FF0B38 !important;
 }
 
 .apresentacao .bg-image {
@@ -38,24 +62,8 @@
   font-weight: normal;
 }
 
-#home-blog {
-  color: #555555;
-}
-
-#home-blog:hover {
-  color: #FF0B38;
-}
-
-#home {
-  color: #555555 !important;
-}
-
-#home:hover {
-  color: #FF0B38 !important;
-}
-
-#blog {
-  color: #FF0B38 !important;
+.blog-content-mobile {
+  display: none;
 }
 
 .sobre {
@@ -100,11 +108,20 @@
   color: #999999;
 }
 
+.card-content {
+  padding: 1.8vw !important;
+}
+
+.card-action {
+  padding: 1vw !important;
+  padding-left: 2vw !important;
+}
+
 .link-post {
   color: #49BE55 !important;
   text-transform: none !important;
   font-weight: bold !important;
-  font-size: 0.8em !important;
+  font-size: 1vw !important;
 }
 
 #home-footer {
@@ -133,6 +150,8 @@
   margin-left: -1.35vw;
 }
 
+/*M E D I A  Q U E R Y  B R E A K  P O I N T S 
+*******************************************************************************************************************/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .circulo {
     height: 0.7vw;
@@ -158,7 +177,10 @@
   .conteudo-post {
     margin-top: 0.6vw !important;
     color: #555555;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+  }
+  .link-post {
+    font-size: 1.3vw !important;
   }
   .subtitulo-post {
     font-size: 1vw;
@@ -166,6 +188,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .link-post {
+    font-size: 1.5vw !important;
+  }
+  .card-content {
+    padding: 2.5vw !important;
+  }
+  .card-action {
+    padding: 1.5vw !important;
+    padding-left: 3vw !important;
+  }
   .blog-content-mobile {
     display: block;
   }
@@ -183,16 +215,9 @@
   .apresentacao {
     margin-bottom: 3vw !important;
   }
-  .texts {
-    margin-top: 10vw;
-    margin-left: 0.5vw;
-  }
   .apresentacao .texts {
     position: relative;
     margin-top: 15%;
-  }
-  .titulo {
-    margin-left: -0.4vw !important;
   }
   .page {
     font-size: 2vw;
@@ -214,6 +239,7 @@
     margin-top: 0.6vw !important;
     color: #555555;
     font-size: 2vw;
+    margin-bottom: -1vw !important;
   }
   .subtitulo-post {
     font-size: 1.4vw;

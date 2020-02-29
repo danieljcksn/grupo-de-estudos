@@ -1,24 +1,4 @@
-.overlay{
-    position: absolute;
-    display: none;   //overlay é exibido apenas quando o jQuery o ativar
-    top: 8.2vw;
-    bottom: 0;
-    opacity: 0.5;
-    width: 100%;
-    right: 0;   //absolutely position element covers entire page
-    background: #212121;
-    z-index: 1;
-    transition: ease-in-out .5s;
-    animation: overlay-animation 0.5s;
-}
-@keyframes overlay-animation{
-    0%{
-       opacity: 0;
-    }
-    100%{
-        opacity: 0.5;
-    }
-}
+//Apresentação
 .apresentacao .bg-image{
     position: absolute;
     margin: 0 !important;
@@ -38,6 +18,9 @@
     color: #222222;
     margin-bottom: 8vw;
 }
+.apresentacao .texts{
+    top: 25%;
+}
 .titulo{
     font-weight: normal !important;
     margin-top: -5vw;
@@ -49,15 +32,27 @@
     color: #555555;
     font-weight: normal;
 }
-#home{
+
+
+//Navbar
+#home, #blog{
     color: #555555 !important;
 }
-#home:hover{
+#home:hover, #blog:hover{
     color: #FF0B38 !important;
 }
 #sobre{
     color: #FF0B38 !important;
 }
+#home-page{
+    color: #555555;
+}
+#home-page:hover{
+    color: #FF0B38;
+}
+
+
+//Corpo
 .sobre{
     margin-top: 0px !important;
 }
@@ -65,7 +60,6 @@
     margin-top: -2vw;
     width: 60%;
 }
-
 .blog-title{
     margin-top: 0;
 }
@@ -73,6 +67,8 @@
     margin-top: 2.4vw;
     width: 95%;
 }
+
+//Footer
 #home-footer{
     color: #777777;
 }
@@ -85,6 +81,10 @@
 #sobre-footer:hover{
     color: #087F8C;
 }
+
+
+/*M E D I A  Q U E R Y  B R E A K  P O I N T S 
+*******************************************************************************************************************/
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     
     .circulo{
@@ -110,11 +110,7 @@
         margin-left: 30%;
     }
     .apresentacao .texts{
-        position: relative;
         margin-top: 15%;
-    }
-    .titulo{
-        margin-left: -1.5vw;
     }
     .page{
         font-size: 2vw;

@@ -6,28 +6,6 @@
         #FF8FE2
     );
 }
-.overlay{
-    position: absolute;
-    display: none;   //overlay é exibido apenas quando o jQuery o ativar
-    top: 8.2vw;
-    bottom: 0;
-    opacity: 0.5;
-    width: 100%;
-    right: 0;   //absolutely position element covers entire page
-    background: #212121;
-    z-index: 1;
-    transition: ease-in-out .5s;
-    animation: overlay-animation 0.5s;
-}
-@keyframes overlay-animation{
-    0%{
-       opacity: 0;
-    }
-    100%{
-        opacity: 0.5;
-    }
-}
-
 //Definições iniciais
 *{
     margin: 0;
@@ -42,19 +20,51 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
-
+#sobre, #blog{
+    color: #555555 !important;
+}
+#sobre:hover, #blog:hover{
+    color: #FF0B38 !important;
+}
 main{
     flex: 1 0 auto;
 }
+.sobre-mobile, .blog-mobile{
+    display: none;
+}
 
+
+//* * * Barra de Navegação * * * //
 nav{
     margin-top: 2.5vw;
+}
+nav ul li a{
+    color: #555555 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    margin-right: 1vw;
+}
+nav ul li a:hover{
+    background-color: white !important;
+}
+.sidenav-close a{
+    color: white !important;
+}
+.sidenav-close a:hover{
+    color: white !important;
+}
+a:hover, a.active{
+    color: #FF0B38 !important;
+    transition:.5s;
+}
+//Cor do Burger
+.material-icons{
+    color: #FF0B38 !important;
 }
 .pg-atual{
     //Ajustando a margem causada pelo círculo
     //Definindo o link 'home' com cor diferente
     display: inline-block;
-    color: #FF0B38;
 }
 //Definindo círculo que ficará sob o link da página Home
 .circulo{
@@ -66,7 +76,6 @@ nav{
     margin-top: 3.5vw;
     margin-left: -1.65vw;
 }
-
 //Definindo o link 'home' com cor diferente
 #home{
     color: #FF0B38 !important;
@@ -76,36 +85,6 @@ nav{
     height: 4vw;
     margin-top: 3%;
 }
-#logotipo:hover{
-    cursor: pointer;
-}
-
-.material-icons{
-    color: #FF0B38 !important;
-}
-nav ul li a{
-    color: #555555 !important;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
-    margin-right: 1vw;
-}
-
-nav ul li a:hover{
-    background-color: white !important;
-}
-
-//Não altera a cor dos links mobile ao colocar o mouse em cima
-.sidenav-close a{
-    color: white !important;
-}
-.sidenav-close a:hover{
-    color: white !important;
-}
-a:hover, a.active{
-    color: #FF0B38 !important;
-    transition:.5s;
-}
-
 //Botão de Participação
 .botao{
     cursor: pointer;
@@ -124,6 +103,10 @@ a:hover, a.active{
     //Animação para o degradê de background
     background-position: right;
 }
+
+
+
+
 //A P R E S E N T A Ç Ã O
 .apresentacao{
     top: 1vw;
@@ -155,7 +138,7 @@ a:hover, a.active{
     line-height: normal;
 }
 .apresentacao .subtitulo{
-    width: 50%;
+    width: 60%;
     font-size: 1.2vw;
     margin: auto;
 }
@@ -309,9 +292,8 @@ a:hover, a.active{
     background-position: right;
 }
 //F I M  P A R T I C I P E
-.sobre-mobile, .blog-mobile{
-    display: none;
-}
+
+
 
 //F O O T E R
 .footer-mobile{
@@ -415,10 +397,12 @@ footer{
 .container a{
     color: white;
 }
+.container a:hover{
+    color: white !important;
+}
 //F I M  F O O T E R
 /*M E D I A  Q U E R Y  B R E A K  P O I N T S 
 *******************************************************************************************************************/
-
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     #logotipo{
         margin-top: 4% !important;
@@ -581,7 +565,6 @@ footer{
         font-size: 1.1vw !important;
     }
 }
-
 @media only screen and (max-width: 768px){
     nav{
         margin-top: 1.5vw;
@@ -610,7 +593,7 @@ footer{
     }
     .apresentacao .subtitulo{
         font-size: 1.8vw;
-        width:50%;
+        width:40%;
     }
     #footer-title{
         display: block;
@@ -765,7 +748,6 @@ footer{
         height: 6vw !important;
     }
 }
-
 @media only screen and (max-width: 450px){
     nav{
         margin-top: 1vw;
