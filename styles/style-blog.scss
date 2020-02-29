@@ -1,25 +1,6 @@
-.overlay{
-    position: absolute;
-    display: none;   //overlay é exibido apenas quando o jQuery o ativar
-    top: 8.2vw;
-    bottom: 0;
-    opacity: 0.5;
-    width: 100%;
-    right: 0;   //absolutely position element covers entire page
-    background: #212121;
-    z-index: 1;
-    transition: ease-in-out .5s;
-    animation: overlay-animation 0.5s;
+.blog-content-mobile{
+    display: none;
 }
-@keyframes overlay-animation{
-    0%{
-       opacity: 0;
-    }
-    100%{
-        opacity: 0.5;
-    }
-}
-
 .apresentacao .bg-image{
     position: absolute;
     margin: 0 !important;
@@ -38,6 +19,7 @@
     position: relative;
     color: #222222;
     margin-bottom: 8vw;
+    overflow: hidden;
 }
 .titulo{
     font-weight: normal !important;
@@ -107,6 +89,7 @@
     color: #49BE55 !important;
     text-transform: none !important;
     font-weight: bold !important;
+    font-size: 0.8em !important;
 }
 #home-footer{
     color: #777777;
@@ -131,7 +114,6 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-    
     .circulo{
         height: 0.7vw;
         width: 0.7vw;
@@ -143,31 +125,59 @@
         margin-left: -1.9vw;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .corpo-blog{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .apresentacao .texts{
+        position: relative;
+        margin-top: 13%;
+    }
+    .conteudo-post{
+        margin-top: 0.6vw !important;
+        color: #555555;
+        font-size: 1.5vw;
+    }
+    .subtitulo-post{
+        font-size: 1vw;
+    }
+}
 @media only screen and (max-width: 768px){
+    .blog-content-mobile{
+        display: block;
+    }
+    .blog-content{
+        display: none;
+    }
+    .corpo-blog{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
     .fig3{
         width: 40%;
         margin-left: 30%;
     }
     .apresentacao{
-        margin-bottom: -20vw;
+        margin-bottom: 3vw !important;
     }
     .texts{
         margin-top: 10vw;
+        margin-left: 0.5vw;
+    }
+    .apresentacao .texts{
+        position: relative;
+        margin-top: 15%;
+    }
+    .titulo{
+        margin-left: -0.4vw !important;
+    }
+    .page{
+        font-size: 2vw;
     }
     .blog-mobile{
         margin-bottom: 10vw;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    .apresentacao .texts{
-        position: relative;
-        margin-top: 13%;
-    }
-
-}
-
-@media only screen and (max-width: 768px){
     .apresentacao .texts{
         position: relative;
         margin-top: 15%;
@@ -175,4 +185,21 @@
     .apresentacao{
         margin-bottom: 0.1vw;
     }
+    .card-title{
+        font-size: 2vw !important;
+    }
+    .conteudo-post{
+        margin-top: 0.6vw !important;
+        color: #555555;
+        font-size: 2vw;
+    }
+    .subtitulo-post{
+        font-size: 1.4vw;
+    }
+}
+@media only screen and (max-width: 568px){
+    .conteudo-post{
+        margin-bottom: -2vw !important;
+    }
+    
 }
