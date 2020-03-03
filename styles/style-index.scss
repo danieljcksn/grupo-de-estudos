@@ -345,9 +345,6 @@ footer{
 #home-footer{
     color: #FF0B38;
 }
-#home-footer:hover{
-    color: #087F8C;
-}
 //Contato -----------------
 #contato-title{
     font-size: 1.1vw;
@@ -372,10 +369,10 @@ footer{
     font-size: 2.3vw;
 }
 .social #instagram:hover{
-    color: #F44747;
+    color: #F44747 !important;
 }
 .social #facebook:hover{
-    color: #3C5898;
+    color: #3C5898 !important;
 }
 
 //Rodapé -----------------

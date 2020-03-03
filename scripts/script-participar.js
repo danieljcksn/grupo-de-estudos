@@ -19,3 +19,8 @@ ScrollReveal().reveal('#content-objetivo-m', { duration: 2000 });
 //Footer
 ScrollReveal().reveal('#footer-info', { delay: 100 });
 ScrollReveal().reveal('#footer-info', { duration: 2000 });
+
+//Inicialização Scrollspy
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+});

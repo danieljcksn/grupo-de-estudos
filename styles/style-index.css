@@ -392,10 +392,6 @@ footer {
   color: #FF0B38;
 }
 
-#home-footer:hover {
-  color: #087F8C;
-}
-
 #contato-title {
   font-size: 1.1vw;
   color: #101C21;
@@ -423,11 +419,11 @@ footer {
 }
 
 .social #instagram:hover {
-  color: #F44747;
+  color: #F44747 !important;
 }
 
 .social #facebook:hover {
-  color: #3C5898;
+  color: #3C5898 !important;
 }
 
 .page-footer {

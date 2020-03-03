@@ -91,20 +91,16 @@
   font-size: 1.5vw;
 }
 
-#home-footer {
+#home-footer, #sobre-footer {
   color: #777777;
 }
 
-#home-footer:hover {
+#home-footer:hover, #sobre-footer:hover {
   color: #FF0B38;
 }
 
-#sobre-footer {
-  color: #FF0B38;
-}
-
-#sobre-footer:hover {
-  color: #087F8C;
+#participar-footer {
+  color: #FF0B38 !important;
 }
 
 /*M E D I A  Q U E R Y  B R E A K  P O I N T S 
