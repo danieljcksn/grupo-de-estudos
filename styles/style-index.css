@@ -171,30 +171,9 @@ a:hover, a.active {
 }
 
 .retangulo-divisor {
-  height: 4.2vw;
+  height: 5vw;
   background-image: var(--gradient);
   width: 100%;
-  background-size: 400%;
-  -webkit-animation: retangulo-animation 10s infinite alternate;
-          animation: retangulo-animation 10s infinite alternate;
-}
-
-@-webkit-keyframes retangulo-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-
-@keyframes retangulo-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
 }
 
 .sobre {

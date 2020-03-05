@@ -150,19 +150,9 @@ a:hover, a.active{
     transform: translate(-50%, -50%);
 }
 .retangulo-divisor{
-    height: 4.2vw;
+    height: 5vw;
     background-image: var(--gradient);
     width: 100%;
-    background-size: 400%;
-    animation: retangulo-animation 10s infinite alternate;
-}
-@keyframes retangulo-animation{
-    0%{
-        background-position: left;
-    }
-    100%{
-        background-position: right;
-    }
 }
 //Sobre a unidade vw: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
 //F I M  A P R E S E N T A Ç Ã O
