@@ -1,0 +1,65 @@
+.corpo-blog {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.apresentacao {
+  margin-bottom: 7vw;
+}
+
+h1 {
+  font-size: 2em !important;
+  font-weight: bold !important;
+  padding-top: 1.5vw;
+}
+
+.navegacao-blog a {
+  color: #777777;
+}
+
+.navegacao-blog a:hover {
+  color: #444444 !important;
+  text-decoration: underline;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.navegacao {
+  color: #FF0B38;
+  font-size: 1.2em !important;
+  font-weight: 500;
+}
+
+#modal-btn:hover {
+  color: white !important;
+}
+
+#modal-btn1:hover {
+  color: initial !important;
+}
+
+.titulo-modal {
+  font-size: 1.3em !important;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .corpo-blog {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  h1 {
+    font-size: 1.6em !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .corpo-blog {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  h1 {
+    font-size: 1.6em !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

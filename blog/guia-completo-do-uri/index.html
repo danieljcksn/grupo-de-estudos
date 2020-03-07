@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Blog - ProgMat</title>
+        <title>URI - Guia para Iniciantes</title>
         <meta charset="utf-8">
         <!-- ****** FAVICONS ****** -->
         <link rel="shortcut icon" href="../../imagens/Favicon/favicon.ico">
@@ -25,29 +25,21 @@
         <meta name="msapplication-TileImage" content="../../imagens/Favicon/favicon-144.png">
         <meta name="msapplication-config" content="../../imagens/Favicon/browserconfig.xml">
         <!-- ****** FAVICONS ****** -->
-        
-        <!--Style-->
+        <!--Iniciando a tela com a largura do dispositivo que está acessando o site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Styles-->
         <link rel="stylesheet" type="text/css" href="../../styles/style-index.css">
         <link rel="stylesheet" type="text/css" href="../../styles/style-blog.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
+        <!--Fonte Poppins-->
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Icones - Materialize-->
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!--Font Awesome-->
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <!--jQuery-->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <!--Scroll Animation-->
-        <script src="https://unpkg.com/scrollreveal@4"></script> 
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="scroll" class="secction scrollspy">
         <!--Cabeçalho-->
@@ -87,97 +79,119 @@
         <!--Apresentação-->
         <div class="apresentacao" id="apresentacao">
             <div class="texts center-align">
-                <p class="titulo"><b>Blog</b></p>
-                <p class="page"><a href="../../index.html" id="home-page">Home</a> / Blog</p>
+                <p class="titulo"><b>Guia do URI para Iniciantes</b></p>
+                <p class="page"><a href="../../index.html" id="home-page">Home</a> / Guia do URI</p>
             </div>
         </div>
         <!--Fim - Apresentação-->
 
         <!--Blog-->
         <div class="corpo-blog">
-            <div class="blog-content">
-                <div class="row">
-                    <div class="col s4">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="../../imagens/sample-1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
-                                <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
-                                <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="blog/tutorial-uri/" class="link-post">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s4">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="../../imagens/sample-1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
-                                <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
-                                <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#" class="link-post">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s4">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="../../imagens/sample-1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
-                                <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
-                                <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#" class="link-post">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
+            <a class="waves-effect waves-light btn-large"><i class="material-icons left">download</i>button</a>
+            <p><a href="#">Baixe este tutorial (.pdf).</a></p>
+            <p class="navegacao">Tópicos abordados:</p>
+            <ul class="navegacao-blog">
+                <li><a href="#1">O que é o URI?</a></li>
+                <li><a href="#2">Como a Plataforma Funciona?</a></li>
+                <li><a href="#2">Criando uma Conta</a></li>
+                <li><a href="#3">Introdução à Interface do URI</a></li>
+                <li><a href="#4">Realizando a primeira submissão</a></li>
+                <li><a href="#5">Compreendendo os erros de submissão</a></li>
+                <li><a href="#6">Rankings</a></li>
+            </ul>
+            <h1 id="1" class="secction scrollspy">O que é o URI?</h1>
+            <p class="text-flow">
+                O <a href=" https://www.urionlinejudge.com.br/judge/pt/">URI</a> é uma plataforma online criada com o objetivo de proporcionar 
+                aos seus usuários o aprendizado, a prática e o aperfeiçoamento de suas 
+                habilidades em algoritmos através da resolução de problemas de programação diversos.
+                O site possui mais de 1000 problemas de programação divididos em 8 grandes categorias.
+                Essa divisão ajuda os usuários a se concentrarem em tópicos de programação específicos. 
+                Os problemas disponíveis na plataforma podem ser resolvidos com a utilização de 11 linguagens 
+                de programação diferentes.
+            </p>
+            <h1 id="2" class="secction scrollspy">Como a Plataforma Funciona?</h1>
+            <p class="text-flow">
+                O código-fonte feito pelo usuário para um determinado desafio é submetido a uma 
+                quantidade grande de testes que são realizados pela plataforma. O usuário pode ter 
+                seu código-resposta aceito ou não, fato que depende da aprovação dos resultados do algoritmo 
+                quando o mesmo é testado e comparado com os resultados esperados.
+                Cada problema disponível no site possui uma pontuação correspondente, sendo esta definida pela 
+                dificuldade do problema e pela quantidade de pessoas que já conseguiram resolvê-lo. A pontuação 
+                do usuário (obtida através da resolução de tais problemas) define a sua posição no ranking, seja 
+                ele um ranking de todos os usuários, nacional ou da universidade em que estuda.
+            </p>
+            <h1 id="3" class="secction scrollspy">Criando uma conta</h1>
+            <p class="text-flow">
+                Para criar uma nova conta, basta acessar este <a href="https://www.urionlinejudge.com.br/judge/pt/register">link</a>.
+                Crie sua conta entrando com uma das opções indicadas (Facebook, Google, Github, etc.) ou preencha 
+                os dados solicitados, como demonstrado na imagem, pelo nosso usuário fictício ‘João Silva’, clicando, 
+                por fim, em ‘Entrar’.
+            </p>
+            <br>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger pink" href="#modal1" id="modal-btn">Exemplo</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4 class="titulo-modal">Criando uma Conta: Demonstração</h4>
+                    <img class="responsive-img" src="imagens/criando-conta.png">
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal-btn1">Entendi</a>
                 </div>
             </div>
-            <div class="blog-content-mobile">
-                <div class="row">
-                    <div class="col s6">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="../../imagens/sample-1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
-                                <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
-                                <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#" class="link-post">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s6">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="../../imagens/sample-1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">URI Online Judge: Tutorial para Iniciantes</span>
-                                <p class="subtitulo-post">Por Daniel Cavalcante. 27 Fev, 2020.</p>
-                                <p class="conteudo-post">Preparamos um tutorial completo para aqueles que ainda não tiveram contato com a plataforma URI.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#" class="link-post">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 id="3" class="secction scrollspy">Introdução à Interface do URI</h1>
+            <p class="text-flow">
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+            </p>
+            <h1 id="4" class="secction scrollspy">Realizando a primeira submissão</h1>
+            <p class="text-flow">
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+            </p>
+            <h1 id="5" class="secction scrollspy">Compreendendo os erros de submissão</h1>
+            <p class="text-flow">
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+            </p>
+            <h1 id="6" class="secction scrollspy">Rankings</h1>
+            <p class="text-flow">
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+                Este grupo, dirigido pela professora Marta Magda Dornelles, 
+                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
+                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
+                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
+                que solucionem os problemas computacionais propostos em sala.
+            </p>
         </div>
         <!--Fim - Blog-->
         
@@ -231,11 +245,11 @@
             <div class="row">
                 <div class="col s6">
                     <p id="navegacao-title"><b>Navegação</b></p>
-                        <div class="footer-links">
-                            <a href="../../index.html" id="home-footer"><i class="fas fa-home"></i> Home</a>
-                            <a href="../../sobre.html" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
-                            <a href="#scroll" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
-                            <a href="../../participar.html"><i class="fas fa-terminal"></i> Participar</a>
+                    <div class="footer-links">
+                        <a href="../../index.html" id="home-footer"><i class="fas fa-home"></i> Home</a>
+                        <a href="../../sobre.html" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
+                        <a href="#scroll" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
+                        <a href="../../participar.html"><i class="fas fa-terminal"></i> Participar</a>
                         </div>
                 </div>
                 <div class="col s6">
@@ -269,7 +283,13 @@
         <!--Fim - Rodapé-->
         
         <!--Script-->
-        <script src="./scripts/script-blog.js"></script>
+        <script src="index.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Scroll Animation-->
+        <script src="https://unpkg.com/scrollreveal@4"></script> 
     </body>
