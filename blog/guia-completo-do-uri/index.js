@@ -21,4 +21,4 @@ $(document).ready(function(){
 //Inicialização do Modal
 $(document).ready(function(){
     $('.modal').modal();
-  });
+});

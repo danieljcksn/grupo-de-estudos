@@ -40,6 +40,9 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!--Scroll Animation-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body id="scroll" class="secction scrollspy">
         <!--Cabeçalho-->
@@ -87,17 +90,18 @@
 
         <!--Blog-->
         <div class="corpo-blog">
-            <a class="waves-effect waves-light btn-large"><i class="material-icons left">download</i>button</a>
-            <p><a href="#">Baixe este tutorial (.pdf).</a></p>
+            <a onclick="M.toast({html: 'Seu download foi iniciado!', classes: 'pink accent-3'})" class="waves-effect waves-light btn-small pink accent-3" id="btn" href="https://drive.google.com/uc?export=download&id=1Z1HWlR8gtscIN2VgB_acwjrdNRxIRRCq"><i class="fas fa-file-download right"></i>Baixe este Guia (PDF)</a>
             <p class="navegacao">Tópicos abordados:</p>
             <ul class="navegacao-blog">
-                <li><a href="#1">O que é o URI?</a></li>
-                <li><a href="#2">Como a Plataforma Funciona?</a></li>
-                <li><a href="#2">Criando uma Conta</a></li>
-                <li><a href="#3">Introdução à Interface do URI</a></li>
-                <li><a href="#4">Realizando a primeira submissão</a></li>
-                <li><a href="#5">Compreendendo os erros de submissão</a></li>
-                <li><a href="#6">Rankings</a></li>
+                <blockquote>
+                    <li><a href="#1">O que é o URI?</a></li>
+                    <li><a href="#2">Como a Plataforma Funciona?</a></li>
+                    <li><a href="#2">Criando uma Conta</a></li>
+                    <li><a href="#3">Introdução à Interface do URI</a></li>
+                    <li><a href="#4">Realizando a primeira submissão</a></li>
+                    <li><a href="#5">Compreendendo os erros de submissão</a></li>
+                    <li><a href="#6">Rankings</a></li>
+                </blockquote>
             </ul>
             <h1 id="1" class="secction scrollspy">O que é o URI?</h1>
             <p class="text-flow">
@@ -129,7 +133,7 @@
             </p>
             <br>
             <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger pink" href="#modal1" id="modal-btn">Exemplo</a>
+            <a class="waves-effect waves-light btn modal-trigger pink accent-3" href="#modal1" id="btn">Exemplo</a>
             <!-- Modal Structure -->
             <div id="modal1" class="modal modal-fixed-footer">
                 <div class="modal-content">
@@ -137,7 +141,7 @@
                     <img class="responsive-img" src="imagens/criando-conta.png">
                 </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal-btn1">Entendi</a>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="btn1">Entendi</a>
                 </div>
             </div>
             <h1 id="3" class="secction scrollspy">Introdução à Interface do URI</h1>
@@ -282,14 +286,12 @@
         </footer>
         <!--Fim - Rodapé-->
         
-        <!--Script-->
-        <script src="index.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!--Font Awesome-->
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <!--Scroll Animation-->
-        <script src="https://unpkg.com/scrollreveal@4"></script> 
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--Script-->
+        <script src="index.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </body>

@@ -12,25 +12,34 @@ h1{
     padding-top: 1.5vw;
 }
 
+.navegacao{
+    margin-top: 2vw;
+    color: #f50057;
+}
 .navegacao-blog a{
     color: #777777;
 }
 
 .navegacao-blog a:hover{
-    color: #444444 !important;
-    text-decoration: underline;
-    transition: all 0.8s;
+    color: #f50057  !important;
+    transition: all 0.4s;
+}
+blockquote{
+    border-left: 5px solid #f50057  !important; /* Just change the color value and that's it*/
 }
 .navegacao{
     color: #FF0B38;
     font-size: 1.2em !important;
     font-weight: 500;
 }
+.titulo{
+    font-size: 2em !important;
+}
 
-#modal-btn:hover{
+#btn:hover{
     color: white !important;
 }
-#modal-btn1:hover{
+#btn1:hover{
     color: initial !important;
 }
 
@@ -38,7 +47,19 @@ h1{
     font-size: 1.3em !important;
     font-weight: bold;
 }
+@media only screen and (min-width: 992px) and (max-width: 1024px){
+    .corpo-blog{
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    .titulo{
+        font-size: 3.5vw !important;
+    }
+    .page{
+        font-size: 2.3vw !important;
+    }
     .corpo-blog{
         margin-left: 5%;
         margin-right: 5%;
@@ -48,6 +69,15 @@ h1{
     }
 }
 @media only screen and (max-width: 768px){
+    .titulo{
+        font-size: 3vw !important;
+    }
+    .page{
+        font-size: 2vw !important;
+    }
+    #btn{
+        font-size: 0.6em!important;
+    }
     .corpo-blog{
         margin-left: 4%;
         margin-right: 4%;
@@ -57,3 +87,11 @@ h1{
     }
 }
 
+@media only screen and (max-width: 568px){
+    .titulo{
+        font-size: 5vw !important;
+    }
+    .page{
+        font-size: 2.9vw !important;
+    }
+}
