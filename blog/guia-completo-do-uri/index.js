@@ -22,3 +22,13 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.modal').modal();
 });
+
+//Material Box
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+});
+
+//Tabs
+$(document).ready(function(){
+    $('.tabs').tabs();
+});

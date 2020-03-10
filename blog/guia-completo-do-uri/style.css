@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .corpo-blog {
   margin-left: 20%;
   margin-right: 20%;
@@ -26,6 +30,7 @@ h1 {
   color: #f50057  !important;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  text-decoration: underline;
 }
 
 blockquote {
@@ -54,6 +59,16 @@ blockquote {
 .titulo-modal {
   font-size: 1.3em !important;
   font-weight: bold;
+}
+
+.navegacao-tabela {
+  font-weight: bold;
+  padding-top: 2vw;
+  color: #f50057;
+}
+
+.nav-tab a {
+  color: #777777;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -85,9 +100,6 @@ blockquote {
   }
   .page {
     font-size: 2vw !important;
-  }
-  #btn {
-    font-size: 0.6em !important;
   }
   .corpo-blog {
     margin-left: 4%;
