@@ -1,10 +1,19 @@
-html, body {
-  overflow-x: hidden;
+@font-face {
+  font-family: "chalk";
+  src: url("chalk.ttf");
 }
 
-.corpo-blog {
-  margin-left: 20%;
-  margin-right: 20%;
+.harlow {
+  font-family: "chalk";
+}
+
+@font-face {
+  font-family: "chalk1";
+  src: url("chalk1.ttf");
+}
+
+.harlow {
+  font-family: "chalk1";
 }
 
 .apresentacao {
@@ -67,8 +76,55 @@ blockquote {
   color: #f50057;
 }
 
-.nav-tab a {
+.nav-tab a, .categories {
   color: #777777;
+}
+
+.badge-num {
+  margin-left: 0.9vw !important;
+  font-family: 'chalk', sans-serif;
+  font-weight: bold;
+  color: #1ABC9C;
+}
+
+.title-badge {
+  font-family: 'chalk', sans-serif;
+}
+
+#title-badge1 {
+  color: #1ABC9C;
+}
+
+#title-badge2 {
+  color: #F39C12;
+}
+
+#title-badge3 {
+  color: #52AF18;
+}
+
+#title-badge4 {
+  color: #E74C3C;
+}
+
+#title-badge5 {
+  color: #8D816F;
+}
+
+#title-badge6 {
+  color: #9B59B6;
+}
+
+#title-badge7 {
+  color: #EF6EA3;
+}
+
+#title-badge8 {
+  color: #34495E;
+}
+
+#title-badge9 {
+  color: #1F78A2;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
