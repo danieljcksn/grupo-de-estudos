@@ -1,7 +1,7 @@
 # Grupo de Estudos
 
 ![Logotipo - URI](https://github.com/daniielcavallcante/grupo-de-estudos/blob/master/geprogmat.png)
-Este site foi criado com para servir como apoio ao grupo de estudos GEPROGMAT, da Universidade Estadual de Santa Cruz.
+Este site foi criado com para servir como apoio ao grupo de estudos ProgMat, da Universidade Estadual de Santa Cruz.
 
 ### Sobre o Grupo de Estudos
 Nas reuniões do grupo, estudamos e discutimos a solução de problemas de programação (majoritariamente oriundos da plataforma URI Online Judge), bem como os aspectos matemáticos envolvidos na resolução do problema.
