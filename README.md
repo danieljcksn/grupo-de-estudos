@@ -12,4 +12,4 @@ Foi também utilizado o framework de CSS Materialize.
 
 Contém, neste site, descrições sobre o funcionamento do grupo de estudos e também material de apoio aos participantes do mesmo. :smile:
 
-##Acesse: geprogmat.uesc.br
+## Acesse: geprogmat.uesc.br
