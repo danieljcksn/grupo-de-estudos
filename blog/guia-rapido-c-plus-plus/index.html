@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Guia Rápido - C++</title>
+        <title>C++ - I/O e Classes</title>
         <meta charset="utf-8">
         <!-- ****** FAVICONS ****** -->
         <link rel="shortcut icon" href="../../imagens/Favicon/favicon.ico">
@@ -85,8 +85,8 @@
         <!--Apresentação-->
         <div class="apresentacao" id="apresentacao">
             <div class="texts center-align">
-                <p class="titulo"><b>Guia Rápido - C++</b></p>
-                <p class="page"><a href="../../" id="home-page">Home</a> / Guia Rápido - C++</p>
+                <p class="titulo"><b>C++ - I/O e Classes</b></p>
+                <p class="page"><a href="../../" id="home-page">Home</a> / C++ - I/O e Classes</p>
             </div>
         </div>
         <!--Fim - Apresentação-->
@@ -100,15 +100,9 @@
                     <li><b>Classes</b></li>
                     <!-- Subtópicos de classes -->
                     <li><a href="#2">&nbsp;&nbsp;&nbsp;• Introdução</a></li>
-                    <li><a href="#4">&nbsp;&nbsp;&nbsp;• Instanciando Classes</a></li>
-                    <li><b>Estruturas Básicas da STL</b></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Introdução</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Pair</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Vector</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Queue</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Stack</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Set</a></li>
-                    <li><a href="#2">&nbsp;&nbsp;&nbsp;• Map</a></li>
+                    <li><a href="#3">&nbsp;&nbsp;&nbsp;• Getters e Setters</a></li>
+                    <li><a href="#4">&nbsp;&nbsp;&nbsp;• Criando um Método</a></li>
+                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• Instanciando Classes</a></li>
 
                 </blockquote>
             </ul>
@@ -129,7 +123,7 @@
             </p>
 
 
-            <!--Como a Plataforma Funciona?-->
+            <!--Classes-->
             <h1 id="2" class="secction scrollspy">Classes</h1>
             <p class="text-flow">
                 A principal diferença entre as linguagens C e C++ é a orientação a objetos presente em C++.  Neste breve guia, veremos o 
@@ -159,7 +153,7 @@
                 Devemos manter o acesso a um atributo sempre como <b>private</b>, a menos que tenhamos um bom motivo para 
                 deixá-lo com outro nível de acesso<sup><a href="https://www.devmedia.com.br/metodos-atributos-e-classes-no-java/25404" target="_blank">[2]</a></sup>.
                 <script src="https://gist.github.com/daniielcavallcante/aa64e47924e938e2beed521043ddf3b6.js"></script>
-                <br><br><b>Getters e Setters</b><br>
+                <br><br><b id="3" class="secction scrollspy">Getters e Setters</b><br>
                 Com os atributos definidos como private, como acessá-los quando necessário?<br>
                 Neste momento, entram os métodos <b>Setters</b> e <b>Getters</b>, que são métodos responsáveis, respectivamente, por 
                 modificar os atributos de uma classe e mostrá-los (retorná-los). Além disso, através dos <b>setters</b>, podemos definir restrições
@@ -168,14 +162,14 @@
                 <script src="https://gist.github.com/daniielcavallcante/87e8c64a215643bd43721dd6b750d946.js"></script>
 
                 <br><br>
-                <b>Criando um método</b><br>
+                <b id="4" class="secction scrollspy">Criando um método</b><br>
                 É possível definir funções que a classe poderá executar, as quais são chamadas de métodos. Podemos 
                 implementar operações simples como a transferência entre contas bancárias e o pagamento de boletos. 
                 Para tal, criaremos o método transferir().
                 <script src="https://gist.github.com/daniielcavallcante/b235358147c1c8efd2939875ce77113c.js"></script>
 
                 <br><br>
-                <b>Instanciando uma Classe</b><br>
+                <b id="5" class="secction scrollspy">Instanciando uma Classe</b><br>
                 Como todos os detalhes foram definidos, podemos instanciar as classes. Assim como a struct, as classes 
                 comportam-se como um novo tipo de dado, e “variáveis” podem ser criadas de modo semelhante aos tipos de
                 dados padrões da linguagem.
