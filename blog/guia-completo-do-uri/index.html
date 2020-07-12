@@ -32,6 +32,8 @@
         <link rel="stylesheet" type="text/css" href="../../styles/style-blog.css">
         <link rel="stylesheet" type="text/css" href="style.css">
 
+        <!--Fonte Ubuntu-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <!--Fonte Poppins-->
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!--Import Google Icon Font-->
@@ -40,7 +42,8 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+        <!--Sintaxe dos códigos-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=default"></script>
         <!--Scroll Animation-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
@@ -51,15 +54,15 @@
             <nav class="transparent z-depth-0">
                 <div class="nav-wrapper">
                     <div class="container">
-                        <a href="#" class="brand-logo"><img src="../../imagens/logotipo.png" id="logotipo"></a>
+                        <a href="../../index.html" class="brand-logo"><img src="../../imagens/logotipo.png" id="logotipo"></a>
                         <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
     
                         <ul class="right hide-on-med-and-down">
                             <!--Menu-->
                             <li><a href="../../" id="home">Home</a></li>
                             <li><a href="../../sobre/" id="sobre">Sobre</a></li>
-                            <li><a href="../../blog.html/" id="blog">Blog<span class="circulo"></span></a></li>
-                            <li><form><button type="submit" class="botao" formaction="../../participar.html/">Participar</button></form></li>
+                            <li><a href="../../blog/" id="blog">Blog<span class="circulo"></span></a></li>
+                            <li><form><button type="submit" class="botao" formaction="../../participar/">Participar</button></form></li>
                         </ul>
                     </div>
                 </div>
@@ -71,8 +74,8 @@
                 <div class="sidenav-close">
                     <li><a href="../../"><i class="fas fa-home" style="color:#FFF;"></i>Home</a></li>
                     <li><a href="../../sobre/"><i class="fas fa-info-circle" style="color:#FFF;"></i></i>Sobre</a></li>
-                    <li><a href="../../blog.html/"><i class="fas fa-blog" style="color:#FFF;"></i>Blog</a></li>
-                    <li><a href="../../participar.html/"><i class="fas fa-terminal" style="color:#FFF;"></i>Participar</a></li>
+                    <li><a href="../../blog/"><i class="fas fa-blog" style="color:#FFF;"></i>Blog</a></li>
+                    <li><a href="../../participar/"><i class="fas fa-terminal" style="color:#FFF;"></i>Participar</a></li>
                 </div>
             </ul>
         </header>
@@ -100,9 +103,8 @@
                     <li><a href="#3">Criando uma Conta</a></li>
                     <li><a href="#4">Introdução à Interface do URI</a></li>
                     <li><a href="#5">Categorias dos Problemas</a></li>
-                    <li><a href="#10">Realizando a primeira submissão</a></li>
-                    <li><a href="#6">Compreendendo os erros de submissão</a></li>
-                    <li><a href="#7">Rankings</a></li>
+                    <li><a href="#6">Interface da Questão</a></li>
+                    <li><a href="#7">Compreendendo as respostas de submissão</a></li>
                 </blockquote>
             </ul>
             <!--O que é o URI?-->
@@ -387,53 +389,224 @@
             </ul>
 
             
-            <!--Realizando a Primeira Submissão-->
-            <h1 id="10" class="secction scrollspy">Realizando a primeira submissão</h1>
+            <!--Interface da Questão-->
+            <h1 id="6" class="secction scrollspy">Interface da Questão</h1>
             <p class="text-flow">
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
+                Vejamos, detalhadamente, os componentes da página de instruções de uma questão. Neste caso, 
+                utilizaremos como exemplo a <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1001" target="_blank">questão 1001</a>.
             </p>
+            <img class="materialboxed responsive-img" data-caption="Tela de instruções de uma questão" src="imagens/tela-instrucoes.jpg">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge1">1</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge1">Cabeçalho da Questão</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Informações básicas sobre a questão. Título, autor, código do problema.
+                        <br><b>Timelimit</b> é o tempo máximo que a execução do programa pode levar para ser aceito. Esse valor é dado em 
+                        segundos. Ou seja, o problema 1001 admite uma solução de no máximo 1 segundo de tempo de execução.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge2">2</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge2">Enunciado</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Enunciado da questão. Traz informações substanciais para a compreensão 
+                        do problema e sua contextualização.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge3">3</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge3">Entrada e Saída</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>A <b>entrada</b> especifica os valores que serão introduzidos no seu programa.
+                        <br>A <b>saída</b> especifica o modo exato como os resultados devem ser impressos. <br>Obs: é necessário imprimir 
+                        quebra de linha no final da impressão de saída. Caso não tenha quebra de linha, um erro ocorrerá na 
+                        submissão do problema, acerca do qual falaremos mais à frente. 
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge4">4</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge4">Exemplos de Entrada e Saída</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Tabela que indica exemplos de valores de entrada e seus respectivos resultados. 
+                        É importante testar estes valores no seu programa-resposta e verificar se os resultados coincidem. 
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge5">5</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge5">Enviar</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Acesso à página em que será o código será submetido.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge6">6</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge6">Blocos</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>É possível também enviar uma solução com a utilização de blocos 
+                        interativos, ao invés de construir o código em si.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge7">7</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge7">Ranking</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Exibe dados e estatísticas sobre todas as tentativas de 
+                        resolução do problema em questão.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge8">8</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge8">Fórum</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Acesso à página do fórum com tópicos que foram abertos 
+                        por outros usuários sobre a questão.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num" id="title-badge9">9</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge9">uDebug</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Plataforma na qual é possível testar valores de entrada escolhidos 
+                        diretamente em um programa que foi aceito como resposta válida, verificar os resultados obtidos e comparar com as saídas que o programa do próprio usuário exibiu.
+                    </p></div>
+                </li>
+            </ul>
 
             
             <!--Compreendendo os Erros de Submissão-->
-            <h1 id="6" class="secction scrollspy">Compreendendo os erros de submissão</h1>
+            <h1 id="7" class="secction scrollspy">Compreendendo as respostas de submissão</h1>
             <p class="text-flow">
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
+                Acessando a página de <a href="https://www.urionlinejudge.com.br/judge/pt/runs" target="_blank">submissões</a> da plataforma, é possível verificar
+                a resposta que a plataforma definiu para o algoritmo que foi submetido, bem como outros detalhes do algoritmo, como o tempo de execução, data de submissão e linguagem utilizada, por exemplo.<br>
+                Ao submeter um algoritmo como resposta para um determinado problema, o mesmo pode ou não ser aceito como uma resposta válida, como pode ser visto na imagem abaixo:
+                <img class="materialboxed responsive-img" data-caption="Respostas de submissão" src="imagens/submissoes.png">
+                <br>Mas o que essas mensagens significam? Vejamos cada uma das possíveis respostas e seus respectivos significados:
+                As informações deste tópico foram retiradas <b>inteiramente</b> do URI Online Judge. Acesse usando este <a href="https://www.urionlinejudge.com.br/judge/pt/answers" target="_blank">link</a>.
             </p>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s1">- In Queue -</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>A sua submissão está na fila para ser julgada.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s2">Accepted</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>A submissão passou por todos os casos de teste.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s3">Compilation Error</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>O código-fonte foi submetido com erro de compilação. A(s) linha(s) 
+                        com erro aparecerão ressaltadas na visualização do código-fonte, para isto, basta clicar sobre 
+                        o ID da submissão. Ali você também encontrará um maior detalhamento do erro.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s4">Runtime Error</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Erro típico quando você define um vetor ou array com menos capacidade
+                         do que o necessário para o problema, ou quando você tenta acessar uma de memória inválida.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s5">Time Limit Exceeded</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>A solução que você submeteu demorou mais tempo do que o permitido 
+                        para rodar todos os testes dos juízes. Se o timelimit for 2 segundos, por exemplo, e seu programa 
+                        demorar 2.3 segundo para rodar todos os casos de teste, você receberá "Time Limit Exceeded". 
+                        É importante cuidar a técnica utilizada para resolver o problema. Uma solucão O(n log n²) pode dar 
+                        tempo de 0.3 segundos enquanto uma solução mais simples de implementar, mas com complexidade O(n²) 
+                        pode levar mais de 100 segundos para rodar. 
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s6">Presentation Error</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Se a sua solução receber "Presentation  Error", isto é, 
+                        erro de apresentação, na verdade ela já está praticamente correta, apenas há erro na 
+                        quantidade de espaços ou letras inversão de letras maiúsculas / minúsculas.<br><br>
 
-            
-            <!--Rankings-->
-            <h1 id="7" class="secction scrollspy">Rankings <i class="fas fa-trophy"></i></h1>
-            <p class="text-flow">
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
-                Este grupo, dirigido pela professora Marta Magda Dornelles, 
-                visa auxiliar o aluno no aprimoramento de suas habilidades em <b>prog</b>ramação 
-                e seu raciocínio lógico-<b>mat</b>emático, além de ampliar sua capacidade de reconhecer 
-                e aplicar conceitos matemáticos necessários para o desenvolvimento de algoritmos eficientes 
-                que solucionem os problemas computacionais propostos em sala.
-            </p>
+                        Por exemplo, se a saída correta para o problema for:
+                        <pre class="prettyprint">1. "X = 5"</pre>
+                        E seu programa apresentar qualquer uma das saídas abaixo:
+                        <pre class="prettyprint">
+1. "x = 5"
+2. "X =  5"
+3. "x  =  5"
+4. "X=5"
+5. "X = 5 "</pre>   
+                        A resposta será "Presentation Error"...
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s7">Wrong Answer</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Sua solução não apresenta o resultado esperado para todos os 
+                        casos de testes dos juízes. Lembre-se que o seu programa também é testado com outras entradas 
+                        além das fornecidas na descrição do problema, porém sempre respeitando as restrições do mesmo. 
+                        O valor mostrado junto a resposta indica o quanto por cento sua saída está diferente do esperado. 
+                        Por exemplo, se sua submissão retornou Wrong Answer (90%) isto signfica que sua saída está 90% diferente 
+                        das saídas corretas. Note também que o valor mostrado em porcentagem foi arredondado para a dezena superior, 
+                        isto é, se a divergência foi de 3.5% você irá visualizar 10%.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s8">Possible Runtime Error</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Se a sua solução recebeu "Possible Runtime Error" um dos seguintes problemas pode ter acontecido:<br>
+                        • Sua classe em Java não foi nomeada corretamente. Ele sempre deve ser nomeada como Main;<br>
+                        • Você está utilizando pacotes;<br>
+                        • Você está utilizando bibliotecas gráficas, como o Swing, ou bibliotecas de rede;<br>
+                        • Você não está lendo a entrada conforme a descrição do problema. Por exemplo, se o problema informar que a linha seguinte contém vários números e você os ler como se estivessem apresentados um por linha, provavelmente seu código lançará uma exceção e você receberá como resposta "Possible Runtime Error";<br>
+                        • Você não definiu o Locale padrão e tentou ler valores de moeda com vírgula ao invés de ponto. Lembre-se sempre de setar o Locale na primeira linha do método main:<br>
+                        <pre class="prettyprint">
+public static void main(String[] args){
+    Locale.setDefault(Locale.US);
+    ...
+}</pre>   
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s9">Thinking...</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>A submissão está sendo re-julgada devido a casos de teste ou 
+                        especificação incorreta.
+                    </p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <p class="badge-num1" id="title-s10">Closed</p>
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body"><p>Houve um problema com esta submissão. Provavelmente 
+                        não recebemos o código-fonte, por isso ela foi finalizada.
+                    </p></div>
+                </li>
+            </ul>
+            Este é, basicamente, o funcionamento do URI. <br>=D
         </div>
+        
         <!--Fim - Blog-->
         
 
@@ -459,7 +632,7 @@
                             <a href="../../" id="home-footer"><i class="fas fa-home"></i> Home</a>
                             <a href="../../sobre/" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
                             <a href="#scroll" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
-                            <a href="../../participar.html/"><i class="fas fa-terminal"></i>&nbsp; Participar</a>
+                            <a href="../../participar/"><i class="fas fa-terminal"></i>&nbsp; Participar</a>
                         </div>
                     </div>
                 </div>
@@ -474,8 +647,8 @@
                 <div class="social">
                     <div class="col s4">
                         <p id="social-title"><b>Mídias Sociais</b></p>
-                        <a href="https://www.instagram.com/projetodeensino/" id="instagram"><i class="fab fa-instagram"></i>&nbsp;</a>
-                        <a href="https://www.facebook.com/projetodensino/" id="facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/projetodeensino/" id="instagram" target="_blank"><i class="fab fa-instagram"></i>&nbsp;</a>
+                        <a href="https://www.facebook.com/projetodensino/" id="facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -490,7 +663,7 @@
                         <a href="../../" id="home-footer"><i class="fas fa-home"></i> Home</a>
                         <a href="../../sobre/" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
                         <a href="#scroll" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
-                        <a href="../../participar.html/"><i class="fas fa-terminal"></i> Participar</a>
+                        <a href="../../participar/"><i class="fas fa-terminal"></i> Participar</a>
                         </div>
                 </div>
                 <div class="col s6">
@@ -507,8 +680,8 @@
                 <div class="social">
                     <div class="col s6">
                         <p id="social-title"><b>Mídias Sociais</b></p>
-                        <a href="https://www.instagram.com/projetodeensino/" id="instagram"><i class="fab fa-instagram"></i>&nbsp;</a>
-                        <a href="https://www.facebook.com/projetodensino/" id="facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/projetodeensino/" id="instagram" target="_blank"><i class="fab fa-instagram"></i>&nbsp;</a>
+                        <a href="https://www.facebook.com/projetodensino/" id="facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>

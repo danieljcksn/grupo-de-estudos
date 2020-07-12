@@ -127,6 +127,52 @@ blockquote {
   color: #1F78A2;
 }
 
+.badge-num1 {
+  margin-left: 0.9vw !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+#title-s1 {
+  color: #948f8e;
+}
+
+#title-s2 {
+  color: #00aa00;
+}
+
+#title-s3 {
+  color: #e5af25;
+}
+
+#title-s4 {
+  color: #00aaaa;
+}
+
+#title-s5 {
+  color: #004fc5;
+}
+
+#title-s6 {
+  color: #666600;
+}
+
+#title-s7 {
+  color: #ff0000;
+}
+
+#title-s8 {
+  color: #774697;
+}
+
+#title-s9 {
+  color: #9a5297;
+}
+
+#title-s10 {
+  color: #dfd312;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .corpo-blog {
     margin-left: 9%;

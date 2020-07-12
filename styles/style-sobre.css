@@ -59,6 +59,7 @@
 
 .sobre {
   margin-top: 0px !important;
+  text-align: justify;
 }
 
 .fig2 {
@@ -68,6 +69,10 @@
 
 .blog-title {
   margin-top: 0;
+}
+
+.blog-text {
+  text-align: justify;
 }
 
 .fig3 {
