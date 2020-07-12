@@ -6,7 +6,6 @@ h1{
     font-weight: bold !important;
     padding-top: 1.5vw;
 }
-
 .navegacao{
     margin-top: 2vw;
     color: #f50057;
@@ -14,7 +13,9 @@ h1{
 .navegacao-blog a{
     color: #777777;
 }
-
+.color1{
+    color:blueviolet;
+}
 .navegacao-blog a:hover{
     color: #f50057  !important;
     transition: all 0.4s;
@@ -51,7 +52,6 @@ blockquote{
     color: #777777;
 }
 .badge-num{
-    margin-left: 0.9vw !important;
     font-family: 'chalk', sans-serif;
     font-weight: bold;
     color: #1ABC9C;
@@ -60,7 +60,7 @@ blockquote{
     font-family: 'chalk', sans-serif;
 }
 #title-badge1{
-    color: #1ABC9C;
+    color: #1F78A2;
 }
 #title-badge2{
     color: #F39C12;

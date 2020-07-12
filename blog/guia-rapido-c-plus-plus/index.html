@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>URI - Guia para Iniciantes</title>
+        <title>Guia Rápido - C++</title>
         <meta charset="utf-8">
         <!-- ****** FAVICONS ****** -->
         <link rel="shortcut icon" href="../../imagens/Favicon/favicon.ico">
@@ -43,7 +43,7 @@
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--Sintaxe dos códigos-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=default"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=sunburst"></script>
         <!--Scroll Animation-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
@@ -112,504 +112,100 @@
 
                 </blockquote>
             </ul>
-            <!--O que é o URI?-->
+            <!--Leitura e Impressão-->
             <h1 id="1" class="secction scrollspy">Operações de Leitura e Impressão</h1>
             <p class="text-flow">
-                O <a href=" https://www.urionlinejudge.com.br/judge/pt/">URI</a> é uma plataforma online criada com o objetivo de proporcionar 
-                aos seus usuários o aprendizado, a prática e o aperfeiçoamento de suas 
-                habilidades em algoritmos através da resolução de problemas de programação diversos.
-                O site possui mais de 1000 problemas de programação divididos em 8 grandes categorias.
-                Essa divisão ajuda os usuários a se concentrarem em tópicos de programação específicos. 
-                Os problemas disponíveis na plataforma podem ser resolvidos com a utilização de 11 linguagens 
-                de programação diferentes.
+                Em C, para lermos dados de entrada e para imprimirmos em um fluxo de saída, utilizamos, respectivamente as funções <b>printf</b> e <b>scanf</b>, ambas inclusas no <i>header</i> <b>stdlib.h</stdlib.h></b>. O modo como a entrada e saída são manipuladas são semelhantes em C++. A  biblioteca <b>iostream</b> deve ser inclusa para a utilização da função de leitura - <b>cin</b> - e de saída - <b>cout</b>.<br>
+                <br>Vejamos um exemplo de utilização:
+                <script src="https://gist.github.com/daniielcavallcante/c8cd90f6209413cdb272aceb6af9531a.js"></script>
+                Uma necessidade recorrente com problemas de programação é a impressão de variáveis de ponto flutuante com controle do número de casas decimais a serem exibidas.
+                Existe um método simples para isso. Basta incluir a biblioteca <b>iomanip</b> que possui funções para manipulação da entrada / saída.
+                
+                Basta, portanto, adicionar os códigos seguintes:
+                <script src="https://gist.github.com/daniielcavallcante/214bea9458e8b381e0aa43de8a499b25.js"></script>
+                O código acima possui a seguinte saída:
+<pre class="prettyprint">4.84</pre>
+                
             </p>
 
 
             <!--Como a Plataforma Funciona?-->
-            <h1 id="2" class="secction scrollspy">Como a Plataforma Funciona?</h1>
+            <h1 id="2" class="secction scrollspy">Classes</h1>
             <p class="text-flow">
-                O código-fonte feito pelo usuário para um determinado desafio é submetido a uma 
-                quantidade grande de testes que são realizados pela plataforma. O usuário pode ter 
-                seu código-resposta aceito ou não, fato que depende da aprovação dos resultados do algoritmo 
-                quando o mesmo é testado e comparado com os resultados esperados.
-                Cada problema disponível no site possui uma pontuação correspondente, sendo esta definida pela 
-                dificuldade do problema e pela quantidade de pessoas que já conseguiram resolvê-lo. A pontuação 
-                do usuário (obtida através da resolução de tais problemas) define a sua posição no ranking, seja 
-                ele um ranking de todos os usuários, nacional ou da universidade em que estuda.
+                A principal diferença entre as linguagens C e C++ é a orientação a objetos presente em C++.  Neste breve guia, veremos o 
+                que são classes e como instanciá-las, na linguagem C++, para a criação de objetos. <br>
+                Através da programação orientada a objetos (POO), é possível modelar com maior precisão o mundo real computacionalmente.<br>
+
+
+                <br>
+                Considere o seguinte cenário: Necessita-se registrar um cliente em um sistema bancário. Para tal registro, será necessário o 
+                <b>nome</b>, o <b>CPF</b> e <b>RG</b> do cliente. O cliente possuirá uma conta bancária, ou seja, informações básicas como o <b>saldo</b>, por exemplo, 
+                também devem ser registradas. A conta bancária possuirá também a simples função de realizar <b>transferências</b>, por exemplo.
+                
+                <br><br>Ainda neste exemplo bastante simplório, percebe-se que podem existir muitos clientes, portanto, é impraticável imaginar uma implementação desse cenário em que manualmente fosse criada uma variável para cada um desses atributos, certo?
+                Neste caso, a programação orientada a objetos mostra-se bastante eficiente e o problema pode ser facilmente contornado utilizando uma abstração de todas as informações que uma conta bancária possui.
+                <br><br>Em orientação a objetos, uma <b>classe</b> é uma descrição que abstrai um conjunto de objetos com características similares<sup><a href="https://pt.wikipedia.org/wiki/Classe_(programa%C3%A7%C3%A3o)" target="_blank">[1]</a></sup>. 
+                <br><br>
+                Podemos criar uma classe Conta. Essa classe possuirá, como atributos, <b>nome</b>, <b>CPF</b>, <b>RG</b> e <b>saldo</b>. 
+                <script src="https://gist.github.com/daniielcavallcante/68ff0e443611fd13c8be31fc10d1ec8d.js"></script>
+                <br>
+                Há um problema com a definição acima: Os atributos estão todos com nível de acesso definido como public e podem facilmente ser 
+                acessados e modificados em qualquer parte do programa. É um problema, pois são informações importantes que 
+                devem ser minimamente protegidas. 
+
+                <br><br>
+                Alteramos, portanto, o nível de acesso de <b>public</b> para <b>private</b>. O ato de definir o tipo de acesso ao 
+                conteúdo das classes compõe um dos pilares da POO: <b>Encapsulamento</b>. <br>
+                Devemos manter o acesso a um atributo sempre como <b>private</b>, a menos que tenhamos um bom motivo para 
+                deixá-lo com outro nível de acesso<sup><a href="https://www.devmedia.com.br/metodos-atributos-e-classes-no-java/25404" target="_blank">[2]</a></sup>.
+                <script src="https://gist.github.com/daniielcavallcante/aa64e47924e938e2beed521043ddf3b6.js"></script>
+                <br><br><b>Getters e Setters</b><br>
+                Com os atributos definidos como private, como acessá-los quando necessário?<br>
+                Neste momento, entram os métodos <b>Setters</b> e <b>Getters</b>, que são métodos responsáveis, respectivamente, por 
+                modificar os atributos de uma classe e mostrá-los (retorná-los). Além disso, através dos <b>setters</b>, podemos definir restrições
+                para a modificação dos atributos de um objeto. Não há restrição no exemplo citado, porém há casos em que isso torna-se
+                bastante necessário.
+                <script src="https://gist.github.com/daniielcavallcante/87e8c64a215643bd43721dd6b750d946.js"></script>
+
+                <br><br>
+                <b>Criando um método</b><br>
+                É possível definir funções que a classe poderá executar, as quais são chamadas de métodos. Podemos 
+                implementar operações simples como a transferência entre contas bancárias e o pagamento de boletos. 
+                Para tal, criaremos o método transferir().
+                <script src="https://gist.github.com/daniielcavallcante/b235358147c1c8efd2939875ce77113c.js"></script>
+
+                <br><br>
+                <b>Instanciando uma Classe</b><br>
+                Como todos os detalhes foram definidos, podemos instanciar as classes. Assim como a struct, as classes 
+                comportam-se como um novo tipo de dado, e “variáveis” podem ser criadas de modo semelhante aos tipos de
+                dados padrões da linguagem.
+                <br><br>
+                Vamos criar duas contas e definir dados fictícios para elas. Na função <b>main</b>, teremos o seguinte:
+                <script src="https://gist.github.com/daniielcavallcante/798f8ea495274c2638db577fa20d42b4.js"></script>
+
+                <br>
+                Se transferirmos R$ 550.00 de Gabriel para Pedro, os saldos após a transferência serão, ambos, R$ 1.000,00.
+                <script src="https://gist.github.com/daniielcavallcante/b3722bbbde9370a95a66e7ef8b55129e.js"></script>
+
+                <br><br>Saída:
+                <pre class="prettyprint">Transferencia realizada com sucesso.
+Pedro Silva possui saldo de R$ 1000.00
+Gabriel Santos possui saldo de R$ 1000.00</pre>
+
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">
+                            <p class="badge-num" id="title-badge1">Código Completo</p>
+                            <span class="badge"></span></div>
+                        <div class="collapsible-body">
+                            <p>
+                                <script src="https://gist.github.com/daniielcavallcante/b21add0bc08085c0a79e9f2165641d39.js"></script>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </p>
-
-
-            <!--Criando uma Conta-->
-            <h1 id="3" class="secction scrollspy">Criando uma conta</h1>
-            <p class="text-flow">
-                Para criar uma nova conta, basta acessar este <a href="https://www.urionlinejudge.com.br/judge/pt/register">link</a>.
-                Crie sua conta entrando com uma das opções indicadas (Facebook, Google, Github, etc.) ou preencha 
-                os dados solicitados, como demonstrado na imagem, pelo nosso usuário fictício ‘João Silva’, clicando, 
-                por fim, em ‘Entrar’.
-            </p>
-            <br>
-            <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger pink accent-3" href="#modal1" id="btn">Exemplo</a>
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal modal-fixed-footer">
-                <div class="modal-content">
-                    <h4 class="titulo-modal">Criando uma Conta: Demonstração</h4>
-                    <img class="responsive-img" src="imagens/criando-conta.png">
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="btn1">Entendi</a>
-                </div>
-            </div>
-
-
-            <!--Introdução à Interface-->
-            <h1 id="4" class="secction scrollspy">Introdução à Interface do URI</h1>
-            <p class="text-flow">
-                Na tela inicial, você encontra todas as funções, assim como os links 
-                para as páginas que a plataforma <a href=" https://www.urionlinejudge.com.br/judge/pt/">URI</a> dispõe.
-                Tratando-se de um tutorial para iniciantes, aqui estão, detalhadamente, 
-                todas as funções / informações da plataforma URI disponíveis na tela inicial.
-            </p>
-            <img class="materialboxed responsive-img" data-caption="Tela inicial do URI Online Judge" src="imagens/tela-inicial.jpg">
-            <table>
-                <thead>
-                      <p class="navegacao-tabela">Navegação</p>
-                </thead>
-        
-                <tbody>
-                  <tr class="nav-tab">
-                    <td><a href="#tab-1">1</td>
-                    <td><a href="#tab-2">2</td>
-                    <td><a href="#tab-3">3</td>
-                    <td><a href="#tab-4">4</td>
-                    <td><a href="#tab-5">5</td>
-                    <td><a href="#tab-6">6</td>
-                    <td><a href="#tab-7">7</td>
-                    <td><a href="#tab-8">8</td>
-                    <td><a href="#tab-9">9</td>
-                    <td><a href="#tab-10">10</a></td>
-                    <td><a href="#tab-11">11</a></td>
-                    <td><a href="#tab-12">12</a></td>
-                    <td><a href="#tab-13">13</a></td>
-                    <td><a href="#tab-14">14</a></td>
-                    <td><a href="#tab-15">15</a></td>
-                    <td><a href="#tab-16">16</a></td>
-                    <td><a href="#tab-17">17</a></td>
-                  </tr>
-                </tbody>
-            </table>
-            <table class="striped">
-                <thead>
-                  <tr>
-                      <th>Item</th>
-                      <th>&nbsp;Descrição</th>
-                  </tr>
-                </thead>
-        
-                <tbody>
-                  <tr>
-                    <td id="tab-1">1</td>
-                    <td>Página inicial do URI.</td>
-                  </tr>
-                  <tr>
-                    <td id="tab-2">2</td>
-                    <td>Acesso às configurações, estatísticas, 
-                        pontuação, amigos e convites que o usuário possui.</td>
-                  </tr>
-                  <tr>
-                    <td id="tab-3">3</td>
-                    <td>Atualizações sobre a plataforma, correção de erros encontrados e anúncio de eventos.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-4">4</td>
-                    <td>Plataforma que permite a interação direta entre professores e alunos, através da 
-                        criação de turmas fechadas, seleção de problemas para que os alunos solucionem e mais.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-5">5</td>
-                    <td>Exibe as competições e torneios que estão ocorrendo, bem como suas instruções 
-                        sobre a participação e também criação de times.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-6">6</td>
-                    <td>No fórum ocorre a interação entre os usuários, discussões sobre problemas, criação 
-                        de tópicos e o tratamento de dúvidas.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-7">7</td>
-                    <td>Dispõe os problemas disponíveis na plataforma em categorias separadas.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-8">8</td>
-                    <td>Exibe os códigos enviados como resposta pelo usuário, bem como seu estado 
-                        (se a resposta é válida ou não) e informações sobre tais uploads (data e hora de submissão, 
-                        linguagem de programação utilizada, tempo de execução e código do problema).
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-9">9</td>
-                    <td>Acesso aos rankings da plataforma. Há o ranking das universidades, países e 
-                        também o ranking de todos os usuários do URI.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-10">10</td>
-                    <td>Deslogar a conta atual da plataforma.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-11">11</td>
-                    <td>Método de pesquisa da plataforma. É possível pesquisar pelo código de problema, pelas 
-                        palavras-chave presentes no enunciado do mesmo, por nome de usuário, universidades e autores.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-12">12</td>
-                    <td>Exibe o percentual de resoluções feitas pelo usuário de todos os problemas que estão 
-                        disponíveis no URI.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-13">13</td>
-                    <td>Número de dias decorridos desde a criação da conta.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-14">14</td>
-                    <td>Quantidade de problemas solucionados.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-15">15</td>
-                    <td>Pontos acumulados com a resolução dos problemas.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-16">16</td>
-                    <td>Links úteis que facilitam o acesso às diversas ferramentas. 
-                        Cada ferramenta possui logo abaixo a sua descrição.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td id="tab-17">17</td>
-                    <td>O Top 20 de todos os usuários do URI. 
-                    </td>
-                  </tr>
-                </tbody>
-            </table>
-
-
-            <!--Categorias-->
-            <h1 id="5" class="secction scrollspy">Categorias</h1>
-            <p class="text-flow">
-                Acessando <a href="https://www.urionlinejudge.com.br/judge/pt/categories" class="categories">URI / Categories</a>, 
-                temos acesso aos problemas disponíveis na plataforma separados por categorias. No total, existem 9 categorias de 
-                problemas no site. Vejamos: 
-            </p>
-            <ul class="collapsible">
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge1">1</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge1">Iniciante</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Conjunto dos problemas básicos de programação, destinados 
-                        principalmente a quem está iniciando na programação. Geralmente exigem a compreensão de 
-                        conceitos basilares da programação, como operações aritméticas com variáveis, por exemplo.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge2">2</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge2">Ad-Hoc</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Ad-Hoc significa basicamente, à grosso modo, algo que foi inventado em tempo real apenas para lidar 
-                        com uma situação específica, em oposição a alguma abordagem sistemática para resolver problemas. Os problemas <b>Ad-Hoc</b> são, 
-                        portanto, aqueles cuja solução não envolve estruturas de dados, algoritmos ou técnicas genéricas. Em geral, a estratégia utilizada 
-                        para resolvê-los é muito específica.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge3">3</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge3">Strings</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Problemas que envolvem a manipulação de strings. Palíndromos e LCS 
-                        são exemplos de conceitos presentes nos desafios desta categoria. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge4">4</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge4">Estruturas e Bibliotecas</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>São os problemas que exigem a aplicação de estruturas de dados 
-                        específicas (Fila e pilha, por exemplo) na implementação das soluções. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge5">5</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge5">Matemática</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Questões que envolvem a compreensão de conceitos matemáticos 
-                        mais avançados e específicos.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge6">6</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge6">Paradigmas</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Nestes, ocorre a utilização de padrões de programação como 
-                        Programação Dinâmica e Backtracking.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge7">7</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge7">Matemática</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Exigem a aplicação de conhecimentos sobre grafos, como Busca em Largura, 
-                        Busca em Profundidade e árvores, por exemplo.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge8">8</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge8">Geometria Computacional</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Problemas avançados que exigem a compreensão e aplicação de conceitos de 
-                        programação mais complexos, como pontos e linhas. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge9">9</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge9">SQL</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Linguagens de Consulta: Seleção, inserção, ordenação e atualização de dados e valores.</p></div>
-                </li>
-            </ul>
-
-            
-            <!--Interface da Questão-->
-            <h1 id="6" class="secction scrollspy">Interface da Questão</h1>
-            <p class="text-flow">
-                Vejamos, detalhadamente, os componentes da página de instruções de uma questão. Neste caso, 
-                utilizaremos como exemplo a <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1001" target="_blank">questão 1001</a>.
-            </p>
-            <img class="materialboxed responsive-img" data-caption="Tela de instruções de uma questão" src="imagens/tela-instrucoes.jpg">
-            <ul class="collapsible">
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge1">1</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge1">Cabeçalho da Questão</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Informações básicas sobre a questão. Título, autor, código do problema.
-                        <br><b>Timelimit</b> é o tempo máximo que a execução do programa pode levar para ser aceito. Esse valor é dado em 
-                        segundos. Ou seja, o problema 1001 admite uma solução de no máximo 1 segundo de tempo de execução.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge2">2</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge2">Enunciado</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Enunciado da questão. Traz informações substanciais para a compreensão 
-                        do problema e sua contextualização.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge3">3</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge3">Entrada e Saída</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>A <b>entrada</b> especifica os valores que serão introduzidos no seu programa.
-                        <br>A <b>saída</b> especifica o modo exato como os resultados devem ser impressos. <br>Obs: é necessário imprimir 
-                        quebra de linha no final da impressão de saída. Caso não tenha quebra de linha, um erro ocorrerá na 
-                        submissão do problema, acerca do qual falaremos mais à frente. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge4">4</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge4">Exemplos de Entrada e Saída</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Tabela que indica exemplos de valores de entrada e seus respectivos resultados. 
-                        É importante testar estes valores no seu programa-resposta e verificar se os resultados coincidem. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge5">5</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge5">Enviar</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Acesso à página em que será o código será submetido.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge6">6</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge6">Blocos</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>É possível também enviar uma solução com a utilização de blocos 
-                        interativos, ao invés de construir o código em si.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge7">7</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge7">Ranking</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Exibe dados e estatísticas sobre todas as tentativas de 
-                        resolução do problema em questão.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge8">8</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge8">Fórum</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Acesso à página do fórum com tópicos que foram abertos 
-                        por outros usuários sobre a questão.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num" id="title-badge9">9</p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="title-badge" id="title-badge9">uDebug</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Plataforma na qual é possível testar valores de entrada escolhidos 
-                        diretamente em um programa que foi aceito como resposta válida, verificar os resultados obtidos e comparar com as saídas que o programa do próprio usuário exibiu.
-                    </p></div>
-                </li>
-            </ul>
-
-            
-            <!--Compreendendo os Erros de Submissão-->
-            <h1 id="7" class="secction scrollspy">Compreendendo as respostas de submissão</h1>
-            <p class="text-flow">
-                Acessando a página de <a href="https://www.urionlinejudge.com.br/judge/pt/runs" target="_blank">submissões</a> da plataforma, é possível verificar
-                a resposta que a plataforma definiu para o algoritmo que foi submetido, bem como outros detalhes do algoritmo, como o tempo de execução, data de submissão e linguagem utilizada, por exemplo.<br>
-                Ao submeter um algoritmo como resposta para um determinado problema, o mesmo pode ou não ser aceito como uma resposta válida, como pode ser visto na imagem abaixo:
-                <img class="materialboxed responsive-img" data-caption="Respostas de submissão" src="imagens/submissoes.png">
-                <br>Mas o que essas mensagens significam? Vejamos cada uma das possíveis respostas e seus respectivos significados:
-                As informações deste tópico foram retiradas <b>inteiramente</b> do URI Online Judge. Acesse usando este <a href="https://www.urionlinejudge.com.br/judge/pt/answers" target="_blank">link</a>.
-            </p>
-            <ul class="collapsible">
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s1">- In Queue -</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>A sua submissão está na fila para ser julgada.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s2">Accepted</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>A submissão passou por todos os casos de teste.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s3">Compilation Error</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>O código-fonte foi submetido com erro de compilação. A(s) linha(s) 
-                        com erro aparecerão ressaltadas na visualização do código-fonte, para isto, basta clicar sobre 
-                        o ID da submissão. Ali você também encontrará um maior detalhamento do erro.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s4">Runtime Error</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Erro típico quando você define um vetor ou array com menos capacidade
-                         do que o necessário para o problema, ou quando você tenta acessar uma de memória inválida.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s5">Time Limit Exceeded</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>A solução que você submeteu demorou mais tempo do que o permitido 
-                        para rodar todos os testes dos juízes. Se o timelimit for 2 segundos, por exemplo, e seu programa 
-                        demorar 2.3 segundo para rodar todos os casos de teste, você receberá "Time Limit Exceeded". 
-                        É importante cuidar a técnica utilizada para resolver o problema. Uma solucão O(n log n²) pode dar 
-                        tempo de 0.3 segundos enquanto uma solução mais simples de implementar, mas com complexidade O(n²) 
-                        pode levar mais de 100 segundos para rodar. 
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s6">Presentation Error</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Se a sua solução receber "Presentation  Error", isto é, 
-                        erro de apresentação, na verdade ela já está praticamente correta, apenas há erro na 
-                        quantidade de espaços ou letras inversão de letras maiúsculas / minúsculas.<br><br>
-
-                        Por exemplo, se a saída correta para o problema for:
-                        <pre class="prettyprint">1. "X = 5"</pre>
-                        E seu programa apresentar qualquer uma das saídas abaixo:
-                        <pre class="prettyprint">
-1. "x = 5"
-2. "X =  5"
-3. "x  =  5"
-4. "X=5"
-5. "X = 5 "</pre>   
-                        A resposta será "Presentation Error"...
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s7">Wrong Answer</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Sua solução não apresenta o resultado esperado para todos os 
-                        casos de testes dos juízes. Lembre-se que o seu programa também é testado com outras entradas 
-                        além das fornecidas na descrição do problema, porém sempre respeitando as restrições do mesmo. 
-                        O valor mostrado junto a resposta indica o quanto por cento sua saída está diferente do esperado. 
-                        Por exemplo, se sua submissão retornou Wrong Answer (90%) isto signfica que sua saída está 90% diferente 
-                        das saídas corretas. Note também que o valor mostrado em porcentagem foi arredondado para a dezena superior, 
-                        isto é, se a divergência foi de 3.5% você irá visualizar 10%.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s8">Possible Runtime Error</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Se a sua solução recebeu "Possible Runtime Error" um dos seguintes problemas pode ter acontecido:<br>
-                        • Sua classe em Java não foi nomeada corretamente. Ele sempre deve ser nomeada como Main;<br>
-                        • Você está utilizando pacotes;<br>
-                        • Você está utilizando bibliotecas gráficas, como o Swing, ou bibliotecas de rede;<br>
-                        • Você não está lendo a entrada conforme a descrição do problema. Por exemplo, se o problema informar que a linha seguinte contém vários números e você os ler como se estivessem apresentados um por linha, provavelmente seu código lançará uma exceção e você receberá como resposta "Possible Runtime Error";<br>
-                        • Você não definiu o Locale padrão e tentou ler valores de moeda com vírgula ao invés de ponto. Lembre-se sempre de setar o Locale na primeira linha do método main:<br>
-                        <pre class="prettyprint">
-public static void main(String[] args){
-    Locale.setDefault(Locale.US);
-    ...
-}</pre>   
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s9">Thinking...</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>A submissão está sendo re-julgada devido a casos de teste ou 
-                        especificação incorreta.
-                    </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        <p class="badge-num1" id="title-s10">Closed</p>
-                        <span class="badge"></span></div>
-                    <div class="collapsible-body"><p>Houve um problema com esta submissão. Provavelmente 
-                        não recebemos o código-fonte, por isso ela foi finalizada.
-                    </p></div>
-                </li>
-            </ul>
-            Este é, basicamente, o funcionamento do URI. <br>=D
         </div>
         
         <!--Fim - Blog-->
