@@ -314,8 +314,8 @@ a:hover, a.active {
   background-position: right;
 }
 
-.footer-mobile {
-  display: none;
+#itens-footer {
+  margin-left: 18%;
 }
 
 .footer-info {
@@ -332,10 +332,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   height: 4vw;
-}
-
-.endereco {
-  margin-left: 10%;
 }
 
 #endereco-title {
@@ -385,12 +381,6 @@ footer {
 
 #contato-text a:hover {
   color: #FF0B38;
-}
-
-#social-title {
-  font-size: 1.1vw;
-  color: #101C21;
-  margin-bottom: 0.6vw;
 }
 
 .social a {
@@ -489,7 +479,7 @@ footer {
     margin-left: 43.5%;
     font-weight: normal;
   }
-  #navegacao-title, #endereco-title, #contato-title, #social-title {
+  #navegacao-title, #endereco-title, #contato-title {
     font-size: 1.4vw;
   }
   #contato-text a, #endereco-text, .footer-links a {
@@ -500,6 +490,9 @@ footer {
   }
   .container {
     font-size: 1.1vw !important;
+  }
+  #itens-footer {
+    margin-left: 17.4%;
   }
 }
 
@@ -576,7 +569,7 @@ footer {
     margin-left: 43.5%;
     font-weight: normal;
   }
-  #navegacao-title, #endereco-title, #contato-title, #social-title {
+  #navegacao-title, #endereco-title, #contato-title {
     font-size: 1.4vw;
   }
   #contato-text a, #endereco-text, .footer-links a {
@@ -590,6 +583,9 @@ footer {
   }
   .container {
     font-size: 1.1vw !important;
+  }
+  #itens-footer {
+    margin-left: 17%;
   }
 }
 
@@ -734,15 +730,7 @@ footer {
     margin-right: auto;
     font-weight: normal;
   }
-  .footer-mobile {
-    margin-left: 8%;
-    margin-top: 10vw;
-    display: inline-block;
-  }
-  .footer-info {
-    display: none;
-  }
-  #navegacao-title, #endereco-title, #contato-title, #social-title {
+  #navegacao-title, #endereco-title, #contato-title {
     padding-bottom: 1vw;
     font-size: 3vw;
     border-bottom: solid 0.01vw #FF2256;
@@ -762,6 +750,9 @@ footer {
   }
   .footer-copyright {
     height: 6vw !important;
+  }
+  #itens-footer {
+    margin-left: 8.4%;
   }
 }
 

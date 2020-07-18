@@ -62,10 +62,6 @@
   font-weight: normal;
 }
 
-.blog-content-mobile {
-  display: none;
-}
-
 .sobre {
   margin-top: 0px !important;
 }
@@ -92,19 +88,18 @@
 .card-title {
   margin-top: -0.5vw !important;
   color: #222222 !important;
-  font-size: 1.45vw !important;
+  font-size: 1.45em !important;
   font-weight: bolder !important;
-  line-height: 1.9vw !important;
 }
 
 .conteudo-post {
   margin-top: 0.6vw !important;
   color: #555555;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 .subtitulo-post {
-  font-size: 0.75vw;
+  font-size: 1em;
   color: #999999;
 }
 
@@ -121,7 +116,7 @@
   color: #49BE55 !important;
   text-transform: none !important;
   font-weight: bold !important;
-  font-size: 1vw !important;
+  font-size: 1em !important;
 }
 
 #home-footer {
@@ -173,19 +168,19 @@
   .conteudo-post {
     margin-top: 0.6vw !important;
     color: #555555;
-    font-size: 1.3vw;
+    font-size: 1.1em;
   }
   .link-post {
-    font-size: 1.3vw !important;
+    font-size: 1.1em !important;
   }
   .subtitulo-post {
-    font-size: 1vw;
+    font-size: 1em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .link-post {
-    font-size: 1.5vw !important;
+    font-size: 1em !important;
   }
   .card-content {
     padding: 2.5vw !important;
@@ -193,12 +188,6 @@
   .card-action {
     padding: 1.5vw !important;
     padding-left: 3vw !important;
-  }
-  .blog-content-mobile {
-    display: block;
-  }
-  .blog-content {
-    display: none;
   }
   .corpo-blog {
     margin-left: 2.5%;
@@ -218,9 +207,6 @@
   .page {
     font-size: 2vw;
   }
-  .blog-mobile {
-    margin-bottom: 10vw;
-  }
   .apresentacao .texts {
     position: relative;
     margin-top: 15%;
@@ -229,12 +215,12 @@
     margin-bottom: 0.1vw;
   }
   .card-title {
-    font-size: 2vw !important;
+    font-size: 1.5em !important;
   }
   .conteudo-post {
     margin-top: 0.6vw !important;
     color: #555555;
-    font-size: 2vw;
+    font-size: 1em;
     margin-bottom: -1vw !important;
   }
   .subtitulo-post {

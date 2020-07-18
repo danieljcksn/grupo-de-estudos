@@ -287,9 +287,10 @@ a:hover, a.active{
 
 
 //F O O T E R
-.footer-mobile{
-    display: none;
+#itens-footer{
+    margin-left: 18%;
 }
+
 .footer-info{
     margin-top: 10vw;
 }
@@ -304,9 +305,6 @@ footer{
     height: 4vw;
 }
 //Endereço -----------------
-.endereco{
-    margin-left: 10%;
-}
 #endereco-title{
     font-size: 1.1vw;
     color: #101C21;
@@ -348,12 +346,6 @@ footer{
 }
 #contato-text a:hover{
     color: #FF0B38;
-}
-//Mídias Sociais -----------------
-#social-title{
-    font-size: 1.1vw;
-    color: #101C21;
-    margin-bottom: 0.6vw;   
 }
 .social a{
     color: #777777;
@@ -449,7 +441,7 @@ footer{
         margin-left: 43.5%;
         font-weight: normal;
     }
-    #navegacao-title, #endereco-title, #contato-title, #social-title{
+    #navegacao-title, #endereco-title, #contato-title{
         font-size: 1.4vw;
     }
     #contato-text a, #endereco-text, .footer-links a{
@@ -460,6 +452,9 @@ footer{
     }
     .container{
         font-size: 1.1vw !important;
+    }
+    #itens-footer{
+        margin-left: 17.4%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -537,7 +532,7 @@ footer{
         font-weight: normal;
     }
     //Foote
-    #navegacao-title, #endereco-title, #contato-title, #social-title{
+    #navegacao-title, #endereco-title, #contato-title{
         font-size: 1.4vw;
     }
     #contato-text a, #endereco-text, .footer-links a{
@@ -551,6 +546,9 @@ footer{
     }
     .container{
         font-size: 1.1vw !important;
+    }
+    #itens-footer{
+        margin-left: 17%;
     }
 }
 @media only screen and (max-width: 768px){
@@ -704,17 +702,7 @@ footer{
         margin-right: auto;
         font-weight: normal;
     }
-
-    //Footer Mobile
-    .footer-mobile{
-        margin-left: 8%;
-        margin-top: 10vw;
-        display: inline-block;
-    }
-    .footer-info{
-        display: none;
-    }
-    #navegacao-title, #endereco-title, #contato-title, #social-title{
+    #navegacao-title, #endereco-title, #contato-title{
         padding-bottom: 1vw;
         font-size: 3vw;
         border-bottom: solid 0.01vw #FF2256;
@@ -734,6 +722,9 @@ footer{
     }
     .footer-copyright{
         height: 6vw !important;
+    }
+    #itens-footer{
+        margin-left: 8.4%;
     }
 }
 @media only screen and (max-width: 450px){
