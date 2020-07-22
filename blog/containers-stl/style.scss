@@ -1,27 +1,35 @@
 @font-face {
-    font-family: "chalk";
-    src: url("chalk.ttf");
+    font-family: "charter";
+    src: url("charter.ttf");
+}
+#list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em !important;
 }
 .harlow {
-    font-family: "chalk";
-}
-@font-face {
-    font-family: "chalk1";
-    src: url("chalk1.ttf");
-}
-
-.harlow {
-    font-family: "chalk1";
+    font-family: "charter";
 }
 .apresentacao{
     margin-bottom: 7vw;
+}
+.subtopic-title{
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+#functions{
+    color: #f50057;
+    font-weight: bold;
+}
+.topic-title{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f50057;
 }
 h1{
     font-size: 2em !important;
     font-weight: bold !important;
     padding-top: 1.5vw;
 }
-
 .navegacao1{
     margin-top: 2vw;
     color: #f50057;
@@ -31,11 +39,12 @@ h1{
 .navegacao-blog a{
     color: #777777;
 }
-
+.color1{
+    color:blueviolet;
+}
 .navegacao-blog a:hover{
     color: #f50057  !important;
     transition: all 0.4s;
-    text-decoration: underline;
 }
 blockquote{
     border-left: 5px solid #f50057  !important; /* Just change the color value and that's it*/
@@ -64,7 +73,6 @@ blockquote{
     color: #777777;
 }
 .badge-num{
-    margin-left: 0.9vw !important;
     font-family: 'chalk', sans-serif;
     font-weight: bold;
     color: #1ABC9C;
@@ -73,7 +81,7 @@ blockquote{
     font-family: 'chalk', sans-serif;
 }
 #title-badge1{
-    color: #1ABC9C;
+    color: #1F78A2;
 }
 #title-badge2{
     color: #F39C12;

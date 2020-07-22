@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contêineres - STL</title>
+        <meta charset="utf-8">
+        <!-- ****** FAVICONS ****** -->
+        <link rel="shortcut icon" href="../../imagens/Favicon/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="../../imagens/Favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="../../imagens/Favicon/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="../../imagens/Favicon/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../imagens/Favicon/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="../../imagens/Favicon/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../imagens/Favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../imagens/Favicon/favicon-16.png">
+        <link rel="apple-touch-icon" href="../../imagens/Favicon/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../imagens/Favicon/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../imagens/Favicon/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../imagens/Favicon/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../imagens/Favicon/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../imagens/Favicon/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../imagens/Favicon/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../imagens/Favicon/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../imagens/Favicon/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="../../imagens/Favicon/favicon-144.png">
+        <meta name="msapplication-config" content="../../imagens/Favicon/browserconfig.xml">
+        <!-- ****** FAVICONS ****** -->
+        <!--Iniciando a tela com a largura do dispositivo que está acessando o site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Styles-->
+        <link rel="stylesheet" type="text/css" href="../../styles/style-index.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/style-blog.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--Fonte Roboto-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!--Fonte Ubuntu-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <!--Fonte Poppins-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Icones - Materialize-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Sintaxe dos códigos-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=sunburst"></script>
+        <!--Scroll Animation-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- MathJax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </head>
+    <body id="scroll" class="secction scrollspy">
+        <!--Cabeçalho-->
+        <header id="inicio">
+            <!--Barra de Navegação-->
+            <nav class="transparent z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="../../index.html" class="brand-logo"><img src="../../imagens/logotipo.png" id="logotipo"></a>
+                        <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+    
+                        <ul class="right hide-on-med-and-down">
+                            <!--Menu-->
+                            <li><a href="../../" id="home">Home</a></li>
+                            <li><a href="../../sobre/" id="sobre">Sobre</a></li>
+                            <li><a href="../../blog/" id="blog">Blog<span class="circulo"></span></a></li>
+                            <li><form><button type="submit" class="botao" formaction="../../participar/">Participar</button></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Fim Nav-Bar-->
+            <!--Mobile Nav-->
+            <ul class="sidenav pink darken-1" id="slide_out">
+                <!--Oculta a side-nav quando algum link recebe um click-->
+                <div class="sidenav-close">
+                    <li><a href="../../"><i class="fas fa-home" style="color:#FFF;"></i>Home</a></li>
+                    <li><a href="../../sobre/"><i class="fas fa-info-circle" style="color:#FFF;"></i></i>Sobre</a></li>
+                    <li><a href="../../blog/"><i class="fas fa-blog" style="color:#FFF;"></i>Blog</a></li>
+                    <li><a href="../../participar/"><i class="fas fa-terminal" style="color:#FFF;"></i>Participar</a></li>
+                </div>
+            </ul>
+        </header>
+        <!--Fim do Cabeçalho-->
+        <img src="../../imagens/Background.png" class="bg-image"> 
+
+        <!--Apresentação-->
+        <div class="apresentacao" id="apresentacao">
+            <div class="texts center-align">
+                <p class="titulo"><b>Contêineres - STL</b></p>
+                <p class="page"><a href="../" id="home-page">Blog</a> / Contêineres - STL</p>
+            </div>
+        </div>
+        <!--Fim - Apresentação-->
+
+        <!--Blog-->
+        <div class="corpo-blog">
+            <p class="navegacao1">Tópicos abordados:</p>
+            <ul class="navegacao-blog">
+                <blockquote>
+                    <li><a href="#1">Introdução</a></li>
+                    <li><a href="#2">O Que São Contêineres?</a></li>
+                    <li><b>Sequenciais</b></li>
+                    <!-- Subtópicos de sequencial -->
+                    <li><a href="#3">&nbsp;&nbsp;&nbsp;• Array</a></li>
+                    <li><a href="#3">&nbsp;&nbsp;&nbsp;• Vector</a></li>
+                    <li><a href="#4">&nbsp;&nbsp;&nbsp;• Deue</a></li>
+                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• Foward List</a></li>
+                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• List</a></li>
+                    <li><a href="#1">Referências</a></li>
+                </blockquote>
+            </ul>
+            <!--Contêineres - O que são?-->
+            <br><br>
+            <p class="text-flow secction scrollspy" id="1" >
+                É bastante comum, seja no desenvolvimento ou na resolução de problemas de programação, necessitarmos 
+                manipular dados; <b>Pesquisa</b>, <b>busca</b>, <b>inserção</b> e <b>remoção</b> de informações em uma coleção de dados são exemplos 
+                de operações recorrentes que todo desenvolvedor utiliza na criação de algoritmos, e para tal existem 
+                diversas estruturas de dados: <b>Fila</b>, <b>Lista</b> e <b>Pilha</b>, por exemplo, possuem vasta utilização.<br><br> 
+                Implementar cada uma dessas estruturas de dados possui custo de tempo elevado, afinal, todas envolvem a 
+                utilização de ponteiros, e a construção desses algoritmos exige do programador muita atenção e tempo para 
+                que problemas não ocorram. Ter essas estruturas (e outras) implementadas previamente, de modo que sejam 
+                facilmente instanciadas ajuda, certamente, na utilização eficaz do tempo e energia do programador.
+                Felizmente, na linguagem C++, isso é uma realidade: <b>STL</b>!
+
+                <br><br>
+                <b>A Standard Template Library</b> (STL) é uma biblioteca padronizada de funções. Esta biblioteca é composta por quatro componentes<sup><a href="https://medium.com/@abhiarrathore/the-magic-of-c-stl-standard-template-library-e910f43379ea" target="_blank">[1]</a></sup>:
+            </p>
+            <ul id="list">
+                <li>&nbsp;&nbsp;&nbsp;• <b>Contêineres</b></li>
+                <li>&nbsp;&nbsp;&nbsp;• <b>Algoritmos</b></li>
+                <li>&nbsp;&nbsp;&nbsp;• <b>Iteradores</b></li>
+                <li>&nbsp;&nbsp;&nbsp;• <b>Functores</b></li>
+            </ul>
+            <p class="text-flow">
+                <br>
+                Veremos, neste post, um pouco sobre os contêineres (containers) encontrados em C++.
+            </p>
+
+            <br>
+            <!--Classes-->
+            <div id="2" class="secction scrollspy"></div>
+            <div class="topic-title">Contêineres - O que são?</div>
+            <p class="text-flow">
+                Os contêineres são algoritmos pré-implementados que representam estruturas de dados auxiliares através de 
+                classes template. Por serem classes template, tais contêineres podem ser utilizados para armazenar elementos 
+                de <b>quaisquer tipos de dados</b>, bem como outras classes<sup><a href="https://www.codeguru.com/cpp/cpp/an-introduction-to-sequence-containers-in-c.html" target="_blank">[2]</a></sup>. 
+                <br>Cada contêiner administra o armazenamento necessário para seus elementos e oferece acesso para cada elemento através de iteradores e/ou funções-membro<sup><a href="https://embeddedartistry.com/blog/2017/08/02/an-overview-of-c-stl-containers/" target="_blank">[3]</a></sup>. 
+                <br><br>Existem <b>4 tipos</b> de contêiner em C++, são eles:
+            </p>
+            <ul id="list">
+                <li>&nbsp;&nbsp;&nbsp;1. Sequenciais</li>
+                <li>&nbsp;&nbsp;&nbsp;2. Adaptativos</li>
+                <li>&nbsp;&nbsp;&nbsp;3. Associativos</li>
+                <li>&nbsp;&nbsp;&nbsp;4. Associativos Desordenados</li>
+            </ul>
+            <br>
+            <p class="text-flow">Vejamos um pouco sobre cada um desses contêineres.</p>
+            <br>
+            <!-- 1 - Sequenciais -->
+            <div class="topic-title">1. Contêineres Sequenciais</div>
+            <hr>
+            <br>
+            <p class="text-flow">Os contêineres sequenciais são representações de estruturas de dados que armazenam elementos homogêneos, 
+                de modo que cada elemento do contêiner pode ser acessado sequencialmente.
+                <br>
+                Os contêineres sequenciais presentes na atual versao do C++ são <b>array</b>, <b>vector</b>, <b>deque</b>, <b>forward_list</b> e <b>list</b>.
+            </p>
+            <br>
+            <!-- 1.1 Array -->
+            <div id="3" class="secction scrollspy"></div>
+            <div class="subtopic-title">1.1 Array</div>
+            <p class="text-flow">O contêiner <b>array</b> representa um vetor <b>estático</b> e <b>contínuo</b> (os elementos são alocados sequencialmente na memória, mas o número máximo de elementos não pode ser alterado).  
+                Esse contêiner foi criado com a finalidade de ser uma releitura do array presente na linguagem C, porém com a <b>mesma performance</b> e 
+                <b>maior legibilidade</b>. <br>A interface do array presente na STL torna mais conveniente as operações para encontrar o tamanho do array e 
+                copiar elementos<sup><a href="https://stackoverflow.com/questions/30263303/stdarray-vs-array-performance" target="_blank">[4]</a></sup>, 
+                por exemplo, bem como permite a utilização de algoritmos baseados em iteradores, definidos na STL (falaremos sobre iteradores no próximo post).
+                <br><br>
+                <b>Sintaxe</b><br>
+            </p>
+            <script src="https://gist.github.com/daniielcavallcante/bd875bf2d6d28be9c573a288597f1038.js"></script>
+            <p class="text-flow">
+                O código acima cria um um array com elementos do tipo <b>object_type</b> e tamanho máximo <b>array_size</b>.
+                <br><br>Para realizar uma declaração explícita dos elementos, basta a utilização do operador <b>=</b>.
+            </p>
+            <script src="https://gist.github.com/daniielcavallcante/49399596a3f829d514648cade461c9f6.js" class="something"></script>
+            <p class="text-flow">
+                O código acima cria um array com todos seus elementos já declarados.<br>
+                Ou também, caso seja necessária a leitura dos dados através do fluxo de entrada:
+            </p>
+            <script src="https://gist.github.com/daniielcavallcante/2de56a89917626daa0f2616fcf5774b3.js"></script>
+
+            <p class="text-flow">
+                Se a entrada, por exemplo, for <i>2 4 6 8 10</i>, o código acima produzirá a seguinte saída:
+            </p>
+            <pre class="prettyprint">2 - 4 - 6 - 8 - 10</pre>
+            <p class="text-flow">
+                <b>Funções Membro de std::array</b><br>
+            </p>
+
+            <blockquote>
+                <p class="text-flow" id="functions">at</p>
+            </blockquote>
+            <p class="text-flow">
+                Retorna o valor no array da posição informada. Se a posição dada for maior que o tamanho do array, a 
+                exceção <b>out_of_range</b> será exibida.
+            </p>
+            <script src="https://gist.github.com/daniielcavallcante/f5a286ff57cd3ffbf6acb82c8c01e7ef.js"></script>
+            <blockquote>
+                <p class="text-flow" id="functions">[ ]</p>
+            </blockquote>
+            <p class="text-flow">
+                Assim como o acesso à um elemento do vetor padrão, os elementos do <b>array</b> podem ser acessados diretamente através do operador [].
+            </p>
+            <blockquote>
+                <p class="text-flow" id="functions">front( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Retorna o primeiro elemento do array.
+            </p>
+            <blockquote>
+                <p class="text-flow" id="functions">back( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Retorna o último elemento do array.
+            </p>
+            <blockquote>
+                <p class="text-flow" id="functions">fill( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Preenche todos os espaços do array com o valor informado.
+            </p>
+            <blockquote>
+                <p class="text-flow" id="functions">swap( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Preenche todos os espaços do array com o valor informado.
+            </p>
+            <script src="https://gist.github.com/daniielcavallcante/5e040ab4b005ac8657c454a46ec035fc.js"></script>
+            <blockquote>
+                <p class="text-flow" id="functions">size( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Retorna o tamanho do array.            
+            </p>
+            <blockquote>
+                <p class="text-flow" id="functions">empty( )</p>
+            </blockquote>
+            <p class="text-flow">
+                Verifica se o array está vazio. Retorna <b>true se estiver vazio e <b>false</b> caso contrário.
+            </p>
+            <br><br>
+
+
+
+            <!-- 1.2 - Vector -->
+            <div id="4" class="secction scrollspy"></div>
+            <div class="subtopic-title">1.2 Vector</div>
+            <p class="text-flow">
+                
+            </p>
+
+
+
+            <div id="5" class="secction scrollspy"></div>
+            <div class="subtopic-title">1.3 Deque</div>
+            <div id="6" class="secction scrollspy"></div>
+            <div class="subtopic-title">1.4 Foward List</div>
+            <div id="7" class="secction scrollspy"></div>
+            <div class="subtopic-title">1.5 List</div>
+
+            <!-- 2 - Adaptativos -->
+            <div class="topic-title">2. Adaptativos</div>
+            <!-- 3 - Associativos -->
+            <div class="topic-title">3. Associativos</div>
+            <!-- 4 - Associativos Desordenados-->
+            <div class="topic-title">4. Associativos Desordenados</div>
+            
+        </div>
+        
+        <!--Fim - Blog-->
+        
+
+
+        <!--Rodapé-->  
+        <!--Footer Info-->
+        <div class="footer-info" id="footer-info">
+            <a href="../../"><img src="../../imagens/logotipo.png" id="footer-title" alt="Logotipo: progmat"></a>
+            <div class="row" id="itens-footer">
+                <!--Endereço-->
+                <div class="endereco col s4">
+                    <p id="endereco-title"><b>Endereço</b></p>
+                    <p id="endereco-text">Universidade Estadual de Santa Cruz.
+                        Campus Soane Nazaré de Andrade, Rod. Jorge Amado, Km 16 - Salobrinho, Ilhéus - BA.</p>
+                </div>
+                <!--Navegação-->
+                <div class="navegacao col s3">
+                    <p id="navegacao-title"><b>Navegação</b></p>
+                    <div class="footer-links">
+                        <a href="../../" id="home-footer"><i class="fas fa-home"></i> Home</a>
+                        <a href="../../sobre/" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
+                        <a href="../" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
+                        <a href="../../participar/"><i class="fas fa-terminal"></i>&nbsp; Participar</a>
+                    </div>
+                </div>
+                <!--Contato-->
+                <div class="contato col s4">
+                    <p id="contato-title"><b>Contato</b></p>
+                    <p id="contato-text"><a href="mailto:progmatuesc@gmail.com"><i class="far fa-envelope-open"></i> Contate-nos!</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Footer-Copyright-->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+              <div class="container">
+              © 2020 Criado com <i class="far fa-heart"></i> por <a href="https://www.escavador.com/sobre/3168420/marta-magda-dornelles" target="_blank">Prof.ª Dra. Marta Magda</a> e <a href="https://github.com/daniielcavallcante/"target="_blank">Daniel Cavalcante</a>.
+              </div>
+            </div>
+        </footer>
+        <!--Fim - Rodapé-->
+        
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--Script-->
+        <script src="index.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>

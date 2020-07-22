@@ -31,7 +31,8 @@
         <link rel="stylesheet" type="text/css" href="../../styles/style-index.css">
         <link rel="stylesheet" type="text/css" href="../../styles/style-blog.css">
         <link rel="stylesheet" type="text/css" href="style.css">
-
+        <!--Fonte Roboto-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <!--Fonte Ubuntu-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <!--Fonte Poppins-->
@@ -93,7 +94,7 @@
 
         <!--Blog-->
         <div class="corpo-blog">
-            <p class="navegacao">Tópicos abordados:</p>
+            <p class="navegacao1">Tópicos abordados:</p>
             <ul class="navegacao-blog">
                 <blockquote>
                     <li><a href="#1">Operações de Leitura e Impressão</a></li>
@@ -111,17 +112,19 @@
             <p class="text-flow">
                 Em C, para lermos dados de entrada e para imprimirmos em um fluxo de saída, utilizamos, respectivamente as funções <b>printf</b> e <b>scanf</b>, ambas inclusas no <i>header</i> <b>stdlib.h</stdlib.h></b>. O modo como a entrada e saída são manipuladas são semelhantes em C++. A  biblioteca <b>iostream</b> deve ser inclusa para a utilização da função de leitura - <b>cin</b> - e de saída - <b>cout</b>.<br>
                 <br>Vejamos um exemplo de utilização:
+            </p>
                 <script src="https://gist.github.com/daniielcavallcante/c8cd90f6209413cdb272aceb6af9531a.js"></script>
+            <p class="text-flow">
                 Uma necessidade recorrente com problemas de programação é a impressão de variáveis de ponto flutuante com controle do número de casas decimais a serem exibidas.
                 Existe um método simples para isso. Basta incluir a biblioteca <b>iomanip</b> que possui funções para manipulação da entrada / saída.
                 
                 Basta, portanto, adicionar os códigos seguintes:
-                <script src="https://gist.github.com/daniielcavallcante/214bea9458e8b381e0aa43de8a499b25.js"></script>
-                O código acima possui a seguinte saída:
-<pre class="prettyprint">4.84</pre>
-                
             </p>
-
+                <script src="https://gist.github.com/daniielcavallcante/214bea9458e8b381e0aa43de8a499b25.js"></script>
+            <p class="text-flow">
+                O código acima possui a seguinte saída:
+            </p>
+<pre class="prettyprint">4.84</pre>
 
             <!--Classes-->
             <h1 id="2" class="secction scrollspy">Classes</h1>
@@ -223,7 +226,7 @@ Gabriel Santos possui saldo de R$ 1000.00</pre>
                     <div class="footer-links">
                         <a href="../../" id="home-footer"><i class="fas fa-home"></i> Home</a>
                         <a href="../../sobre/" id="sobre-footer"><i class="fas fa-info-circle"></i> &nbsp;Sobre</a>
-                        <a href="#scroll" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
+                        <a href="../" id="blog-footer">&nbsp;<i class="fas fa-blog"></i> Blog</a>
                         <a href="../../participar/"><i class="fas fa-terminal"></i>&nbsp; Participar</a>
                     </div>
                 </div>

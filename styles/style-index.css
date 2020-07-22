@@ -27,6 +27,11 @@ body {
           flex-direction: column;
 }
 
+.text-flow {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15em !important;
+}
+
 #sobre, #blog {
   color: #555555 !important;
 }
@@ -506,7 +511,7 @@ footer {
     height: 15vw !important;
   }
   #logotipo {
-    height: 6vw;
+    height: 7vw;
     margin-top: 4% !important;
   }
   a:hover, a.active {
@@ -602,7 +607,7 @@ footer {
     height: 15vw !important;
   }
   #logotipo {
-    height: 6vw;
+    height: 8vw !important;
     margin-top: 1.5vw !important;
   }
   .apresentacao .titulo {
