@@ -108,7 +108,7 @@
                     <li><b>Sequenciais</b></li>
                     <!-- Subtópicos de sequencial -->
                     <li><a href="#3">&nbsp;&nbsp;&nbsp;• Array</a></li>
-                    <li><a href="#3">&nbsp;&nbsp;&nbsp;• Vector</a></li>
+                    <li><a href="#4">&nbsp;&nbsp;&nbsp;• Vector</a></li>
                     <li><a href="#4">&nbsp;&nbsp;&nbsp;• Deue</a></li>
                     <li><a href="#5">&nbsp;&nbsp;&nbsp;• Foward List</a></li>
                     <li><a href="#5">&nbsp;&nbsp;&nbsp;• List</a></li>
@@ -252,7 +252,7 @@
                 <p class="text-flow" id="functions">empty( )</p>
             </blockquote>
             <p class="text-flow">
-                Verifica se o array está vazio. Retorna <b>true se estiver vazio e <b>false</b> caso contrário.
+                Verifica se o array está vazio. Retorna <b>true</b> se estiver vazio e <b>false</b> caso contrário. 
             </p>
             <br><br>
 
@@ -262,13 +262,49 @@
             <div id="4" class="secction scrollspy"></div>
             <div class="subtopic-title">1.2 Vector</div>
             <p class="text-flow">
-                
+                O contêiner sequencial <b>Vector</b> é baseado em arrays e suporta acesso aleatório a seus elementos<sup><a href="https://www.inf.pucrs.br/~pinho/PRGSWB/STL/stl.html" target="_blank">[5]</a></sup>. Ele é capaz de reproduzir 
+                todas as características do array e, como principal diferença, possui a capacidade de <b>expandir a quantidade de elementos dinamicamente</b>
+                a cada inserção realizada. Esse contêiner é <b>contínuo</b> (os elementos de um Vector são alocados sequencialmente na memória, e são individualmente acessíveis, por esta razão, 
+                através do operador <b>[ ]</b> ) e <b>dinâmico</b> (é capaz de redimensionar seu tamanho automaticamente, de acordo com a quantidade de elementos 
+                inseridos)<sup><a href="https://www.inf.pucrs.br/~pinho/PRGSWB/STL/stl.html" target="_blank">[6]</a></sup>.<br> Vectors também podem 
+                alocar armazenamento extra na memória e por esta razão alguns possuem uma capacidade de armazenamento superior ao necessário para o 
+                armazenamento dos itens. A capacidade pode ser encontrada através da função-membro <b>capacity()</b>. Portanto, comparado à arrays,
+                 vectors consomem mais memória em troca da habilidade de controlar o armazenamento e crescer dinamicamente de forma eficiente<sup><a href="http://www.cplusplus.com/reference/vector/vector/" target="_blank">[7]</a></sup>.
+
+                <br><br> 
+                O Vector possui suporte a funções-membro bastante semelhantes às que foram vista anteriormente, e também possui funções próprias. 
+                <b>push_back( ):</b> Insere um elemento no final do vector.<br>
+                <b>pop_back( ):</b> Retira último elemento do vector.<br>
+                <b>erase( ):</b> Remove um elemento (posição) ou um intervalo de elementos ([primeiro, último))<br>
+                <b>clear( ):</b> Elimina todos os elementos do Vector<br>
+
+                <br>Bem como o <b>array</b>, Vectors também possuem as funções membro <b>at</b>, <b>front</b>, <b> back</b>, <b>swap</b>, <b>empty</b>, <b>size</b>, <b>begin</b>, <b>end</b>. 
+                <br><br><b>Exemplo rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/b043d2c0b12c6622294c9bc68e9982e0.js"></script>
             </p>
 
 
 
             <div id="5" class="secction scrollspy"></div>
             <div class="subtopic-title">1.3 Deque</div>
+            <p class="text-flow">
+                Deque é uma implementação de <b>filas duplamente terminadas</b> (<b>D</b>ouble <b>E</b>nded <b>Que</b>ue).<br>
+                Nesse contêiner, os elementos podem ser inseridos tanto na frente (cabeça) quanto no fim (cauda)<sup><a href="https://pt.wikipedia.org/wiki/Deque_(estruturas_de_dados)" target="_blank">[7]</a></sup>. 
+                Deques possuem funcionalidades bastante semelhantes à Vectors, porém com eficiente inserção e remoção de elementos também no início da 
+                sequência, não apenas no fim (como o Vector). No entanto, diferente de Vectors não há a garantia de que todos os elementos serão armazenados 
+                em posições contínuas da memória. Para operações que envolvem frequentes inserções e remoções de elementos localizados em posições diferentes do início e fim, deques possuem
+                desempenho pior e iteradores menos consistentes, comparado à listas encadeadas / duplamente encadeadas.<sup><a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">[8]</a></sup><br><br>
+                <b>Principais funções-membro:</b><br>
+                → push_front( ): Insere um elemento no início.<br>
+                → push_back( ): Insere um elemento no fim.<br>
+                → pop_front( ): Remove o primeiro elemento<br>
+                → pop_back( ): Remove o último elemento.<br>
+
+                <br>A <b>deque</b> também possui algumas funções-membro e operadores que vectors e arrays possuem. Para mais detalhes, acesse a página <a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">C Plus Plus</a>.
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/a1204ea973bd125f1194d41d4845169c.js"></script>
+            </p>
             <div id="6" class="secction scrollspy"></div>
             <div class="subtopic-title">1.4 Foward List</div>
             <div id="7" class="secction scrollspy"></div>
