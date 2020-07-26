@@ -109,8 +109,8 @@
                     <!-- Subtópicos de sequencial -->
                     <li><a href="#3">&nbsp;&nbsp;&nbsp;• Array</a></li>
                     <li><a href="#4">&nbsp;&nbsp;&nbsp;• Vector</a></li>
-                    <li><a href="#4">&nbsp;&nbsp;&nbsp;• Deue</a></li>
-                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• Foward List</a></li>
+                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• Deue</a></li>
+                    <li><a href="#6">&nbsp;&nbsp;&nbsp;• Foward List</a></li>
                     <li><a href="#5">&nbsp;&nbsp;&nbsp;• List</a></li>
                     <li><a href="#1">Referências</a></li>
                 </blockquote>
@@ -254,7 +254,7 @@
             <p class="text-flow">
                 Verifica se o array está vazio. Retorna <b>true</b> se estiver vazio e <b>false</b> caso contrário. 
             </p>
-            <br><br>
+            <br><br><br>
 
 
 
@@ -283,8 +283,8 @@
                 <script src="https://gist.github.com/daniielcavallcante/b043d2c0b12c6622294c9bc68e9982e0.js"></script>
             </p>
 
-
-
+            
+            <br><br><br>
             <div id="5" class="secction scrollspy"></div>
             <div class="subtopic-title">1.3 Deque</div>
             <p class="text-flow">
@@ -307,9 +307,58 @@
             </p>
             <div id="6" class="secction scrollspy"></div>
             <div class="subtopic-title">1.4 Foward List</div>
+            <p class="text-flow">
+                Forward lists são containers sequenciais que permitem operações de inserção e remoção de elementos em 
+                qualquer posição da sequência em tempo constante.
+                <br>Forward lists são implementadas semelhantemente à listas simplesmente encadeadas; Listas simplesmente encadeadas podem armazenar 
+                cada um de seus elementos em alocações diferentes de memória. Para manter a ordem, cada elemento possui um ponteiro para o 
+                próximo elemento da sequência.<br>
+                Comparado aos outros contêineres sequenciais (array, vector e deque), <b>forward_list</b> tem melhor performance na inserção, 
+                extração e na movimentação de elementos em qualquer posição dentro do contêiner, assim como em algoritmos que usam essas 
+                operações intensivamente, como algoritmos de ordenação, por exemplo.<br>
+                A principal desvantagem de foward_lists e lists, quando comparadas aos outros contêineres sequenciais é que estes oferecem 
+                acesso direto aos elementos a partir da posição deles. Por exemplo, para acessar o sexto elemento em uma foward_list, será 
+                necessário iterar do início do contêiner até aquela posição, feito em tempo linear determinado pela distância entre esses 
+                elementos. Foward_lists também consomem memória extra para manter as informações de linkagem da lista<sup><a href="http://www.cplusplus.com/reference/forward_list/forward_list/" target="_blank">[9]</a></sup>.
+                <br><br><br>
+            
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/forward_list/forward_list/assign/" target="_blank">assign( ):</a></b> Determina os novos elementos que irão compor a lista, substituindo o conteúdo atual e reajustando o tamanho de acordo a quantidade determinada.<br>
+                <b><a href="http://www.cplusplus.com/reference/forward_list/forward_list/push_front/" target="_blank">push_front( ):</a></b> Insere um elemento no início. <br>
+                <b><a href="http://www.cplusplus.com/reference/forward_list/forward_list/pop_front/" target="_blank">pop_front( ):</a></b> Remove primeiro elemento. <br>
+                <b><a href="http://www.cplusplus.com/reference/forward_list/forward_list/insert_after/" target="_blank">insert_after( ):</a></b>Insere um ou mais elementos depois de uma posição dada.<br>
+                <b><a href="http://www.cplusplus.com/reference/forward_list/forward_list/erase_after/" target="_blank">erase_after( ):</a></b>Elimina um elemento ou um intervalo de elementos a partir de uma posição dada.<br>
+                
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/36212e3bc6c2d567a66793a6200b3060.js"></script>
+            </p>
             <div id="7" class="secction scrollspy"></div>
             <div class="subtopic-title">1.5 List</div>
+            <p class="text-flow">
+                Lists são contêineres sequenciais que permitem operações de inserção e remoção de elementos em quaisquer posições na sequência, 
+                bem como permitem a iteração em ambas direções.
+                <br>Esses contêineres são implementados do mesmo modo que <b>listas duplamente encadeadas</b>; Listas duplamente encadeadas podem armazenar cada 
+                um de seus elementos em posições de memória diferentes e não-relacionadas. Para a ordem ser mantida, são armazenados também ponteiros que associam 
+                cada elemento ao seu antecessor e ao seu sucessor.
+                
 
+                <br><br><br>
+            
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/list/list/assign/" target="_blank">assign( ):</a></b> Determina os novos elementos que irão compor a lista, substituindo o conteúdo atual e reajustando o tamanho de acordo a quantidade determinada.<br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/push_front/" target="_blank">push_front( ):</a></b> Insere um elemento no início. <br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/push_back/" target="_blank">push_back( ):</a></b> Insere um elemento no fim.<br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/pop_front/" target="_blank">pop_front( ):</a></b> Remove o primeiro elemento. <br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/pop_back/" target="_blank">pop_back( ):</a></b> Remove o último elemento<br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/insert/" target="_blank">insert( ):</a></b> Insere um ou mais elementos depois de uma posição dada.<br>
+                <b><a href="http://www.cplusplus.com/reference/list/list/erase/" target="_blank">erase( ):</a></b> Elimina um elemento ou um intervalo de elementos a partir de uma posição dada.<br>
+                
+
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/c331c1ac4897bd89c2628fc6f14bb9a3.js"></script>
+            </p>
             <!-- 2 - Adaptativos -->
             <div class="topic-title">2. Adaptativos</div>
             <!-- 3 - Associativos -->
