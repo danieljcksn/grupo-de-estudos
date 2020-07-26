@@ -155,7 +155,7 @@
             </p>
             <ul id="list">
                 <li>&nbsp;&nbsp;&nbsp;1. Sequenciais</li>
-                <li>&nbsp;&nbsp;&nbsp;2. Adaptativos</li>
+                <li>&nbsp;&nbsp;&nbsp;2. Adaptadores</li>
                 <li>&nbsp;&nbsp;&nbsp;3. Associativos</li>
                 <li>&nbsp;&nbsp;&nbsp;4. Associativos Desordenados</li>
             </ul>
@@ -359,8 +359,68 @@
                 <b>Exemplo Rápido:</b>
                 <script src="https://gist.github.com/daniielcavallcante/c331c1ac4897bd89c2628fc6f14bb9a3.js"></script>
             </p>
-            <!-- 2 - Adaptativos -->
-            <div class="topic-title">2. Adaptativos</div>
+            <!-- 2 - Adaptadores -->
+            <div class="topic-title">2. Adaptadores</div>
+            <p class="text-flow">
+                Adaptadores de contêiner são construídos através da adaptação de contêineres sequenciais, restrigindo e/ou modificando as interfaces destes para oferecer o comportamento desejado<sup><a href="http://cs.stmarys.ca/~porter/csc/ref/stl/containers_summary.html" target="_blank">[10]</a></sup>.
+            </p>
+            <div id="8" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">2.1 Stack</div>
+            <p class="text-flow">
+                Stacks são um tipo de adaptador de contêiner, projetados para executarem o comportamento LIFO (Last-in, first-out), 
+                onde os elementos são inseridos e retirados do topo da estrutura, exatamente a ideia oferecida pela Pilha. Stack é uma adaptação do contêiner <b>deque</b>.
+
+                <br><br>
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/stack/stack/empty/" target="_blank">empty( ):</a></b> Retorna <b>true</b> se o tamanho da stack for zero e <b>false</b>, caso contrário.<br>
+                <b><a href="http://www.cplusplus.com/reference/stack/stack/size/" target="_blank">size( ):</a></b> Retorna o tamanho da stack.<br>
+                <b><a href="http://www.cplusplus.com/reference/stack/stack/top/" target="_blank">top( ):</a></b> Retorna o elemento localizado no "topo" da stack.<br>
+                <b><a href="http://www.cplusplus.com/reference/stack/stack/push/" target="_blank">push( ):</a></b> Insere um novo elemento no topo da stack, sobre o atual <i>top</i>.<br>
+                <b><a href="http://www.cplusplus.com/reference/stack/stack/pop/" target="_blank">pop( ):</a></b> Retira o elemento localizado no topo da stack.<br>
+
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/1ae95aa6db6f9c3311002b3dba659fad.js"></script>
+            </p>
+
+
+            <div id="9" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">2.2 Queue</div>
+            <p class="text-flow">
+                Este adaptador foi projetado para executar o padrão FIFO (fist-in, first-out), uma implementação da estrutura de dados Fila. Este contêiner é uma adaptação do <b>deque</b>.
+            
+                <br><br>
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/empty/" target="_blank">empty( ):</a></b> Retorna <b>true</b> se o tamanho da queue for zero e <b>false</b>, caso contrário.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/size/" target="_blank">size( ):</a></b> Retorna o tamanho da queue.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/front/" target="_blank">front( ):</a></b> Retorna o elemento primeiro elemento da queue.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/back/" target="_blank">back( ):</a></b> Acessa o último elemento.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/push/" target="_blank">push( ):</a></b> Insere um elemento.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/pop/" target="_blank">pop( ):</a></b> Retira o primeiro elemento.<br>
+
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/db6efe3dcadbd69b4b9b24f8e9bda1c1.js"></script>
+            </p>
+
+
+
+            <div id="10 class="secction scrollspy"></div><br>
+            <div class="subtopic-title">2.3 Priority Queue</div>
+            <p class="text-flow">
+                Este adaptador foi projetado para executar uma fila de modo que o primeiro elemento é sempre o maior da fila, de acordo com algum critério. 
+                <br><br>
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/queue/queue/empty/" target="_blank">empty( ):</a></b> Retorna <b>true</b> se o tamanho da queue for zero e <b>false</b>, caso contrário.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/priority_queue/size/" target="_blank">size( ):</a></b> Retorna o tamanho.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/priority_queue/top/" target="_blank">top( ):</a></b> Retorna o elemento localizado no topo.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/priority_queue/push/" target="_blank">push( ):</a></b> Insere um elemento.<br>
+                <b><a href="http://www.cplusplus.com/reference/queue/priority_queue/pop/" target="_blank">pop( ):</a></b> Remove o elemento no topo.<br>
+
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/efc4388600b97879b4e34ed2b3b3c87a.js"></script>
+            </p>
             <!-- 3 - Associativos -->
             <div class="topic-title">3. Associativos</div>
             <!-- 4 - Associativos Desordenados-->
