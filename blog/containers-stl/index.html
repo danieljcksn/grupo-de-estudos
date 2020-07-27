@@ -111,8 +111,25 @@
                     <li><a href="#4">&nbsp;&nbsp;&nbsp;• Vector</a></li>
                     <li><a href="#5">&nbsp;&nbsp;&nbsp;• Deue</a></li>
                     <li><a href="#6">&nbsp;&nbsp;&nbsp;• Foward List</a></li>
-                    <li><a href="#5">&nbsp;&nbsp;&nbsp;• List</a></li>
-                    <li><a href="#1">Referências</a></li>
+                    <li><a href="#7">&nbsp;&nbsp;&nbsp;• List</a></li>
+                    
+                    <li><b>Adaptadores</b></li>
+                    <!-- Subtópicos de Adaptadores -->
+                    <li><a href="#8">&nbsp;&nbsp;&nbsp;• Stack</a></li>
+                    <li><a href="#9">&nbsp;&nbsp;&nbsp;• Queue</a></li>
+                    <li><a href="#10">&nbsp;&nbsp;&nbsp;• Priority Qeue</a></li>
+                    
+                    
+                    <li><b>Associativos</b></li>
+                    <!-- Subtópicos de Associativos -->
+                    <li><a href="#11">&nbsp;&nbsp;&nbsp;• Set</a></li>
+                    <li><a href="#12">&nbsp;&nbsp;&nbsp;• Multiset</a></li>
+                    <li><a href="#13">&nbsp;&nbsp;&nbsp;• Map</a></li>
+                    <li><a href="#14">&nbsp;&nbsp;&nbsp;• Multimap</a></li>
+
+                    <li><a href="#15">Associativos Desordenados</a></li>
+
+                    <li><a href="#16">Referências</a></li>
                 </blockquote>
             </ul>
             <!--Contêineres - O que são?-->
@@ -289,11 +306,11 @@
             <div class="subtopic-title">1.3 Deque</div>
             <p class="text-flow">
                 Deque é uma implementação de <b>filas duplamente terminadas</b> (<b>D</b>ouble <b>E</b>nded <b>Que</b>ue).<br>
-                Nesse contêiner, os elementos podem ser inseridos tanto na frente (cabeça) quanto no fim (cauda)<sup><a href="https://pt.wikipedia.org/wiki/Deque_(estruturas_de_dados)" target="_blank">[7]</a></sup>. 
+                Nesse contêiner, os elementos podem ser inseridos tanto na frente (cabeça) quanto no fim (cauda)<sup><a href="https://pt.wikipedia.org/wiki/Deque_(estruturas_de_dados)" target="_blank">[8]</a></sup>. 
                 Deques possuem funcionalidades bastante semelhantes à Vectors, porém com eficiente inserção e remoção de elementos também no início da 
                 sequência, não apenas no fim (como o Vector). No entanto, diferente de Vectors não há a garantia de que todos os elementos serão armazenados 
                 em posições contínuas da memória. Para operações que envolvem frequentes inserções e remoções de elementos localizados em posições diferentes do início e fim, deques possuem
-                desempenho pior e iteradores menos consistentes, comparado à listas encadeadas / duplamente encadeadas.<sup><a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">[8]</a></sup><br><br>
+                desempenho pior e iteradores menos consistentes, comparado à listas encadeadas / duplamente encadeadas.<sup><a href="http://www.cplusplus.com/reference/deque/deque/" target="_blank">[9]</a></sup><br><br>
                 <b>Principais funções-membro:</b><br>
                 → push_front( ): Insere um elemento no início.<br>
                 → push_back( ): Insere um elemento no fim.<br>
@@ -319,7 +336,7 @@
                 A principal desvantagem de foward_lists e lists, quando comparadas aos outros contêineres sequenciais é que estes oferecem 
                 acesso direto aos elementos a partir da posição deles. Por exemplo, para acessar o sexto elemento em uma foward_list, será 
                 necessário iterar do início do contêiner até aquela posição, feito em tempo linear determinado pela distância entre esses 
-                elementos. Foward_lists também consomem memória extra para manter as informações de linkagem da lista<sup><a href="http://www.cplusplus.com/reference/forward_list/forward_list/" target="_blank">[9]</a></sup>.
+                elementos. Foward_lists também consomem memória extra para manter as informações de linkagem da lista<sup><a href="http://www.cplusplus.com/reference/forward_list/forward_list/" target="_blank">[10]</a></sup>.
                 <br><br><br>
             
                 <b>Principais funções-membro:</b> <br> 
@@ -362,7 +379,7 @@
             <!-- 2 - Adaptadores -->
             <div class="topic-title">2. Adaptadores</div>
             <p class="text-flow">
-                Adaptadores de contêiner são construídos através da adaptação de contêineres sequenciais, restrigindo e/ou modificando as interfaces destes para oferecer o comportamento desejado<sup><a href="http://cs.stmarys.ca/~porter/csc/ref/stl/containers_summary.html" target="_blank">[10]</a></sup>.
+                Adaptadores de contêiner são construídos através da adaptação de contêineres sequenciais, restrigindo e/ou modificando as interfaces destes para oferecer o comportamento desejado<sup><a href="http://cs.stmarys.ca/~porter/csc/ref/stl/containers_summary.html" target="_blank">[11]</a></sup>.
             </p>
             <div id="8" class="secction scrollspy"></div><br>
             <div class="subtopic-title">2.1 Stack</div>
@@ -381,6 +398,7 @@
                 <br><br>
                 <b>Exemplo Rápido:</b>
                 <script src="https://gist.github.com/daniielcavallcante/1ae95aa6db6f9c3311002b3dba659fad.js"></script>
+                Algoritmo baseado exemplo do <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>
             </p>
 
 
@@ -401,11 +419,12 @@
                 <br><br>
                 <b>Exemplo Rápido:</b>
                 <script src="https://gist.github.com/daniielcavallcante/db6efe3dcadbd69b4b9b24f8e9bda1c1.js"></script>
+                Algoritmo baseado exemplo do <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>
             </p>
 
 
 
-            <div id="10 class="secction scrollspy"></div><br>
+            <div id="10" class="secction scrollspy"></div><br>
             <div class="subtopic-title">2.3 Priority Queue</div>
             <p class="text-flow">
                 Este adaptador foi projetado para executar uma fila de modo que o primeiro elemento é sempre o maior da fila, de acordo com algum critério. 
@@ -420,12 +439,149 @@
                 <br><br>
                 <b>Exemplo Rápido:</b>
                 <script src="https://gist.github.com/daniielcavallcante/efc4388600b97879b4e34ed2b3b3c87a.js"></script>
+                Algoritmo baseado exemplo do <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>
             </p>
+            <br><br>
             <!-- 3 - Associativos -->
             <div class="topic-title">3. Associativos</div>
+            <p class="text-flow">
+                Os contêineres associativos possuem este nome por sempre associarem chaves à valores. Uma característica importante é que os elementos desses contêineres estão sempre ordenados, e reordenam-se à cada nova inserção.
+            </p>
+
+            <div id="11" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">3.1 Set</div>
+            <p class="text-flow">
+                Sets são contêineres que armazenam elementos únicos, ordenados de acordo com uma ordem específica. 
+                Em um set, o valor do elemento também o identifica (o valor é, em si, uma chave), e cada elemento no contêiner deve ser único. 
+                Os elementos não podem ter seus valores modificados uma vez inseridos, mas podem ser removidos e inseridos no contêiner.<sup><a href="http://www.cplusplus.com/reference/set/set/" target="_blank">[12]</a></sup>
+
+                <br><br>
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/set/set/begin/" target="_blank">begin( ):</a></b> Retorna um iterador para o início. <br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/end/" target="_blank">end( ):</a></b> Retorna um ponteiro para o fim do set. <br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/insert/" target="_blank">insert( ):</a></b> Insere um novo elemento. <br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/size/" target="_blank">size( ):</a></b> Retorna o tamanho do contêiner. <br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/erase/" target="_blank">erase( ):</a></b> Retorna do set um elemento ou um intervalo de elementos.<br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/clear/" target="_blank">clear( ):</a></b> Elimina todos os elementos do set<br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/find/" target="_blank">find( ):</a></b> Busca um elemento a partir da chave indicada. Se encontrar, retorna um iterador para o elemento ou retorna um ponteiro para o fim do contêiner, caso contrário.<br>
+                <b><a href="http://www.cplusplus.com/reference/set/set/count/" target="_blank">count( ):</a></b> Retorna a quantidade de elementos com um valor específico. <br>
+
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/41af546124bfb27800ac9d620d795db9.js"></script>
+                Para mais informações sobre sets, veja a página <a href="http://www.cplusplus.com/reference/set/set/" target="_blank">referência</a> do C++.<br>
+            </p>
+
+            <div id="12" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">3.2 Multiset</div>
+            <p class="text-flow">
+                Multiset é um contêiner bastante semelhante ao set, no entanto, permite que existam no contêiner vários elementos com a mesma chave. Todas as demais propriedades, funções-membro e iteradores funcionam de mesmo modo. 
+                Em um set, o valor do elemento também o identifica (o valor é, em si, uma chave), e cada elemento no contêiner deve ser único. 
+                Os elementos não podem ter seus valores modificados uma vez inseridos, mas podem ser removidos e inseridos no contêiner.<sup><a href="http://www.cplusplus.com/reference/set/multiset/" target="_blank">[13]</a></sup>
+                <br><br>
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/fa287f13d463fb509c10106e3a83d945.js"></script>
+                Para mais informações sobre multisets, veja a página <a href="http://www.cplusplus.com/reference/set/multiset/" target="_blank">referência</a> do C++.<br>
+            </p>
+
+
+            <div id="13" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">3.3 Map</div>
+            <p class="text-flow">
+                Maps são contêineres associativos que armazenam elementos formados pela combinação de uma chave e um valor mapeado, seguindo uma ordem específica.
+                Em um map, os valores=chave são geralente utilizados para ordenar e identificar unicamente cada elemento, enquanto os valores mapeados armazenam o conteúdo associado a essa chave<sup><a href="http://www.cplusplus.com/reference/map/map/" target="_blank">[14]</a></sup>
+                <br><br>
+
+                <b>Principais funções-membro:</b> <br> 
+                <b><a href="http://www.cplusplus.com/reference/map/map/begin/" target="_blank">begin( ):</a></b> Retorna um iterador para o início. <br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/end/" target="_blank">end( ):</a></b> Retorna um ponteiro para o fim do map. <br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/insert/" target="_blank">insert( ):</a></b> Insere um novo elemento. <br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/size/" target="_blank">size( ):</a></b> Retorna o tamanho do contêiner. <br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/erase/" target="_blank">erase( ):</a></b> Retorna do map um elemento ou um intervalo de elementos.<br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/clear/" target="_blank">clear( ):</a></b> Elimina todos os elementos do contêiner<br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/find/" target="_blank">find( ):</a></b> Busca um elemento a partir da chave indicada. Se encontrar, retorna um iterador para o elemento ou retorna um ponteiro para o fim do contêiner, caso contrário.<br>
+                <b><a href="http://www.cplusplus.com/reference/map/map/count/" target="_blank">count( ):</a></b> Retorna a quantidade de elementos com um valor específico. <br>
+
+
+
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/98caeaa0453f2b8d432a2910dea4b3ed.js"></script>
+                Para mais informações sobre maps, veja a página <a href="http://www.cplusplus.com/reference/map/map/" target="_blank">referência</a> do C++.<br>
+            </p>
+
+
+            <div id="14" class="secction scrollspy"></div><br>
+            <div class="subtopic-title">3.4 Multimap</div>
+            <p class="text-flow">
+                Assim como os multisets estão para os sets, multimaps estão para os maps. A única diferença entre estes dois é que Multimaps são capazes de mapearem valores que possuem mesma chave dentro do contêiner. Todas as demais propriedades, funções-membro e iteradores funcionam de mesmo modo.
+                <br><br>
+
+                <b>Exemplo Rápido:</b>
+                <script src="https://gist.github.com/daniielcavallcante/4232b3ae42b14d9dda8bb7866c648616.js"></script>
+                Para mais informações sobre multimaps, veja a página <a href="http://www.cplusplus.com/reference/map/multimap/" target="_blank">referência</a> do C++.<br>
+            </p>
+
+
+
+            <br><br>
             <!-- 4 - Associativos Desordenados-->
+            <div id="15" class="secction scrollspy"></div><br>
             <div class="topic-title">4. Associativos Desordenados</div>
-            
+            <p class="text-flow">Os contêineres associativos desordenados são pouco utilizados, quando comparado aos citados anterioers.<br>Existem 4 contêineres que pertencem a esse tipo:<br>
+            → unordered_set<br>
+            → unordered_multiset<br>
+            → unordered_map<br>
+            → unordered_mutlimap<br>
+
+            Como indicado pelos nomes, a principal diferença desses contêineres para os contêineres associativos comuns é que estes não ordenam os itens automaticamente segundo uma ordem específica, pois em muitas situações a ordenação não é necessária. 
+            É possível, no entanto, ordená-los depois (mas a utilização desta ordenação não faria sentido, sabendo que já existem os contêineres associativos comuns).
+
+
+            <br><br>Se deseja aprender mais sobre os contêineres associativos desordenados, veja a página <a href="http://www.cplusplus.com/reference/map/multimap/" target="_blank">referência</a> do C++.<br>
+            </p>
+            <br><br>
+            <div id="16" class="secction scrollspy"></div><br>
+            <div class="topic-title">5. Referências</div>
+            <p class="text-flow">
+                Aqui estão todos os links dos sites citados no decorrer do post =).
+                <br>
+                1. <a href="https://medium.com/@abhiarrathore/the-magic-of-c-stl-standard-template-library-e910f43379ea" target="_blank">The Complete Practical Guide to C++ STL(Standard Template Library)</a>. <br>
+                2. <a href="https://www.codeguru.com/cpp/cpp/an-introduction-to-sequence-containers-in-c.html
+                " target="_blank">An Introduction to Sequence Containers in C++</a>. www.codeguru.com<br>
+                3. <a href="https://embeddedartistry.com/blog/2017/08/02/an-overview-of-c-stl-containers/
+                " target="_blank">An Overview of C++ STL Containers
+            </a>. embeddedartistry.com<br>
+                4. <a href="https://stackoverflow.com/questions/30263303/stdarray-vs-array-performance
+                " target="_blank">std::array vs array performance
+            </a><br>
+                5. <a href="https://www.inf.pucrs.br/~pinho/PRGSWB/STL/stl.html
+                " target="_blank">STL - Standard  Template Library
+            </a>. www.inf.pucrs.br<br>
+                6. <a href="http://www.cplusplus.com/reference/vector/vector/
+                " target="_blank">std::vector
+            </a>. www.cplusplus.com<br>
+                7. <a href="https://pt.wikipedia.org/wiki/Deque_(estruturas_de_dados)" target="_blank">Deque (estruturas de dados)
+                </a><br>
+                8. <a href="http://www.cplusplus.com/reference/deque/deque/
+                " target="_blank">std:deque
+            </a>. www.cplusplus.com<br>
+                9. <a href="http://www.cplusplus.com/reference/forward_list/forward_list/
+                " target="_blank">std::foward_list
+            </a>. www.cplusplus.com<br>
+                10. <a href="http://cs.stmarys.ca/~porter/csc/ref/stl/containers_summary.html
+                " target="_blank">STL Container and Container Adaptor Classes: A Summary
+            </a>. cs.stmarys.ca<br>
+                11. <a href="http://www.cplusplus.com/reference/set/set/
+                " target="_blank">std::set
+            </a>. www.cplusplus.com<br>
+                12. <a href="http://www.cplusplus.com/reference/set/multiset/
+                " target="_blank">std::multiset
+            </a>. www.cplusplus.com<br>
+                13. <a href="http://www.cplusplus.com/reference/map/map/
+                " target="_blank">std::multimap
+            </a>. www.cplusplus.com<br>
+
+            </p>
         </div>
         
         <!--Fim - Blog-->
